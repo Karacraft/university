@@ -11,7 +11,7 @@
     
     </head>
 <body>
-    <div id="app" class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
             <div class="top-right links">
                 @auth
@@ -30,6 +30,13 @@
             <h3>con</h3>    
         </div>
     </div>
+
+    <div id="app">
+        {{-- <welcome :title="'This is cool app'"></welcome> --}}
+        <welcome :title="'{{$title}}'"></welcome>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>
