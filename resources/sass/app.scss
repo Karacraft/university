@@ -1,6 +1,8 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+// @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 // Variables
 @import 'variables';
@@ -8,7 +10,18 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+//  Welcome/Login page Navbar
 .navbar-laravel {
   background-color: $primary;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+//  Vertical Line Between Divisions - Welcom/Login Page
+.vl {
+    border-left: 1px solid lightgray;
+    height: 455px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 25px;
+  }

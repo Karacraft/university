@@ -8,6 +8,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+//Suppress the development version warning
+Vue.config.productionTip = false;
 
 /**
  * The following block of code may be used to automatically register your
@@ -21,8 +23,8 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('welcome',require('./components/Welcome.vue').default);
-Vue.component('page',require('./components/Page.vue').default);
+// Vue.component('welcome',require('./components/Welcome.vue').default);
+// Vue.component('page',require('./components/Page.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,5 +33,8 @@ Vue.component('page',require('./components/Page.vue').default);
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+
+
 });
