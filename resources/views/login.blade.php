@@ -20,10 +20,10 @@
 
     {{-- Navigation Bar --}}
     <div class="container-flex" id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <a href="" class="navbar-brand ml-2">
                 {{-- Company Logo --}}
-                <img src="{{ asset('images/avtlogo.png') }}" alt="Auvitronics Logo" srcset="" width="60px" height="auto">
+                <img src="{{ asset('images/avtlogo.png') }}" alt="Auvitronics Logo" srcset="" width="40px" height="auto">
                 {{-- Company Name --}}
                 {{ config('app.name') }}
             </a>
@@ -41,7 +41,8 @@
                             {{-- Sign In Column --}}
                             <div class="col-6 text-muted pt-5 pl-5 pr-5">
                                 <h1>Log In</h1>
-                                <form action="{{ route('login') }}" method="post">
+                                <form action="{{ route('logme') }}" method="post">
+                                    {{ csrf_field() }}
                                     <div class="form-group mt-2">
                                         <label for="email">EMAIL</label>
                                         <input type="text" class="form-control" id="email" class="email">
@@ -60,7 +61,7 @@
                                     </div>
 
                                     <div class="form-group mt-5">
-                                        <button type="submit" class="btn btn-success btn-block">Submit</button>
+                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
                                     </div>
 
                                     <div class="form-group text-center">
@@ -83,7 +84,7 @@
                                 Let's Get 
                 
                                 Started!</h1>
-                                <a href="" class="btn btn-success">Register</a>
+                                <a href="" class="btn btn-primary">Register</a>
                             </div>
                             {{-- Signup COlumn --}}
                         </div>
@@ -94,7 +95,8 @@
     </div>
     {{-- Login Page --}}
    
-    <script type="text/javascript" src="js/app.js"></script>
+    {{-- <script type="text/javascript" src="js/app.js"></script> --}}
+
     <script>
     var showpass = document.getElementById("showpass").addEventListener('click',function(){
         

@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome',[
-        'title' => 'From Web.php'
-    ]);
-});
-Route::post('/login',function(){
-    dd($request->all());
-})->name('login');
+Route::get('/','FrontEndController@index')->name('index');
+Route::post('/logme','FrontEndController@login')->name('logme');
+Route::get('/landing','FrontEndController@landing')->name('landing');
+Route::get('/landing/{string}','FrontEndController@showpage')->name('showpage');
+
+
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
