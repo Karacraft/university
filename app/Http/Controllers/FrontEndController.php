@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class FrontEndController extends Controller
 {
+
+    protected $productArray = ['moulding','epp','sw','vm','two-wheeler','paintshop'
+        ,'hcp','chrome','molding','gentsassy','ladiesassy','lamps','abm'];
+
     /**
      * Display a listing of the resource.
      *

@@ -1,5 +1,6 @@
 {{-- Navigation Bar --}}
 <div class="container-flex" id="app">
+    {{-- Top Navigation Bar --}}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a href="" class="navbar-brand ml-2">
             {{-- Company Logo --}}
@@ -7,34 +8,38 @@
             {{-- Company Name --}}
             {{ config('app.name') }}
         </a>
+        
+        <!--
         {{-- Collapse Button --}}
-        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarUSerArea" aria-controls="navbarUSerArea" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarUSerArea" aria-controls="navbarUSerArea" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> --}}
+        </button>
+        -->
 
         {{-- Collapsable Navbar --}}
         <div class="collapse navbar-collapse" id="navbarUSerArea">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="#" title="Courses"><i class="fas fa-book fa-2x"></i></a>
-                </li>
-                <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="#" title="Announcements"><i class="fas fa-bell fa-2x"></i></a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="Emotions"><i class="fas fa-smile fa-2x"></i></a>
+                    <a class="nav-link" href="#" title="Profile"><i class="fas fa-user fa-2x"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="User Pic">
-                        <img src="{{ asset('images/default-user.png') }}" alt="" srcset="" width="30px" class="img-fluid rounded-circle">
+                        <img src="{{ asset('images/ceo.png') }}" alt="" srcset="" width="30px" class="img-fluid rounded">
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
+    {{-- Top Navigation Bar --}}
 
     {{-- Department Navigation Start --}}
-<nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Departments</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -90,5 +95,6 @@
     
     </nav>
     {{-- Department Navigation End --}}
+
 </div>
 {{-- Navigation Bar --}}
