@@ -3,7 +3,7 @@
 
 @section('content')
      {{-- Create Responvive Departments List --}}
-     <div class="container-flex">
+     <div class="">
         {{-- Tabls for Every Department --}}
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
@@ -48,22 +48,22 @@
         </ul>
 
         <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="container tab-pane active" id="moulding">
+        <div class="tab-content m-2">
+            <div class="tab-pane active" id="moulding">
                 @include('production.moulding')
             </div>
-            <div class="container tab-pane" id="epp">About EPP</div>
-            <div class="container tab-pane" id="sw">About Steering Wheel</div>
-            <div class="container tab-pane" id="vm">About VM</div>
-            <div class="container tab-pane" id="wheeler">About 2 Wheeler</div>
-            <div class="container tab-pane" id="paintshop">About PaintShop</div>
-            <div class="container tab-pane" id="hcp">About HCP</div>
-            <div class="container tab-pane" id="chrome">About Chrome</div>
-            <div class="container tab-pane" id="molding">About Molding</div>
-            <div class="container tab-pane" id="gentsassy">About Gents Assy</div>
-            <div class="container tab-pane" id="ladiesassy">About Ladies Assy</div>
-            <div class="container tab-pane" id="lamps">About Lamps</div>
-            <div class="container tab-pane" id="abm">About ABM</div>
+            <div class="tab-pane" id="epp">About EPP</div>
+            <div class="tab-pane" id="sw">About Steering Wheel</div>
+            <div class="tab-pane" id="vm">About VM</div>
+            <div class="tab-pane" id="wheeler">About 2 Wheeler</div>
+            <div class="tab-pane" id="paintshop">About PaintShop</div>
+            <div class="tab-pane" id="hcp">About HCP</div>
+            <div class="tab-pane" id="chrome">About Chrome</div>
+            <div class="tab-pane" id="molding">About Molding</div>
+            <div class="tab-pane" id="gentsassy">About Gents Assy</div>
+            <div class="tab-pane" id="ladiesassy">About Ladies Assy</div>
+            <div class="tab-pane" id="lamps">About Lamps</div>
+            <div class="tab-pane" id="abm">About ABM</div>
         </div>
     </div>
 @endsection
