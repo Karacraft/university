@@ -85,6 +85,11 @@ class FrontEndController extends Controller
         }
     }
 
+    public function machine()
+    {
+        return view('production.machine');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

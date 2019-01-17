@@ -15,6 +15,7 @@ Route::get('/','FrontEndController@index')->name('index');
 Route::post('/logme','FrontEndController@login')->name('logme');
 Route::get('/landing','FrontEndController@landing')->name('landing');
 Route::get('/landing/{string}','FrontEndController@showpage')->name('showpage');
+Route::get('/machine','FrontEndController@machine')->name('machine');
 
 
 

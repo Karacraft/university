@@ -76,7 +76,9 @@
                             <h4>Inject Moulding</h4>
                             Inject  Information
                             <br>
-                            <img src="{{ asset('images/inject.jpg') }}" class="img-fluid" alt="">
+                            <a href="{{ route('machine') }}">
+                                <img src="{{ asset('images/inject.jpg') }}" class="img-fluid" alt="">
+                            </a>    
                         </div>
                     </div>
                 </div>
@@ -232,6 +234,11 @@
             <h3>Maintenance Under Construction</h3>
         </div>
 
+        {{-- Sub-Level Courses --}}
+        <div class="mt-4 hideme" id="ppcourses">
+            <h3>Production Planning Under Construction</h3>
+        </div>
+
     </div>
 
 
@@ -246,6 +253,7 @@ var machine = document.getElementById('machinecourses');
 var molds = document.getElementById('moldscourses');
 var aux = document.getElementById('auxcourses');
 var maint = document.getElementById('maintcourses');
+var pp = document.getElementById('ppcourses');
 
 function toggleCheckbox(element)
 {
@@ -268,7 +276,8 @@ function hideCourses()
         machine.classList.add('hideme');
         molds.classList.add('hideme');
         aux.classList.add('hideme');
-        maint.classList.add('hideme')
+        maint.classList.add('hideme');
+        pp.classList.add('hideme');
 }
 
 function showCourse(element)
@@ -279,28 +288,40 @@ function showCourse(element)
         machine.classList.remove('hideme');
         molds.classList.add('hideme');
         aux.classList.add('hideme');
-        maint.classList.add('hideme')
+        maint.classList.add('hideme');
+        pp.classList.add('hideme');
     }
     else if(element.id === "molds")
     {
         machine.classList.add('hideme');
         molds.classList.remove('hideme');
         aux.classList.add('hideme');
-        maint.classList.add('hideme')
+        maint.classList.add('hideme');
+        pp.classList.add('hideme');
     }
     else if(element.id === "aux")
     {
         machine.classList.add('hideme');
         molds.classList.add('hideme');
         aux.classList.remove('hideme');
-        maint.classList.add('hideme')
+        maint.classList.add('hideme');
+        pp.classList.add('hideme');
     }
     else if(element.id === "maint")
     {
         machine.classList.add('hideme');
         molds.classList.add('hideme');
         aux.classList.add('hideme');
-        maint.classList.remove('hideme')
+        maint.classList.remove('hideme');
+        pp.classList.add('hideme');
+    }
+    else if(element.id === "pp")
+    {
+        machine.classList.add('hideme');
+        molds.classList.add('hideme');
+        aux.classList.add('hideme');
+        maint.classList.add('hideme');
+        pp.classList.remove('hideme');
     }
 
 
