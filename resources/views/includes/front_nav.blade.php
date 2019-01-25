@@ -1,7 +1,7 @@
 {{-- Navigation Bar --}}
 <div class="container-flex" id="app">
     {{-- Top Navigation Bar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <a href="" class="navbar-brand ml-2">
             {{-- Company Logo --}}
             <img src="{{ asset('images/avtlogo.png') }}" alt="Auvitronics Logo" srcset="" width="40px" height="auto">
@@ -25,9 +25,9 @@
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="#" title="Announcements"><i class="fas fa-bell fa-2x"></i></a>
                 </li> --}}
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="#" title="Profile"><i class="fas fa-user fa-2x"></i></a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="User Pic">
                         <img src="{{ asset('images/ceo.png') }}" alt="" srcset="" width="30px" class="img-fluid rounded">
@@ -38,63 +38,63 @@
     </nav>
     {{-- Top Navigation Bar --}}
 
-    {{-- Department Navigation Start --}}
-    <nav class="navbar navbar-expand-lg navbar-light" id="departmentnav">
-        <a class="navbar-brand" href="#">Departments</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'production']) }}">Production</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'delivery']) }}">Delivery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'material']) }}">Material</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'equipment']) }}">Equipment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'plantss']) }}">Plant SS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'pe']) }}">PE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'efficiency']) }}">Efficiency</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'qa']) }}">Quality Assurance</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-info" href="{{ route('showpage',['id' => 'pd']) }}">Product Development</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-warning" href="{{ route('showpage',['id' => 'it']) }}">Information Technology</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-warning" href="{{ route('showpage',['id' => 'hr']) }}">Human Resource</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-warning" href="{{ route('showpage',['id' => 'mrkt']) }}">Marketing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-warning" href="{{ route('showpage',['id' => 'admin']) }}">Admin</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link bg-warning" href="{{ route('showpage',['id' => 'finance']) }}">Finance</a>
-                </li>
-                    
-            </ul>
-        </div>
+   {{-- Department Navigation Start --}}
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-1" id="departmentnav">
+    <a class="navbar-brand text-white" href="#">Departments | </a>
+    <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     
-    </nav>
-    {{-- Department Navigation End --}}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link bg-primary {{ Route::currentRouteName() == 'production' ? 'active' : '' }}" href="{{ route('production') }}">Production</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Delivery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Material</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Equipment</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Plant 5S</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">PE</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Efficiency</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Quality Assurance</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}">Product Development</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-warning" href="{{ route('underconstruction') }}">Information Technology</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-warning" href="{{ route('underconstruction') }}">Human Resource</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-warning" href="{{ route('underconstruction') }}">Marketing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-warning" href="{{ route('underconstruction') }}">Admin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link bg-warning" href="{{ route('underconstruction') }}">Finance</a>
+            </li>
+                
+        </ul>
+    </div>
+
+</nav>
+{{-- Department Navigation End --}}
 
 </div>
 {{-- Navigation Bar --}}

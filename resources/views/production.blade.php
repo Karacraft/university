@@ -5,45 +5,39 @@
      {{-- Create Responvive Departments List --}}
      <div class="">
         {{-- Tabls for Every Department --}}
-        <ul class="nav nav-tabs" role="tablist">
+        <ul class="nav nav-pills" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" href="#moulding" data-toggle="tab">Moulding</a>
+                <a class="nav-link rounded-0 active" href="#moulding" data-toggle="tab">Moulding</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#epp" data-toggle="tab">Epp</a>
+                <a class="nav-link rounded-0" href="#epp" data-toggle="tab">Epp</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#sw" data-toggle="tab">SW</a>
+                <a class="nav-link rounded-0" href="#sw" data-toggle="tab">SW</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#vm" data-toggle="tab">VM</a>
+                <a class="nav-link rounded-0"  href="#vm" data-toggle="tab">VM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#wheeler" data-toggle="tab">2 Wheeler</a>
+                <a class="nav-link rounded-0"  href="#wheeler" data-toggle="tab">2 Wheeler</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#paintshop" data-toggle="tab">Paint Shop</a>
+                <a class="nav-link rounded-0"  href="#paintshop" data-toggle="tab">Paint Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#hcp" data-toggle="tab">HCP</a>
+                <a class="nav-link rounded-0"  href="#hcp" data-toggle="tab">HCP</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#chrome" data-toggle="tab">Chrome</a>
+                <a class="nav-link rounded-0"  href="#chrome" data-toggle="tab">Chrome</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#molding" data-toggle="tab">Molding</a>
+                <a class="nav-link rounded-0"  href="#assy" data-toggle="tab">Assembly</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#gentsassy" data-toggle="tab">Gents Assy</a>
+                <a class="nav-link rounded-0"  href="#lamps" data-toggle="tab">Lamps</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#ladiesassy" data-toggle="tab">Ladies Assy</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  href="#lamps" data-toggle="tab">Lamps</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  href="#abm" data-toggle="tab">ABM</a>
+                <a class="nav-link rounded-0"  href="#abm" data-toggle="tab">ABM</a>
             </li>
         </ul>
 
@@ -52,18 +46,66 @@
             <div class="tab-pane active" id="moulding">
                 @include('production.moulding')
             </div>
-            <div class="tab-pane" id="epp">About EPP</div>
-            <div class="tab-pane" id="sw">About Steering Wheel</div>
-            <div class="tab-pane" id="vm">About VM</div>
-            <div class="tab-pane" id="wheeler">About 2 Wheeler</div>
-            <div class="tab-pane" id="paintshop">About PaintShop</div>
-            <div class="tab-pane" id="hcp">About HCP</div>
-            <div class="tab-pane" id="chrome">About Chrome</div>
-            <div class="tab-pane" id="molding">About Molding</div>
-            <div class="tab-pane" id="gentsassy">About Gents Assy</div>
-            <div class="tab-pane" id="ladiesassy">About Ladies Assy</div>
-            <div class="tab-pane" id="lamps">About Lamps</div>
-            <div class="tab-pane" id="abm">About ABM</div>
+            <div class="tab-pane" id="epp">
+                <div class="text-center">
+                    <h3 class="mt-5">About EPP</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="sw">
+                <div class="text-center">
+                    <h3 class="mt-5">About Steering Wheel</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="vm">
+                <div class="text-center">
+                    <h3 class="mt-5">About Vaccum Moulding</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="wheeler">
+                <div class="text-center">
+                    <h3 class="mt-5">About 2 Wheeler</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="paintshop">
+                <div class="text-center">
+                    <h3 class="mt-5">About Paintshop</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>    
+            </div>
+            <div class="tab-pane" id="hcp">
+                <div class="text-center">
+                    <h3 class="mt-5">About Health Care Products</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="chrome">
+                <div class="text-center">
+                    <h3 class="mt-5">About Chrome</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="assy">
+                <div class="text-center">
+                    <h3 class="mt-5">About Assembly</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="lamps">
+                <div class="text-center">
+                    <h3 class="mt-5">About Lamps</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
+            <div class="tab-pane" id="abm">
+                <div class="text-center">
+                    <h3 class="mt-5">About ABM</h3>
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                </div>
+            </div>
         </div>
     </div>
 @endsection

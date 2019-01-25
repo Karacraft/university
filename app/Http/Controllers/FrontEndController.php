@@ -17,7 +17,7 @@ class FrontEndController extends Controller
      */
     public function index()
     {
-        return view('login');
+        return view('login'); 
     }
 
     public function login(Request $request)
@@ -29,130 +29,23 @@ class FrontEndController extends Controller
 
     public function landing()
     {
+        //Landing has Department Navigation
         return view('landing');
     }
 
-    public function showpage($string)
+    public function underconstruction()
     {
-        // dd($string);
-        switch ($string) {
-            case 'production':
-                return view('production');
-                break;
-            case 'delivery':
-                # code...
-                break;
-            case 'material':
-                # code...
-                break;
-            case 'equipment':
-                # code...
-                break;
-            case 'plantss':
-                # code...
-                break;
-            case 'pe':
-                # code...
-                break;
-            case 'efficiency':
-                # code...
-                break;
-            case 'qa':
-                # code...
-                break;
-            case 'pd':
-                # code...
-                break;
-            case 'it':
-                # code...
-                break;
-            case 'hr':
-                # code...
-                break;
-            case 'mrkt':
-                # code...
-                break;
-            case 'admin':
-                # code...
-                break;
-            case 'finance':
-                # code...
-                break;
-            
-            default:
-                # code...
-                break;
-        }
+        return view('underconstruction');
     }
 
+    public function production()
+    {
+        return view('production');
+    }
+  
     public function machine()
     {
         return view('production.machine');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

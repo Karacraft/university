@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/','FrontEndController@index')->name('index');
-Route::post('/logme','FrontEndController@login')->name('logme');
-Route::get('/landing','FrontEndController@landing')->name('landing');
-Route::get('/landing/{string}','FrontEndController@showpage')->name('showpage');
+Route::get('/','FrontEndController@index')->name('index');  //login.blade
+Route::post('/logme','FrontEndController@login')->name('logme'); //Post
+Route::get('/landing','FrontEndController@landing')->name('landing'); //landing shows departments navigation
+Route::get('/production','FrontEndController@production')->name('production');
+Route::get('/underconstruction','FrontEndController@underconstruction')->name('underconstruction');
+
 Route::get('/machine','FrontEndController@machine')->name('machine');
 
 

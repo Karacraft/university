@@ -8,7 +8,8 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+@import 'flatly.scss';
 
 //  Welcome/Login page Navbar
 .navbar-laravel {
@@ -26,10 +27,35 @@
     top: 25px;
   }
 
+//   .navlink {
+
+//     background-color: green !important;
+  
+//   } 
 .hideme {
     display:none;
 }
 
 .showme {
     display:block;
+}
+.chart-item-bg { stroke: #ddd }
+
+.chart-item-0 { stroke: #dd0000 }
+
+.chart-item-1 { stroke: #00cc00 }
+
+.chart-item-2 { stroke: #0000ff }
+// .active a {
+
+//     background-color: green !important;
+  
+//   }
+
+//   Center Image
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

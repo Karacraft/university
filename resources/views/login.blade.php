@@ -40,7 +40,7 @@
                         <div class="row align-items-center h-100">
                             {{-- Sign In Column --}}
                             <div class="col-6 text-muted pt-5 pl-5 pr-5">
-                                <h1>Log In</h1>
+                                <h3>Log In</h3>
                                 <form action="{{ route('logme') }}" method="post">
                                     {{ csrf_field() }}
                                     <div class="form-group mt-2">
@@ -78,12 +78,12 @@
                             
                             {{-- Sign Up Column --}}
                             <div class="col-6 text-center text-muted pt-5 pl-5 pr-5">
-                                <h1>
+                                <h3>
                                     First Visit?
                                     <br>
                                 Let's Get 
                 
-                                Started!</h1>
+                                Started!</h3>
                                 <a href="" class="btn btn-primary">Register</a>
                             </div>
                             {{-- Signup COlumn --}}
