@@ -56,57 +56,56 @@
                                 {{-- Courses --}}
                                 <div class="table-responsive">
                                     <table class="table">
-                                        <thead class="thead-dark">
+                                        {{-- <thead class="thead-dark">
                                             <tr>
-                                                <th>Courses Attempted</th>
-                                                <th>Rating Achieved</th>
+                                                <th>Technology</th>
+                                                <th>Achievement</th>
                                             </tr>
-                                        </thead>
+                                        </thead> --}}
                                         <tbody>
+                                            <tr class="onerem bg-primary text-white">
+                                                <td>Technology</td>
+                                                <td class="text-center">Moulding</td>
+                                                <td class="text-center">EPP</td>
+                                                <td class="text-center">SW</td>
+                                                <td class="text-center">VM</td>
+                                            </tr>
                                             <tr>
-                                                <td class="onerem">Production&nbsp;>&nbsp;Moulding</td>
-                                                <td><span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span></td>
+                                                <td class="onerem">Achievement</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
                                             </tr>
 
+                                            <tr class="onerem bg-primary text-white">
+                                                <td>Technology</td>
+                                                <td class="text-center">2 Wheeler</td>
+                                                <td class="text-center">Paint Shop</td>
+                                                <td class="text-center">HCP</td>
+                                                <td class="text-center">Chrome</td>
+                                            </tr>
                                             <tr>
-                                                <td class="onerem">Production&nbsp;>&nbsp;EPP</td>
-                                                <td><span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span></td>
+                                                <td class="onerem">Achievement</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                           
+                                            <tr class="onerem bg-primary text-white">
+                                                <td>Technology</td>
+                                                <td class="text-center">Lamps</td>
+                                                <td class="text-center">ABM</td>
+                                                <td class="text-center">Mirror</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="onerem">Achievement</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
                                             </tr>
 
-                                            <tr>
-                                                <td class="onerem">Production&nbsp;>&nbsp;Steering Wheel</td>
-                                                <td><span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="onerem">Production&nbsp;>&nbsp;Vaccum Moulding</td>
-                                                <td><span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star checked"></span>
-                                                    <span class="fa fa-star"></span>
-                                                    <span class="fa fa-star"></span></td>
-                                            </tr>
-
-                                            <tr>
-                                                    <td class="onerem">Quality Assurance</td>
-                                                    <td><span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span>
-                                                        <span class="fa fa-star checked"></span></td>
-                                                </tr>
                                         </tbody>
                                     </table>
                                 </div>
