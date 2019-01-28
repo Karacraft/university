@@ -29,7 +29,18 @@
         {{-- Add Course Details Here --}}
         <div class="mt-4 mb-4">
             
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum id quas nostrum itaque molestias rerum sint, ipsum voluptatem ducimus laboriosam ipsam asperiores autem veritatis sapiente quisquam ipsa accusamus adipisci facere?</p>
+            <p>With over 85 thousand types of injection molding plastic materials to choose from, you can only imagine how overwhelming it can be for product designers, entrepreneurs, and others alike to pick just the right material to manufacture their product.</p>
+
+            <p>But don’t get discouraged — it is much easier to pick a material when you look into the overall material composition that plastics used for injection molding fall into. These are the top six materials used throughout the industry:</p>
+
+            <ul>
+                <li>Polypropylene (PP)</li>
+                <li>Acrylonitrile Butadiene Styrene (ABS)</li>
+                <li>Polyamide (Nylon)</li>
+                <li>High Density Polyethylene (HDPE)</li>
+                <li>Polycarbonate (PC)</li>
+                <li>ABS + PC Blend (mostly used for electronics enclosures)</li>
+            </ul>
         
             {{-- Youtube Video --}}
             <div class="container">
@@ -38,11 +49,11 @@
                         <div class="embed-responsive embed-responsive-16by9">
                             {{-- <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe> --}}
                             <video width="320" height="240" controls>
-                                <source src="{{ asset('videos/videoplayback.mp4') }}" type="video/mp4">
+                                <source src="{{ asset('videos/materials.webm') }}" type="video/mp4">
                             </video>
                         </div>
                         {{-- Text Below Video --}}
-                        <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum id quas nostrum itaque molestias rerum sint, ipsum voluptatem ducimus laboriosam ipsam asperiores autem veritatis sapiente quisquam ipsa accusamus adipisci facere?
+                        <p class="mt-4">There are thousands of variations within each material, so for the purpose of this article, we will be focusing on the main properties of each of these six categories, focusing on hardness, flexibility, weight, and cost.
                             <br>
                             <a class="btn btn-primary text-white mt-2 mb-2" id="continue">Continue</a>
                         </p>    
