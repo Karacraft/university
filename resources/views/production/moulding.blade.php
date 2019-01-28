@@ -1,5 +1,5 @@
 
-    <div class="mt-4">
+    <div class="mt-4 animated fadeIn">
 
         <div class="row mt-2">
             <div class="col-3">
@@ -19,14 +19,15 @@
             </div>
 
             <div class="col-9" id="progress">
-                <div class="row">
+                <div class="row animated fadeIn">
                     <div class="col-3">
                         <h4 class="border-top border-bottom shadow-sm p-2">Course Progress</h4>
                     </div>
 
-                    <div class="col-8 hideme" id="prog">
-                        <table class="table table-sm text-center">
-                            <thead>
+                    {{-- Progresss Table --}}
+                    <div class="col-8 hideme animated fadeIn" id="prog">
+                        <table class="table table-sm text-center ">
+                            <thead >
                                 <tr>
                                     <th>&nbsp</th>
                                     <th>Machine 1.1</th>
@@ -46,7 +47,7 @@
                                     <td><div id="mychart5"></div><div>93%</div></td>
                                 </tr>
                                 <tr>
-                                    <td>Quiz</td>
+                                    <td>Self Test</td>
                                     <td><div id="mychart6"></div><div>81%</div></td>
                                     <td><div id="mychart7"></div><div>56%</div></td>
                                     <td><div id="mychart8"></div><div>93%</div></td>
@@ -58,7 +59,7 @@
                     </div>
 
                     <div class="col-1">
-
+                            
                     </div>
                 </div>
                 
@@ -68,7 +69,7 @@
         {{-- Sub-Level Buttons --}}
         <div class="mt-4">
             {{-- Level 01 --}}
-            <div id="level1courses" class="hideme mt-2">
+            <div id="level1courses" class="hideme mt-2 animated fadeIn">
                 <h4>Level-01</h4>
                 {{-- Create a row to display proper cards --}}
                 <div class="row">
@@ -93,14 +94,16 @@
                     <div class="col">
                         <a id="costing" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Costing 1.7</a>
                     </div>
-                    
+                    <div class="col">
+                        <a id="quiz" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Course Quiz</a>
+                    </div>
                 </div>
               
             </div>
             {{-- Level 01 --}}
 
             {{-- Level 02 --}}
-            <div id="level2courses" class="hideme mt-2">
+            <div id="level2courses" class="hideme mt-2 animated fadeIn">
                 <h4>Level-02
                     <br>
                     <small><span class="text-danger">Restricted Section</span>
@@ -127,120 +130,165 @@
         </div>
 
         {{-- Sub-Level Courses MACHINES 1.1 --}}
-        <div class="mt-4 hideme" id="machinecourses">
-            <div class="row">
+        <div class="mt-4 hideme animated fadeIn " id="machinecourses">
+            <div class="row m-2">
 
-                <div class="col">
+                <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Injection Moulding 1.1.1
+                        <div class="card-header bg-primary">
+                            Material 1.1.1
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <a href="{{ route('machine') }}">
+                                <img src="{{ asset('images/material.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
+                        <div class="card-header bg-primary">
                             General Design & Function 1.1.2
                         </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/gdf.jpg') }}" class="card-img-bottom">
+                        </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
+                        <div class="card-header bg-primary">
                             Injection Unit 1.1.3
                         </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/injector1.jpg') }}" class="card-img-bottom">
+                        </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
+                        <div class="card-header bg-primary">
                             Clamping Unit 1.1.4
                         </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Drive Unit 1.1.5
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Control System 1.1.6
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Efficiency & Energy Consumption 1.1.7
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Auxillay Equipments 1.1.8
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Scientific Moulding 1.1.9
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-body">
-                            Process Troubleshooting 1.1.10
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/clamping-unit.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
                 </div>
                
             </div>
+
+            <div class="row m-2">
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Drive Unit 1.1.5
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/driveunit.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Control System 1.1.6
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/controlunit.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Efficiency & Energy Consumption 1.1.7
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/energyeffi.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Auxillay Equipments 1.1.8
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/auxequipment.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row m-2">
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Scientific Moulding 1.1.9
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/scientific.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Process Troubleshooting 1.1.10
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="mouldcourses">
-            <h3>Moulds Course Under Construction</h3>
+            <h3 class="text-center mt-5">Moulds Course Under Construction</h3>
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="auxcourses">
-            <h3>Auxillaries Course Under Construction</h3>
+            <h3 class="text-center mt-5">Auxillaries Course Under Construction</h3>
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="maintcourses">
-            <h3>Maintenance Course Under Construction</h3>
+            <h3 class="text-center mt-5">Maintenance Course Under Construction</h3>
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="ppcourses">
-            <h3>Production Planning Course Under Construction</h3>
+            <h3 class="text-center mt-5">Production Planning Course Under Construction</h3>
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="qualitycourses">
-            <h3>Quality Course Under Construction</h3>
+            <h3 class="text-center mt-5">Quality Course Under Construction</h3>
         </div>
 
         {{-- Sub-Level Courses --}}
         <div class="mt-4 hideme" id="costingcourses">
-            <h3>Costing Course Under Construction</h3>
+            <h3 class="text-center mt-5">Costing Course Under Construction</h3>
+        </div>
+
+        <div class="mt-4 hideme" id="coursequiz">
+            <h3 class="text-center mt-5">Course Quiz</h3>
         </div>
 
     </div>
@@ -258,6 +306,8 @@ var maint = document.getElementById('maintcourses');
 var pp = document.getElementById('ppcourses');
 var quality = document.getElementById('qualitycourses');
 var costing = document.getElementById('costingcourses');
+var quiz = document.getElementById('quiz');
+// console.log(quiz);
 
 // Sub Level Buttons
 function toggleCheckbox(element)

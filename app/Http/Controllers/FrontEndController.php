@@ -48,4 +48,8 @@ class FrontEndController extends Controller
         return view('production.machine');
     }
 
+    public function profile()
+    {
+        return view('profile');
+    }
 }

@@ -5,7 +5,7 @@
      {{-- Create Responvive Departments List --}}
      <div class="">
         {{-- Tabls for Every Department --}}
-        <ul class="nav nav-pills" role="tablist">
+        <ul class="nav nav-pills animated fadeIn" role="tablist">
             <li class="nav-item">
                 <a class="nav-link rounded-0 active" href="#moulding" data-toggle="tab">Moulding</a>
             </li>
@@ -49,61 +49,61 @@
             <div class="tab-pane" id="epp">
                 <div class="text-center">
                     <h3 class="mt-5">About EPP</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="sw">
                 <div class="text-center">
                     <h3 class="mt-5">About Steering Wheel</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="vm">
                 <div class="text-center">
                     <h3 class="mt-5">About Vaccum Moulding</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="wheeler">
                 <div class="text-center">
                     <h3 class="mt-5">About 2 Wheeler</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="paintshop">
                 <div class="text-center">
                     <h3 class="mt-5">About Paintshop</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>    
             </div>
             <div class="tab-pane" id="hcp">
                 <div class="text-center">
                     <h3 class="mt-5">About Health Care Products</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="chrome">
                 <div class="text-center">
                     <h3 class="mt-5">About Chrome</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="assy">
                 <div class="text-center">
                     <h3 class="mt-5">About Assembly</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="lamps">
                 <div class="text-center">
                     <h3 class="mt-5">About Lamps</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
             <div class="tab-pane" id="abm">
                 <div class="text-center">
                     <h3 class="mt-5">About ABM</h3>
-                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+                    <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid animated fadeIn center mt-5">
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 {{-- Navigation Bar --}}
 <div class="container-flex" id="app">
     {{-- Top Navigation Bar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-        <a href="" class="navbar-brand ml-2">
+    <nav class="navbar navbar-expand-lg py-0 navbar-dark bg-secondary">
+        <a href="{{ route('landing') }}" class="navbar-brand ml-2">
             {{-- Company Logo --}}
             <img src="{{ asset('images/avtlogo.png') }}" alt="Auvitronics Logo" srcset="" width="40px" height="auto">
             {{-- Company Name --}}
@@ -29,8 +29,8 @@
                     <a class="nav-link" href="#" title="Profile"><i class="fas fa-user fa-2x"></i></a>
                 </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link" href="#" title="User Pic">
-                        <img src="{{ asset('images/ceo.png') }}" alt="" srcset="" width="30px" class="img-fluid rounded">
+                    <a class="nav-link" href="{{ route('profile') }}" title="Student's Profile">
+                        <img src="{{ asset('images/ceo.jpg') }}" alt="" srcset="" width="30px" class="img-fluid rounded">
                     </a>
                 </li>
             </ul>

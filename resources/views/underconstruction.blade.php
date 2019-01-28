@@ -2,6 +2,8 @@
 
 
 @section('content')
-     {{-- Create Responvive Departments List --}}
+    <div class="animated fadeIn">
+        {{-- Create Responvive Departments List --}}
      <img src="{{ asset('images/underconstruction.jpg') }}" class="img-fluid center mt-5">
+    </div>
 @endsection
