@@ -53,59 +53,66 @@
                     <div class="col-8">
                         <div class="card">
                             <div class="card-body">
+                                <div class="row">
+                                    <div class="col text-center mb-2">
+                                        <span style="font-size:1.5rem;">Total 11 </span> <span class="fa fa-star checked fa-2x"></span>
+                                        <span style="font-size:1.5rem;">out of 24 </span><span class="fa fa-star checked fa-2x"></span>
+                                    </div>
+                                </div>
                                 {{-- Courses --}}
                                 <div class="table-responsive">
                                     <table class="table">
-                                        {{-- <thead class="thead-dark">
-                                            <tr>
+                                        <thead>
+                                            <tr class="onerem bg-primary text-white text-center">
                                                 <th>Technology</th>
                                                 <th>Achievement</th>
                                             </tr>
-                                        </thead> --}}
+                                        </thead>
                                         <tbody>
-                                            <tr class="onerem bg-primary text-white">
-                                                <td>Technology</td>
-                                                <td class="text-center">Moulding</td>
-                                                <td class="text-center">EPP</td>
-                                                <td class="text-center">SW</td>
-                                                <td class="text-center">VM</td>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">Moulding</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
                                             </tr>
                                             <tr>
-                                                <td class="onerem">Achievement</td>
+                                                <td class="text-center" style="font-size:1rem;">EPP</td>
                                                 <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                            </tr>
-
-                                            <tr class="onerem bg-primary text-white">
-                                                <td>Technology</td>
-                                                <td class="text-center">2 Wheeler</td>
-                                                <td class="text-center">Paint Shop</td>
-                                                <td class="text-center">HCP</td>
-                                                <td class="text-center">Chrome</td>
                                             </tr>
                                             <tr>
-                                                <td class="onerem">Achievement</td>
+                                                <td class="text-center" style="font-size:1rem;">SW</td>
                                                 <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                            </tr>
-                                           
-                                            <tr class="onerem bg-primary text-white">
-                                                <td>Technology</td>
-                                                <td class="text-center">Lamps</td>
-                                                <td class="text-center">ABM</td>
-                                                <td class="text-center">Mirror</td>
                                             </tr>
                                             <tr>
-                                                <td class="onerem">Achievement</td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
-                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                                <td class="text-center" style="font-size:1rem;">VM</td>
                                                 <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
                                             </tr>
-
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">2 Wheeler</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">Paint Shop</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">HCP</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">Chrome</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">Lamps</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">ABM</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center" style="font-size:1rem;">Mirror</td>
+                                                <td class="text-center"><span class="fa fa-star checked fa-2x"></td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>

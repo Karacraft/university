@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic);@charset "UTF-8";
 
 /*!
  * Bootswatch v4.2.1
@@ -10737,6 +10737,15 @@ a.text-dark:focus {
   top: 25px;
 }
 
+.vl2 {
+  border-left: 1px solid lightgray;
+  height: 230px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 25px;
+}
+
 .hideme {
   display: none;
 }
@@ -10750,7 +10759,7 @@ a.text-dark:focus {
 }
 
 .chart-item-0 {
-  stroke: #dd0000;
+  stroke: #137000;
 }
 
 .chart-item-1 {

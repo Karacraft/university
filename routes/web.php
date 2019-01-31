@@ -11,14 +11,27 @@
 |
 */
 
-Route::get('/','FrontEndController@index')->name('index');  //login.blade
-Route::post('/logme','FrontEndController@login')->name('logme'); //Post
-Route::get('/landing','FrontEndController@landing')->name('landing'); //landing shows departments navigation
-Route::get('/production','FrontEndController@production')->name('production');
-Route::get('/underconstruction','FrontEndController@underconstruction')->name('underconstruction');
-Route::get('/machine','FrontEndController@machine')->name('machine');
+Route::get('/','FrontEndController@index')->name('index');  //  Main Landing
+Route::get('/abs','FrontEndController@abs')->name('abs');   //  Avt Businsess School
+Route::get('/ait','FrontEndController@ait')->name('ait');   //  Avt I Technology
+
+/** AIT Routes */
+Route::get('/production','ProductionController@production')->name('production');
+Route::get('/production/moulding','ProductionController@moulding')->name('production.moulding');
+Route::get('/production/moulding/materials','ProductionController@moulding_materials')->name('production.moulding.materials');
+
+
+Route::get('/production/epp','ProductionController@epp')->name('production.epp');
+
+
+Route::get('/production/paintshop','ProductionController@paintshop')->name('prduction.paintshop');
+Route::get('/production/paintshop/materials','ProductionController@paintshop_materials')->name('prduction.paintshop.materials');
+
+
+
 Route::get('/profile','FrontEndController@profile')->name('profile');
 
+Route::get('/underconstruction','FrontEndController@underconstruction')->name('underconstruction');
 
 
 

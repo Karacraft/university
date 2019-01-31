@@ -7,30 +7,33 @@ use Illuminate\Http\Request;
 class FrontEndController extends Controller
 {
 
-    protected $productArray = ['moulding','epp','sw','vm','two-wheeler','paintshop'
-        ,'hcp','chrome','molding','gentsassy','ladiesassy','lamps','abm'];
+    // protected $productArray = ['moulding','epp','sw','vm','two-wheeler','paintshop'
+    //     ,'hcp','chrome','molding','gentsassy','ladiesassy','lamps','abm'];
 
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+   
+    //  Shows Main page
     public function index()
     {
-        return view('login'); 
+        return view('index'); 
     }
 
+    //  Avt Business School
+    public function abs()
+    {
+        return view('abs');
+    }
+
+    //  Avt Intelligent Tech
+    public function ait()
+    {
+        return view('ait');
+    }
+
+    //  Login Page
     public function login(Request $request)
     {
-        // dd ($request->all());
         //  For time being, move user to Dashboard
-        return redirect()->route('landing');
-    }
-
-    public function landing()
-    {
-        //Landing has Department Navigation
-        return view('landing');
+        // return redirect()->route('landing');
     }
 
     public function underconstruction()
@@ -38,10 +41,9 @@ class FrontEndController extends Controller
         return view('underconstruction');
     }
 
-    public function production()
-    {
-        return view('production');
-    }
+    
+
+
   
     public function machine()
     {

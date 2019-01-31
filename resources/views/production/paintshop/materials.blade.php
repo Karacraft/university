@@ -4,22 +4,21 @@
     <div class="container mt-4 animated fadeIn">
 
         {{-- Course Linkage --}}
-        <div class="row text-center">
+        <div class="row text-center bg-primary text-white py-2">
             <div class="col-1">
-                <a href="">&#60;</a>
+                {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>Machines:Material 1.1.1</h4>
+                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
             </div>
             <div class="col-1">
-                <a href="">&#62;</a>
+                {{-- <a href="">&#62;</a> --}}
             </div>
         </div>
-        <hr>
         {{-- Course Heading --}}
-        <div class="row">
-            <div class="col-11">
-                <h2 class="text-primary">Material for Inject Moulding</h2>
+        <div class="row py-2">
+            <div class="col-12">
+                <h2 class="text-primary">Material for Paintshop</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -27,7 +26,7 @@
         </div>
 
         {{-- Add Course Details Here --}}
-        <div class="mt-4 mb-4">
+        <div class="mb-4">
             
             <p>With over 85 thousand types of injection molding plastic materials to choose from, you can only imagine how overwhelming it can be for product designers, entrepreneurs, and others alike to pick just the right material to manufacture their product.</p>
 
@@ -232,7 +231,7 @@
                             <h2 class="h-100 d-flex justify-content-center flex-column">Result</h2>
                         </div> --}}
                         <div class="col"><h2 class="">Knowledge</h2>
-                                <i class="fas fa-brain fa-5x text-info"></i>
+                                <img src="{{ asset('images/brain.png') }}" alt="" width="120px">
                                 <h2 class="text-dark mt-2">100%</h2>
                         </div>
                         <div class="col"><h2>Self Check</h2>
@@ -267,8 +266,8 @@ document.addEventListener("DOMContentLoaded",function(){
     })
 
     var myChart = new DonutChart(document.getElementById("mychart"), {
-    r: 30,
-    stroke: 12,
+    r: 55,
+    stroke: 20,
     scale: 100,
     items: [
       { label: "A", value: .80 },

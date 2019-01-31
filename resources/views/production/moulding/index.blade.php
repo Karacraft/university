@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+    {{-- Include Navigation --}}
+    @include('includes.front_nav_ait')
+    @include('includes.production_nav')
 
     <div class="mt-4 animated fadeIn">
 
@@ -18,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="col-9" id="progress">
+            <div class="col-9 hideme" id="progress">
                 <div class="row animated fadeIn">
                     <div class="col-3">
                         <h4 class="border-top border-bottom shadow-sm p-2">Course Progress</h4>
@@ -31,28 +37,35 @@
                                 <tr>
                                     <th>&nbsp</th>
                                     <th>Machine 1.1</th>
-                                    <th>Mold 1.2</th>
-                                    <th>Auxillary 1.3</th>
+                                    <th>Moulds 1.2</th>
+                                    <th>Auxillaries 1.3</th>
                                     <th>Maintenance 1.4</th>
                                     <th>Product Planning 1.5</th>
+                                    <th>Quality 1.6</th>
+                                    <th>Costing 1.7</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Knowledge</td>
                                     <td><div id="mychart"></div><div>75%</div></td>
-                                    <td><div id="mychart2"></div><div>63%</div></td>
-                                    <td><div id="mychart3"></div><div>81%</div></td>
-                                    <td><div id="mychart4"></div><div>56%</div></td>
-                                    <td><div id="mychart5"></div><div>93%</div></td>
+                                    <td><div id="mychart2"></div><div>60%</div></td>
+                                    <td><div id="mychart3"></div><div>80%</div></td>
+                                    <td><div id="mychart4"></div><div>55%</div></td>
+                                    <td><div id="mychart5"></div><div>90%</div></td>
+                                    <td><div id="mychart11"></div><div>60%</div></td>
+                                    <td><div id="mychart12"></div><div>80%</div></td>
                                 </tr>
                                 <tr>
                                     <td>Self Test</td>
-                                    <td><div id="mychart6"></div><div>81%</div></td>
-                                    <td><div id="mychart7"></div><div>56%</div></td>
-                                    <td><div id="mychart8"></div><div>93%</div></td>
+                                    <td><div id="mychart6"></div><div>80%</div></td>
+                                    <td><div id="mychart7"></div><div>55%</div></td>
+                                    <td><div id="mychart8"></div><div>90%</div></td>
                                     <td><div id="mychart9"></div><div>75%</div></td>
-                                    <td><div id="mychart10"></div><div>63%</div></td>
+                                    <td><div id="mychart10"></div><div>60%</div></td>
+                                    <td><div id="mychart13"></div><div>55%</div></td>
+                                    <td><div id="mychart14"></div><div>90%</div></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -94,16 +107,16 @@
                     <div class="col">
                         <a id="costing" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Costing 1.7</a>
                     </div>
-                    <div class="col">
+                    {{-- <div class="col">
                         <a id="quiz" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Course Quiz</a>
-                    </div>
+                    </div> --}}
                 </div>
               
             </div>
             {{-- Level 01 --}}
 
             {{-- Level 02 --}}
-            <div id="level2courses" class="hideme mt-2 animated fadeIn">
+        <div id="level2courses" class="hideme mt-2 ml-5 animated fadeIn">
                 <h4>Level-02
                     <br>
                     <small><span class="text-danger">Restricted Section</span>
@@ -139,7 +152,7 @@
                             Material 1.1.1
                         </div>
                         <div class="card-body bg-secondary">
-                            <a href="{{ route('machine') }}">
+                            <a href="{{ route('production.moulding.materials') }}">
                                 <img src="{{ asset('images/material.jpg') }}" class="card-img-bottom">
                             </a>
                         </div>
@@ -293,6 +306,8 @@
 
     </div>
 
+@endsection
+
 @section('scripts')
 <script>
 // Divisions
@@ -306,7 +321,7 @@ var maint = document.getElementById('maintcourses');
 var pp = document.getElementById('ppcourses');
 var quality = document.getElementById('qualitycourses');
 var costing = document.getElementById('costingcourses');
-var quiz = document.getElementById('quiz');
+// var quiz = document.getElementById('quiz');
 // console.log(quiz);
 
 // Sub Level Buttons
@@ -435,7 +450,7 @@ var myChart2 = new DonutChart(document.getElementById("mychart2"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .63 },
+      { label: "A", value: .60 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -446,7 +461,7 @@ var myChart3 = new DonutChart(document.getElementById("mychart3"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .81 },
+      { label: "A", value: .80 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -457,7 +472,7 @@ var myChart4 = new DonutChart(document.getElementById("mychart4"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .56 },
+      { label: "A", value: .55 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -468,7 +483,7 @@ var myChart5 = new DonutChart(document.getElementById("mychart5"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .93 },
+      { label: "A", value: .90 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -479,7 +494,7 @@ var myChart6 = new DonutChart(document.getElementById("mychart6"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .81 },
+      { label: "A", value: .80 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -490,7 +505,7 @@ var myChart7 = new DonutChart(document.getElementById("mychart7"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .56 },
+      { label: "A", value: .55 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -501,7 +516,7 @@ var myChart8 = new DonutChart(document.getElementById("mychart8"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .93 },
+      { label: "A", value: .90 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]
@@ -523,7 +538,51 @@ var myChart10 = new DonutChart(document.getElementById("mychart10"), {
     stroke: 4,
     scale: 100,
     items: [
-      { label: "A", value: .63 },
+      { label: "A", value: .60 },
+    //   { label: "B", value: .1 },
+    //   { label: "C", value: .5 },
+    ]
+})
+
+var myChart11 = new DonutChart(document.getElementById("mychart11"), {
+    r: 15,
+    stroke: 4,
+    scale: 100,
+    items: [
+      { label: "A", value: .60 },
+    //   { label: "B", value: .1 },
+    //   { label: "C", value: .5 },
+    ]
+})
+
+var myChart12 = new DonutChart(document.getElementById("mychart12"), {
+    r: 15,
+    stroke: 4,
+    scale: 100,
+    items: [
+      { label: "A", value: .80 },
+    //   { label: "B", value: .1 },
+    //   { label: "C", value: .5 },
+    ]
+})
+
+var myChart13 = new DonutChart(document.getElementById("mychart13"), {
+    r: 15,
+    stroke: 4,
+    scale: 100,
+    items: [
+      { label: "A", value: .55 },
+    //   { label: "B", value: .1 },
+    //   { label: "C", value: .5 },
+    ]
+})
+
+var myChart14 = new DonutChart(document.getElementById("mychart14"), {
+    r: 15,
+    stroke: 4,
+    scale: 100,
+    items: [
+      { label: "A", value: .90 },
     //   { label: "B", value: .1 },
     //   { label: "C", value: .5 },
     ]

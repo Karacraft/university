@@ -2,8 +2,8 @@
 // Fonts
 // @import url('https://fonts.googleapis.com/css?family=Nunito');
 // @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
+// @import url('https://fonts.googleapis.com/css?family=Roboto');
+// @import '../fonts/Roboto-Regualr.ttf';
 // Variables
 @import 'variables';
 
@@ -11,6 +11,13 @@
 // @import '~bootstrap/scss/bootstrap';
 @import 'flatly.scss';
 
+
+// @font-face {
+//     font-family: 'Roboto';
+//     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//   }
 //  Welcome/Login page Navbar
 .navbar-laravel {
   background-color: $primary;
@@ -27,6 +34,15 @@
     top: 25px;
   }
 
+.vl2 {
+    border-left: 1px solid lightgray;
+    height: 230px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 25px;
+}
+
 //   .navlink {
 
 //     background-color: green !important;
@@ -41,7 +57,7 @@
 }
 .chart-item-bg { stroke: #e3e3e3 }
 
-.chart-item-0 { stroke: #dd0000 }
+.chart-item-0 { stroke: #137000 }
 
 .chart-item-1 { stroke: #00cc00 }
 

@@ -24,10 +24,6 @@
 </head>
 <body>
     <div id="app">
-        {{-- Add Navigation --}}
-        @include('includes.front_nav')
-
-        {{-- Add Content --}}
         @yield('content')
     </div>
 
