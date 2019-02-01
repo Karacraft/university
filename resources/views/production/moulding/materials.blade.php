@@ -27,7 +27,7 @@
 
         {{-- Add Course Details Here --}}
         <div class="mb-4">
-            
+            <h5>
             <p>With over 85 thousand types of injection molding plastic materials to choose from, you can only imagine how overwhelming it can be for product designers, entrepreneurs, and others alike to pick just the right material to manufacture their product.</p>
 
             <p>But don’t get discouraged — it is much easier to pick a material when you look into the overall material composition that plastics used for injection molding fall into. These are the top six materials used throughout the industry:</p>
@@ -40,47 +40,20 @@
                 <li>Polycarbonate (PC)</li>
                 <li>ABS + PC Blend (mostly used for electronics enclosures)</li>
             </ul>
-        
+        </h5>
             {{-- Youtube Video --}}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            {{-- <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe> --}}
-                            {{-- <video width="320" height="240" controls> --}}
-                                {{-- <source src="https://www.youtube.com/watch?v=b1U9W4iNDiQ" type="video/mp4"> --}}
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GWcFYM6GmCk" allowfullscreen></iframe>
-                                {{-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> --}}
-                            {{-- </video> --}}
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z4zmfTzzWxs" allowfullscreen></iframe>
                         </div>
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dxr0TRn9ioo" allowfullscreen></iframe>
-                        </div>
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqbZz517ajI" allowfullscreen></iframe>
-                        </div>
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I7-qw5mTA1w" allowfullscreen></iframe>
-                        </div>
-                        {{-- Text Below Video --}}
-                        <p class="mt-4">There are thousands of variations within each material, so for the purpose of this article, we will be focusing on the main properties of each of these six categories, focusing on hardness, flexibility, weight, and cost.
-                            <br>
-                            <a class="btn btn-primary text-white mt-2 mb-2" id="continue">Continue</a>
-                        </p>    
                     </div>    
-                    {{-- <div class="col-4">
-                        <ul class="list-group">
-                            <li class="list-group-item active">Related Videos</li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=b1U9W4iNDiQ" target="_blank">Inject Moulding Animation</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=RMjtmsr3CqA" target="_blank">Plastic Injection Moulding</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=WHwTHarf8Ck" target="_blank">Injection moulding of 72 screw caps</a></li>
-                        </ul>
-                    </div> --}}
                 </div>     
             </div>   
             
             {{-- SelfCheck = Hidden By Default  --}}
-            <div class="card border-primary animated fadeIn" id="selfcheck">
+            <div class="card border-primary animated fadeIn hideme" id="selfcheck">
                 <div class="body">
 
                     <h3 class="ml-3 mt-3">Self Check</h3>
@@ -235,7 +208,7 @@
             </div>
 
             {{-- Test Results = Hidden By Default --}}
-            <div class="card mt-2" id="result">
+            <div class="card mt-2 hideme" id="result">
                 <div class="card-body bg-primary text-white">
                     <div class="row text-center">
                         {{-- <div class="col">

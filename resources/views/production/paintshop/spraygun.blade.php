@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>PaintShop &rarr; Spray Gun with Pump  &rarr; Material 2.1.4</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Spray Gun with Pump </h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -29,26 +29,40 @@
         <div class="mb-4 mt-4">
             
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
+            <p>Spray guns are similar to conventional air spray guns in that they use pneumatic fluid atomization.</p>
+            <p>However, HVLP guns use a higher volume of air at a lower pressure. The lower pneumatic pressure allows for less overspray.</p>
+            <p>HVLP guns are commonly used in the automotive, general metal, aerospace, architectural coating, furniture finishing, and other fine finishing applications where material waste is of a great concern.</p>
+            <p>HVLP spray guns are often required by U.S. Environmental Agencies for high usage customers. HVLP spray guns come in a variety configurations; siphon feed, gravity feed, and pressure feed.</p>
+
             </h5>
 
+            <h5>Advantages</h5>
+            <h5>
+                <p>High transfer efficiency (65% to 75%). Sprays well into recesses and cavities.</p>
+            </h5>
             {{-- Youtube Video --}}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
-                        </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AUdQe7wBKOs" allowfullscreen></iframe>
                         </div>
                     </div>    
                 </div>     
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BCgu-ovPwNU" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                </div>  
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vu3aCxGSadw" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                </div>
             </div>   
             
             {{-- SelfCheck = Hidden By Default  --}}

@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>EPP &rarr; Machines &rarr; Process 3.1.1</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Process</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -29,11 +29,8 @@
         <div class="mb-4 mt-4">
             
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
+                <p>The manufacturing process is complex, requiring both technical expertise and specialized custom equipment. Polypropylene resin is combined with other ingredients in a multi-step proprietary process. Under tightly controlled conditions, extruded pellets expand to become consistently shaped beads of expanded polypropylene foam. Other specialized manufacturing techniques may be employed to produce variations in the final product form.</p>
+                <p>EPP foam beads are then injected into molds. In many cases, cost-effective multi-cavity aluminum molds are used. Pressure and steam heat fuse the beads into a finished shape. The finished EPP foam part becomes a key component in sub-assemblies incorporated in the original equipment manufacturer’s product.</p>
             </h5>
 
             {{-- Youtube Video --}}
@@ -41,11 +38,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/95kzk_bo4Zs" allowfullscreen></iframe>
                         </div>
                         
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BAd_LUKlp2I" allowfullscreen></iframe>
                         </div>
                     </div>    
                 </div>     

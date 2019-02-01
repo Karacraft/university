@@ -36,7 +36,7 @@
                                             <h2>Auvitronics Technology & Business</h3>
                                             <div class="row">
                                                 <div class="col">
-                                                        <a href="https://app.powerbi.com/?noSignUpCheck=1" class="btn btn-primary">Dashboard</a>
+                                                        <a href="https://app.powerbi.com/?noSignUpCheck=1" class="btn btn-primary btn-block">Dashboard</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -52,9 +52,11 @@
                                             Intelligence 
                                             Center 
                                             </h2>
+                                            <div class="row mb-2">
+                                                <div class="col"><a href="{{ route('ait') }}" class="btn btn-primary btn-block">Auvitronics Information Technology</a></div>
+                                            </div>
                                             <div class="row">
-                                                <div class="col"><a href="{{ route('ait') }}" class="btn btn-primary">Auvitronics I Technology</a></div>
-                                                <div class="col"><a href="{{ route('abs') }}" class="btn btn-primary" onclick="return false;">Auvitronics Business School</a></div>
+                                                <div class="col"><a href="{{ route('abs') }}" class="btn btn-primary btn-block" onclick="return false;">Auvitronics Business School</a></div>
                                             </div>
                                         </div>
                                         {{-- Signup COlumn --}}

@@ -7,7 +7,7 @@
                 <a class="nav-link bg-primary" href="{{ route('production.moulding') }}">Moulding</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('prduction.paintshop') }}">Paintshop</a>
+                <a class="nav-link bg-primary" href="{{ route('production.paintshop') }}">Paintshop</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link bg-primary" href="{{ route('production.epp') }}">Epp</a>

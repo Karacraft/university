@@ -88,21 +88,21 @@
                 <h4>Level-01</h4>
                 {{-- Create a row to display proper cards --}}
                 <div class="row">
-                    <div class="col">
+                    <div class="col-2">
                         <a id="machine" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Machines 2.1</a>
                     </div>
-                    <div class="col">
+                    {{-- <div class="col">
                         <a id="maint" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Maintenance 2.2</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="pp" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Production Planning 2.3</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="quality" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Quality 2.4</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="costing" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Costing 2.5</a>
-                    </div>
+                    </div> --}}
                     {{-- <div class="col">
                         <a id="quiz" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Course Quiz</a>
                     </div> --}}
@@ -147,7 +147,7 @@
                             Material 2.1.1
                         </div>
                         <div class="card-body bg-secondary">
-                            <a href="{{ route('prduction.paintshop.materials') }}">
+                            <a href="{{ route('production.paintshop.materials') }}">
                                 <img src="{{ asset('images/ps_machine_material.jpg') }}" class="card-img-bottom">
                             </a>
                         </div>
@@ -160,7 +160,9 @@
                             Spary Booth & Air Handling Unit 2.1.2
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/ps_machine_ahu.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.paintshop.sprayboothahu') }}">
+                                <img src="{{ asset('images/ps_machine_ahu.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +173,9 @@
                             Robot 2.1.3
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/ps_machine_robot.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.paintshop.robot') }}">
+                                <img src="{{ asset('images/ps_machine_robot.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +186,9 @@
                             Spray Gun with Pump 2.1.4
                         </div>
                         <div class="card-body bg-secondary">
-                            {{-- <img src="{{ asset('images/clamping-unit.jpg') }}" class="card-img-bottom"> --}}
+                            <a href="{{ route('production.paintshop.sprayguns') }}">
+                                <img src="{{ asset('images/ps_machine_spraygun.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -197,12 +203,15 @@
                             I.R Oven 2.1.5
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/ps_machine_over_ir.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.paintshop.iroven') }}">
+                                <img src="{{ asset('images/ps_machine_over_ir.jpg') }}" class="card-img-bottom">
+                            </a>
+                            {{-- <img src="{{ asset('images/ps_machine_over_ir.jpg') }}" class="card-img-bottom"> --}}
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Teaching Controller Unit 2.1.6
@@ -211,55 +220,54 @@
                             <img src="{{ asset('images/ps_machine_tc.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
-                            Coneyor & Jigs 2.1.7
+                            Coneyors 2.1.7
                         </div>
                         <div class="card-body bg-secondary">
-                            {{-- <img src="{{ asset('images/energyeffi.jpg') }}" class="card-img-bottom"> --}}
+                            <a href="{{ route('production.paintshop.conveyors') }}">
+                                <img src="{{ asset('images/conveyor.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Efficiency & Energy Consumption 2.1.8
                         </div>
                         <div class="card-body bg-secondary">
-                            {{-- <img src="{{ asset('images/auxequipment.jpg') }}" class="card-img-bottom"> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 
             <div class="row m-2">
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Process Troubleshooting 2.1.9
                         </div>
                         <div class="card-body bg-secondary">
-                            {{-- <img src="{{ asset('images/scientific.jpg') }}" class="card-img-bottom"> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Viscosity Cup 2.1.10
                         </div>
                         <div class="card-body bg-secondary">
-                            {{-- <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom"> --}}
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 

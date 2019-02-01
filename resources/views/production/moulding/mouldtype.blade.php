@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>Moulding &rarr; Moulds &rarr; Material 1.2.1</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Mould Types</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -26,29 +26,43 @@
         </div>
 
         {{-- Add Course Details Here --}}
-        <div class="mb-4 mt-4">
-            
+        <div class="mb-4">
+            <h5>MOLD
+            <p>It is a custom build tool in which we converts plastic raw material into finished product.</p></h5> 
+            <h5>TWO PLATES MOLD 
+            <p>A two-plate mold has only one parting line.If a runner is used, it is connected to the molded product and requires manual removal and separation after the part is ejected. This type of mold is the least expensive to make and is commonly used for parts with relatively simple geometries.</p>
+            THREE PLATE MOLD</h5> 
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
-            </h5>
-
+            <p>Three-plate molds have two parting lines, one for the runner system and one for the molded product. When the mold opens, the runner is automatically separated from the product to allow separate handling.</p>
+            <p>This eliminates the need for manual separation and removal and the sprue and runner system. This type of mould, as its name suggests, has an extra plate.This plate usually continues the gate on one of its sides with the complete runner system, preferably trapezoidal. The
+            opposite side of the plate carries part of the mould form (usually the female part). When the mold opens the plate is separated by means of a delayed action mechanism (e.g., chains or length bolts), so breaking the restricted gate. The moldings are then ejected from one daylight and the sprue and runner system are ejected from the other. This type of molds are usually required when multicavities involved.</P>
+        </h5>
+                    
             {{-- Youtube Video --}}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kUh-g6SfAIc" allowfullscreen></iframe>
                         </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
-                        </div>
+                       
                     </div>    
                 </div>     
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ECfGv5NyXsg" allowfullscreen></iframe>
+                        </div>
+                        
+                    </div>    
+                </div> 
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mz44doHKM-Q" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                </div> 
             </div>   
             
             {{-- SelfCheck = Hidden By Default  --}}
@@ -245,7 +259,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     cont.addEventListener('click',function(){
         selfcheck.classList.remove('hideme');
-        result.classList.remove('hideme');
+        // result.classList.remove('hideme');
     })
 
     var myChart = new DonutChart(document.getElementById("mychart"), {

@@ -87,30 +87,30 @@
                 <h4>Level-01</h4>
                 {{-- Create a row to display proper cards --}}
                 <div class="row">
-                    <div class="col">
-                        <a id="machine" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Machines 1.1</a>
+                    <div class="col-2">
+                        <a id="machine" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Machines 3.1</a>
                     </div>
-                    <div class="col">
+                    {{-- <div class="col">
                         <a id="moulds" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Moulds 1.2</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="aux" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Auxillaries 1.3</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="maint" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Maintenance 1.4</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="pp" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Production Planning 1.5</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="quality" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Quality 1.6</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="costing" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Costing 1.7</a>
-                    </div>
-                    <div class="col">
+                    </div> --}}
+                    {{-- <div class="col">
                         <a id="quiz" class="btn btn-secondary shadow-sm text-white btn-sm btn-block" onclick="showCourse(this)">Course Quiz</a>
-                    </div>
+                    </div> --}}
                 </div>
               
             </div>
@@ -150,11 +150,11 @@
                 <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
-                            Material 1.1.1
+                            Process 3.1.1
                         </div>
                         <div class="card-body bg-secondary">
-                            <a href="">
-                                <img src="{{ asset('images/material.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.epp.process') }}">
+                                <img src="{{ asset('images/epp_process.jpg') }}" class="card-img-bottom">
                             </a>
                         </div>
                     </div>
@@ -163,10 +163,12 @@
                 <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
-                            General Design & Function 1.1.2
+                            Impregnation 3.1.2
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/gdf.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.epp.impregnation') }}">
+                                <img src="{{ asset('images/epp_impregnationunit.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -174,10 +176,12 @@
                 <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
-                            Injection Unit 1.1.3
+                            Oven 3.1.3
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/injector1.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.epp.oven') }}">
+                                <img src="{{ asset('images/epp_oven.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -185,10 +189,12 @@
                 <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
-                            Clamping Unit 1.1.4
+                            EPP History 1.1.4
                         </div>
                         <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/clamping-unit.jpg') }}" class="card-img-bottom">
+                            <a href="{{ route('production.epp.history') }}">
+                                <img src="{{ asset('images/epp_history.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +203,7 @@
 
             <div class="row m-2">
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Drive Unit 1.1.5
@@ -206,9 +212,9 @@
                             <img src="{{ asset('images/driveunit.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Control System 1.1.6
@@ -217,9 +223,9 @@
                             <img src="{{ asset('images/controlunit.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Efficiency & Energy Consumption 1.1.7
@@ -228,9 +234,9 @@
                             <img src="{{ asset('images/energyeffi.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-3">
+                {{-- <div class="col-3">
                     <div class="card bg-primary shadow-sm, text-white">
                         <div class="card-header bg-primary">
                             Auxillay Equipments 1.1.8
@@ -239,35 +245,11 @@
                             <img src="{{ asset('images/auxequipment.jpg') }}" class="card-img-bottom">
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
 
-            <div class="row m-2">
-
-                <div class="col-3">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-header bg-primary">
-                            Scientific Moulding 1.1.9
-                        </div>
-                        <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/scientific.jpg') }}" class="card-img-bottom">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="card bg-primary shadow-sm, text-white">
-                        <div class="card-header bg-primary">
-                            Process Troubleshooting 1.1.10
-                        </div>
-                        <div class="card-body bg-secondary">
-                            <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          
 
         </div>
 

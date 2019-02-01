@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>Moulding &rarr; Moulds &rarr; Clamping Unit 1.1.4</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Clamping Unit</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -26,28 +26,16 @@
         </div>
 
         {{-- Add Course Details Here --}}
-        <div class="mb-4 mt-4">
+        <div class="mb-4">
             
-            <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
-            </h5>
-
-            {{-- Youtube Video --}}
+                {{-- Youtube Video --}}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rqbZz517ajI" allowfullscreen></iframe>
                         </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
-                        </div>
-                    </div>    
+                    </div>
                 </div>     
             </div>   
             
@@ -224,6 +212,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 @endsection
 
@@ -245,7 +234,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
     cont.addEventListener('click',function(){
         selfcheck.classList.remove('hideme');
-        result.classList.remove('hideme');
+        // result.classList.remove('hideme');
     })
 
     var myChart = new DonutChart(document.getElementById("mychart"), {

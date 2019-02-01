@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>PaintShop &rarr; Coneyors 2.1.7   &rarr; Material 2.1.7</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Coneyors </h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -29,26 +29,35 @@
         <div class="mb-4 mt-4">
             
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
+            <p>The conveyor system is routed to transport parts from the point of loading through the processing system to the point of unloading, which will reduce manual handing of workpieces, minimizing labor costs and possible damage.</p>
+            <p>According to the weight, dimension & shape of the product being conveyed and the type of finishing process applied, we will design and develop the best solution for your painting system.</p>
+            <p>For painting lines, overhead conveyors are mainly used.</p>
             </h5>
 
+            
             {{-- Youtube Video --}}
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
-                        </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6y8inHBnXbE" allowfullscreen></iframe>
                         </div>
                     </div>    
                 </div>     
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/P0SaD-LfFxA" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                </div>  
+                <div class="row">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Rb2j-ZzTkDY" allowfullscreen></iframe>
+                        </div>
+                    </div>    
+                </div>
             </div>   
             
             {{-- SelfCheck = Hidden By Default  --}}

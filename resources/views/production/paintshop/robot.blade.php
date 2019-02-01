@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>PaintShop &rarr; Robot &rarr; Material 2.1.3</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Paintshop Robot</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -29,11 +29,9 @@
         <div class="mb-4 mt-4">
             
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
+                <p>Robot painting produces top quality results. Once properly programmed, an industrial painting robot can apply material without leaving behind drips, inconsistencies, overspray, etc. Paint and/or coating is applied precisely and consistently. </p>
+                <p>Industrial painting robots can provide exceptional part accessibility. Not only are robotic arms slim and far-reaching, but robots can be installed in a number of different locations (wall, shelf, rail) allowing for even greater flexibility.</p>
+                <p>Robotic painters also protect workers. The painting application is a hazardous and taxing job. Workers can be exposed to unsafe VOCs, iso-cyanides and carcinogens. Painting robots, on the other hand, are better equipped to handle the dangers of this particular work environment. Built with explosion-proof arms, these robots remain safe in the midst of combustible gas.</p>
             </h5>
 
             {{-- Youtube Video --}}
@@ -41,11 +39,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
-                        </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wJnJxZfSfKM" allowfullscreen></iframe>
                         </div>
                     </div>    
                 </div>     

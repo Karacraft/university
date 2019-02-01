@@ -9,7 +9,7 @@
                 {{-- <a href="">&#60;</a> --}}
             </div>
             <div class="col-10">
-                <h4>PaintShop &rarr; Machines &rarr; Material 2.1.1</h4>
+                <h4>PaintShop &rarr; Spray Booth & AHU &rarr; Material 2.1.2</h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}
@@ -18,7 +18,7 @@
         {{-- Course Heading --}}
         <div class="row py-2">
             <div class="col-12">
-                <h2 class="text-primary">Material for Paintshop</h2>
+                <h2 class="text-primary">Spray Booth & Air Handling Unit (AHU)</h2>
             </div>
             {{-- <div class="col-1">
                 <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
@@ -29,27 +29,23 @@
         <div class="mb-4 mt-4">
             
             <h5>
-                <p>Automotive paint is paint used on automobiles for both protection and decoration purposes.</p>
-                <p>Modern automobile paint is applied in several layers, with a total thickness of around 100 µm (0.1mm).</p>
-                <p>Paint application requires preparation and primer steps to ensure proper application.</p>
-                <p>A basecoat is applied after the primer paint is applied.</p>    
-                <p>Following this, a clear coat of paint may be applied that forms a glossy and transparent coating</p>
+            <p>A spray booth is an enclosed or semi-enclosed area used for the spray painting of fabricated items.</p> 
+            <p>Spray booths may be equipped with a source of filtered air to keep the atmosphere dust-free, a waterfall backdrop to trap overspray, and an exhaust system to vent the fumes of the evaporating solvents.</p>
+            <p>Setting up your own spray booth has many advantages and can be very beneficial to your business, especially considering how simple it is to set up. Using a spray booth is a fantastic method of protecting your work environment from the hazardous materials required when spraying paint.</p>
+            <p>Nothing ruins a fresh coat of paint like debris or dust settling on the freshly painted surface. Setting up a spray booth can eliminate the risk of such problems occurring.</p>
+                
             </h5>
 
             {{-- Youtube Video --}}
-            <div class="container">
+            {{-- <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/acGUs4QeVLs" allowfullscreen></iframe>
-                        </div>
-                        
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UwZGVPoKwQU" allowfullscreen></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wJnJxZfSfKM" allowfullscreen></iframe>
                         </div>
                     </div>    
                 </div>     
-            </div>   
+            </div>    --}}
             
             {{-- SelfCheck = Hidden By Default  --}}
             <div class="card border-primary animated fadeIn hideme" id="selfcheck">
