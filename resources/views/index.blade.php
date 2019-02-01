@@ -22,52 +22,91 @@
     <script src="{{ asset('js/all.js') }}"></script>
     <script src="{{ asset('js/donut-chart.js') }}"></script>
 </head>
-<body class="bg-primary">
+<body>
     <div id="app" class="mt-5">
 
-            <div class="container  mt-5 pt-5 h-100">
-                    <div class="row h-100 justify-content-center  mt-5">
-                        <div class="col-12">
-                            <div class="card shadow">
-                                <div class="card-body">
-                                    <div class="row align-items-center h-100">
-                                        {{-- Sign In Column --}}
-                                        <div class="col-6 text-muted text-center p-5">
-                                            <h2>Auvitronics Technology & Business</h3>
-                                            <div class="row">
-                                                <div class="col">
-                                                        <a href="https://app.powerbi.com/?noSignUpCheck=1" class="btn btn-primary btn-block">Dashboard</a>
-                                                </div>
-                                            </div>
+        {{-- First Look --}}
+        <div class="container  mt-5 pt-5 h-100" id="firstcontainer">
+            <div class="row h-100 justify-content-center  mt-5">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row align-items-center h-100">
+                                <div class="col-6 text-muted text-center p-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ2N2M4OWItZmMzNS00Yzk0LWFjOGYtMmI3MzRiYTJlNjNmIiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9">
+                                                <img src="{{ asset('images/dashboard.png') }}" alt="" class="img-fluid">
+                                            </a>
                                         </div>
-                                        {{-- Sign In COlumn --}}
-            
-                                        <div class="vl2"></div>
-                                        
-                                        {{-- Sign Up Column --}}
-                                        <div class="col-6 text-center text-muted p-5">
-                                            <h2>
-                                            Auvitronics 
-                                            Artifical   
-                                            Intelligence 
-                                            Center 
-                                            </h2>
-                                            <div class="row mb-2">
-                                                <div class="col"><a href="{{ route('ait') }}" class="btn btn-primary btn-block">Auvitronics Information Technology</a></div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col"><a href="{{ route('abs') }}" class="btn btn-primary btn-block" onclick="return false;">Auvitronics Business School</a></div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center text-muted p-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="" id="aaic" onclick="showSecondContainer(event)">
+                                                <img src="{{ asset('images/aaic.png') }}" alt="" class="img-fluid">
+                                            </a>
                                         </div>
-                                        {{-- Signup COlumn --}}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        {{-- Second Look --}}
+        <div class="container  mt-5 pt-5 h-100 hideme animated fadeIn" id="secondcontainer">
+            <div class="row h-100 justify-content-center  mt-5">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row align-items-center h-100">
+                                <div class="col-6 text-muted text-center p-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="{{ route('ait') }}">
+                                                <img src="{{ asset('images/ait.png') }}" alt="" class="img-fluid">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 text-center text-muted p-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <a href="{{ route('abs') }}">
+                                                <img src="{{ asset('images/abs.png') }}" alt="" class="img-fluid" onclick="return false;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 
+
+<script>
+var first = document.getElementById('firstcontainer');
+var second = document.getElementById('secondcontainer');
+
+function showSecondContainer(event)
+{
+    event.preventDefault();
+    
+    first.classList.add('hideme');
+    second.classList.remove('hideme');
+}
+</script>
+
+
 </body>
 </html>
+
+
