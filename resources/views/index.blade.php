@@ -35,7 +35,7 @@
                                 <div class="col-6 text-muted text-center p-5">
                                     <div class="row">
                                         <div class="col">
-                                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNTQ2N2M4OWItZmMzNS00Yzk0LWFjOGYtMmI3MzRiYTJlNjNmIiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9">
+                                            <a href="https://login.microsoftonline.com/common/oauth2/authorize?client_id=871c010f-5e61-4fb1-83ac-98610a7e9110&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dZggt_pCQtc5hFII7nnmOZ1pHhxwvHMgtma5ekqMaPocwi2ufkt9A2kib8fl3x12daVBVCsnh99wHW1Byp5kxGStEaW3V_8ZvixUpQju3sAD4U_vQ6sN0yQUciWgqlxcxVoPDEYGdLiMRFUZHuiyhPw&nonce=636848530761595209.MjIwNDY2ZGYtODFjOS00ODI1LThkZWUtMTIxNDM1N2ZlOTE3Nzk4YzYxMTEtZTg0ZC00ZTc1LWJhNjEtMmZkMjI1ZTU2ZTUw&site_id=500453&redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&post_logout_redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&nux=1&msafed=0">
                                                 <img src="{{ asset('images/dashboard.png') }}" alt="" class="img-fluid">
                                             </a>
                                         </div>
