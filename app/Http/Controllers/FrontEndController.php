@@ -56,7 +56,7 @@ class FrontEndController extends Controller
             return redirect()->back()->withErrors(array('password' => 'Password is not correct!'))->withInput();
         }
         // return compact('email','password');
-        return redirect('https://login.microsoftonline.com/common/oauth2/authorize?client_id=871c010f-5e61-4fb1-83ac-98610a7e9110&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dq-7A4vsjb3cA3laGzL15QV_SfT3uvRpk7n70s41zxyrJVyn-WpjDEdt4AD5icqYz3BTAnjhtl_98LNZ_5OZPiIBT-n71vv411ZBD2eGHK7UcZLQFvWQidV2P6CJKVMVjmv2zcCXm6G1pw2V4D7MrNQ&nonce=636856344385888025.MGU0ZWU3YTEtMTlmNy00ODlkLWI0ODEtMjA1YmU1NjUzYjNkNWI4MzViZjktNTRmYi00ZTc4LWJjODgtZTlhMmJmMTE5YzBh&site_id=500453&redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&post_logout_redirect_uri=https%3a%2f%2fapp.powerbi.com%2f%3fnoSignUpCheck%3d1&resource=https%3a%2f%2fanalysis.windows.net%2fpowerbi%2fapi&nux=1&msafed=0');
+        return redirect('https://app.powerbi.com/view?r=eyJrIjoiMjAyYWRlOGMtOTM1Ny00M2FkLWEwZTUtZWVlOGNjOTE2Njk1IiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9');
         // dd($request->all());
         $authorized = Config::get('university.authorized', 'default');
         return $authorized;
