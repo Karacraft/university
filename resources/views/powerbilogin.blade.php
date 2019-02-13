@@ -34,59 +34,47 @@
     {{-- Login Page --}}
     <div class="container mt-5 pt-5">
         <div class="row h-100 justify-content-center align-self-center">
-            <div class="col-10">
+            <div class="col-6">
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row align-items-center h-100">
                             {{-- Sign In Column --}}
-                            <div class="col-6 text-muted pt-5 pl-5 pr-5">
+                            <div class="col text-muted pt-5 pl-5 pr-5">
                                 <h3>Log In</h3>
-                                <form action="{{ route('logme') }}" method="post">
-                                    {{ csrf_field() }}
+                                <form action="{{ route('powerbilogin') }}" method="post">
+                                    @csrf
                                     <div class="form-group mt-2">
                                         <label for="email">EMAIL</label>
-                                        <input type="email" name="email" class="form-control" id="email" class="email">
+                                        <input type="email" name="email" class="form-control" id="email" value="{{ old('email') }}">
+                                        @if ($errors->has('email')) <p class="text-danger">{{ $errors->first('email') }}</p> @endif
                                     </div>
 
                                     <div class="form-group">
                                         <label for="password">PASSWORD</label>
                                         <div class="input-group">
-                                            <input type="password" name="password" class="form-control" id="password" class="password" onkeyup="this.value = this.value.toLowerCase();">
+                                            <input type="password" name="password" class="form-control" id="password" onkeyup="this.value = this.value.toLowerCase();">
                                                 <div class="input-group-append">
                                                     <div class="input-group-text">
                                                         <i class="fas fa-eye" id="showpass"></i>
                                                     </div>
                                                 </div>
                                         </div>
+                                        @if ($errors->has('password')) <p class="text-danger">{{ $errors->first('password') }}</p> @endif
                                     </div>
 
                                     <div class="form-group mt-5">
                                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
                                     </div>
 
-                                    <div class="form-group text-center">
+                                    {{-- <div class="form-group text-center">
                                         <a href="http://">Forgot Password?</a>
                                         <br>
                                         <a href="">Send a New Registration Email</a>
-                                    </div>
+                                    </div> --}}
 
                                 </form>
                             </div>
-                            {{-- Sign In COlumn --}}
-
-                            <div class="vl"></div>
                             
-                            {{-- Sign Up Column --}}
-                            <div class="col-6 text-center text-muted pt-5 pl-5 pr-5">
-                                <h3>
-                                    First Visit?
-                                    <br>
-                                Let's Get 
-                
-                                Started!</h3>
-                                <a href="" class="btn btn-primary">Register</a>
-                            </div>
-                            {{-- Signup COlumn --}}
                         </div>
                     </div>
                 </div>
@@ -115,10 +103,6 @@
             this.classList.remove('fa-eye-slash'); //Add Slash Icon
         }
     })
-    function togglePassword()
-    {
-        
-    }
     </script>
 
 </body>

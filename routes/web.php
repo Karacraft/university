@@ -14,6 +14,8 @@
 Route::get('/','FrontEndController@index')->name('index');  //  Main Landing
 Route::get('/abs','FrontEndController@abs')->name('abs');   //  Avt Businsess School
 Route::get('/ait','FrontEndController@ait')->name('ait');   //  Avt I Technology
+Route::get('/showpowerbilogin','FrontEndController@showpowerbilogin')->name('showpowerbilogin');    //  Powerbi Login - Faker
+Route::post('/powerbilogin','FrontEndController@powerbilogin')->name('powerbilogin');   //  Login User
 
 /** AIT Routes */
 Route::get('/production','ProductionController@production')->name('production');
