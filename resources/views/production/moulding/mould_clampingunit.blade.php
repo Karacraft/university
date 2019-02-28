@@ -37,6 +37,20 @@
                         </div>
                     </div>
                 </div>     
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2U7cYM43KmM" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>  
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="embed-responsive embed-responsive-16by9 mb-3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/TguHaCX-lNc&t" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>  
             </div>   
             
             {{-- SelfCheck = Hidden By Default  --}}
