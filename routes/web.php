@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/','FrontEndController@index')->name('index');  //  Main Landing
+Route::get('/','FrontEndController@index')->name('index');  //  Main Landing Page
+Route::get('/secondary','FrontEndController@secondary')->name('secondary'); //  Select AIT / ABS
 Route::get('/abs','FrontEndController@abs')->name('abs');   //  Avt Businsess School
 Route::get('/ait','FrontEndController@ait')->name('ait');   //  Avt I Technology
 Route::get('/showpowerbilogin','FrontEndController@showpowerbilogin')->name('showpowerbilogin');    //  Powerbi Login - Faker
@@ -24,6 +25,7 @@ Route::get('/production/moulding/materials','ProductionController@moulding_mater
 Route::get('/production/moulding/mouldtype','ProductionController@moulding_mouldtype')->name('production.moulding.mouldtype');
 Route::get('/production/moulding/runner','ProductionController@moulding_runner')->name('production.moulding.runner');
 Route::get('/production/moulding/gatting','ProductionController@moulding_gatting')->name('production.moulding.gatting');
+Route::get('/production/moudling/components','ProductionController@moulding_components')->name('production.moulding.component');
 Route::get('/production/moulding/injectunit','ProductionController@moulding_injectunit')->name('production.moulding.injectunit');
 Route::get('/production/moulding/gendesign','ProductionController@moulding_gendesign')->name('production.moulding.gendesign');
 Route::get('/production/moulding/clampingunit','ProductionController@moulding_clampingunit')->name('production.moulding.clampingunit');

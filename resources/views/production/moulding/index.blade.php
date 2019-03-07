@@ -308,18 +308,30 @@
                     </div>
                 </div>
                 <div class="col-3">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Gatting System 1.2.3
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.gatting') }}">
-                                    <img src="{{ asset('images/mould_gatting.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Gatting System 1.2.3
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <a href="{{ route('production.moulding.gatting') }}">
+                                <img src="{{ asset('images/mould_gatting.jpg') }}" class="card-img-bottom">
+                            </a>
                         </div>
                     </div>
-                
+                </div>
+                <div class="col-3">
+                    <div class="card bg-primary shadow-sm, text-white">
+                        <div class="card-header bg-primary">
+                            Components 1.2.4
+                        </div>
+                        <div class="card-body bg-secondary">
+                            <a href="{{ route('production.moulding.component') }}">
+                                <img src="{{ asset('images/mould_component.jpg') }}" class="card-img-bottom">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    
                
             </div>
         </div>

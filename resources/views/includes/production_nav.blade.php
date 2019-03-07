@@ -1,5 +1,5 @@
 {{-- Include Segment Navigation Here --}}
-<nav class="navbar navbar-expand-lg navbar-dark bg-secondary p-1" id="departmentnav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary p-1 py-0" id="departmentnav">
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">

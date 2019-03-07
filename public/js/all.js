@@ -1,3 +1,4 @@
+// Font Awesome Js
 (function () {
   'use strict';
 

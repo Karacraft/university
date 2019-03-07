@@ -7,15 +7,15 @@ use Illuminate\Support\Facades\Config;
 
 class FrontEndController extends Controller
 {
-
-    // protected $productArray = ['moulding','epp','sw','vm','two-wheeler','paintshop'
-    //     ,'hcp','chrome','molding','gentsassy','ladiesassy','lamps','abm'];
-
-   
     //  Shows Main page
     public function index()
     {
         return view('index'); 
+    }
+
+    public function secondary()
+    {
+        return view('secondary');
     }
 
     //  Avt Business School
@@ -73,10 +73,6 @@ class FrontEndController extends Controller
     {
         return view('underconstruction');
     }
-
-    
-
-
   
     public function machine()
     {

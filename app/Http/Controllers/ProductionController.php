@@ -86,6 +86,10 @@ class ProductionController extends Controller
     {
         return view('production.moulding.mould_gatting');
     }
+    public function moulding_components()
+    {
+        return view('production.moulding.mould_component');
+    }
     public function moulding_injectunit()
     {
         return view('production.moulding.mould_injectionunit');

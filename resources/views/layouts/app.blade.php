@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('css/all.css') }}">
+    {{-- Extra Styles --}}
+    @yield('styles')
 
-    
 </head>
 <body>
+    {{-- Main App --}}
     <div id="app">
         @yield('content')
     </div>
@@ -27,5 +29,6 @@
     <script src="{{ asset('js/all.js') }}"></script>
     <script src="{{ asset('js/donut-chart.js') }}"></script>
     @yield('scripts')
+
 </body>
 </html>

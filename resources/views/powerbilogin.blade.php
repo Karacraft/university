@@ -6,7 +6,6 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name')}}</title>
-
         <!-- Bootstrap -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Animate.css -->
@@ -16,25 +15,9 @@
     
     </head>
 <body>
-    {{-- Welcome Page is Seperate from rest of the Application --}}
-
-    {{-- Navigation Bar --}}
-    <div class="container-flex" id="app">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a href="" class="navbar-brand ml-2">
-                {{-- Company Logo --}}
-                <img src="{{ asset('images/avtlogo.png') }}" alt="Auvitronics Logo" srcset="" width="40px" height="auto">
-                {{-- Company Name --}}
-                {{ config('app.name') }}
-            </a>
-        </nav>
-    </div>
-    {{-- Navigation Bar --}}
-   
-    {{-- Login Page --}}
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-5 animated fadeIn">
         <div class="row h-100 justify-content-center align-self-center">
-            <div class="col-6">
+            <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row align-items-center h-100">
