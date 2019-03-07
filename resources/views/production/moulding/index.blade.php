@@ -279,7 +279,7 @@
         </div>
 
         {{-- Sub-Level Courses Moulds --}}
-        <div class="mt-4 hideme" id="mouldcourses">
+        <div class="mt-4 hideme animated fadeIn" id="mouldcourses">
             <div class="row m-2">
 
                 <div class="col-3">
