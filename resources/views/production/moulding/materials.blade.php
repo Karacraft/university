@@ -1,22 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-4 animated fadeIn">
+<div class="container mt-4 animated fadeIn">
 
-        <div class="card border-primary mb-3">
-            <div class="card-header bg-primary">
-                @component('includes.course_header_links')
-                    @slot('left')
-                        
-                    @endslot
-    
-                    @slot('right')
-                    {{ route('production.moulding.gendesign') }}
-                    @endslot
-    
-                    <h4>Moulding &rarr; Machines &rarr; Material 1.1.1</h4>
-                @endcomponent
-            </div>
+    <div class="card border-primary mb-3">
+        <div class="card-header bg-primary">
+            @component('includes.course_header_links')
+                @slot('left')
+                    
+                @endslot
+
+                @slot('right')
+                {{ route('production.moulding.gendesign') }}
+                @endslot
+
+                <h4>Moulding &rarr; Machines &rarr; Material 1.1.1</h4>
+            @endcomponent
         </div>
 
         <div class="card-body">
@@ -82,7 +81,7 @@
                             <button type="submit" class="btn btn-primary mb-2">Save Your Q#1 Progress</button>
                         </div>
                         <hr>
-    
+
                         {{-- Question 2 --}}
                         <div class="container">
                             <h5>Question # 2</h5>
@@ -124,7 +123,7 @@
                             <button type="submit" class="btn btn-info mb-2">Save Your Q#3 Progress</button>
                         </div>
                         <hr> --}}
-    
+
                         {{-- Question 4 --}}
                         <div class="container">
                             <h5>Question # 3 - Which of the following processes of moulding is widely used for manufacturing of bottle caps and automotive dashboards?</h5>
@@ -156,7 +155,7 @@
                             </div>
                         </div>
                         <hr>
-    
+
                         {{-- Question 5 --}}
                         <div class="container">
                             <h5>Question # 4 - Complex shape of parts or components cannot be formed by the injection moulding process.</h5>
@@ -176,7 +175,7 @@
                             </div>
                         </div>
                         <hr>
-    
+
                         {{-- Question 6 --}}
                         <div class="container">
                             <h5>Question # 5 - Which of the following cooling systems is used in injection moulding process to increase solidification rate of components made?</h5>
@@ -207,10 +206,10 @@
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
-    
+
                 {{-- Test Results = Hidden By Default --}}
                 <div class="card mt-2 hideme" id="result">
                     <div class="card-body bg-primary text-white">
@@ -236,8 +235,8 @@
         <div class="card-footer text-center">
             <a href="{{ url()->previous() }}" class="btn btn-sm btn-primary">Go Back</a>
         </div>
-        
     </div>
+</div>
 @endsection
 
 @section('scripts')

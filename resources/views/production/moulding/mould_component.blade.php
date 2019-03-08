@@ -109,7 +109,7 @@
                     </div>  
                 </div>    --}}
             </div>
-            
+
             <div class="mb-4"> 
                 {{-- SelfCheck = Hidden By Default  --}}
                 <div class="card shadow-sm animated fadeIn hideme" id="selfcheck">
@@ -292,9 +292,6 @@
     </div>
 
 </div>      
-
-       
-    
 @endsection
 
 @section('scripts')
