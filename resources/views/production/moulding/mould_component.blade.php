@@ -108,7 +108,9 @@
                         </div>    
                     </div>  
                 </div>    --}}
-                    
+            </div>
+            
+            <div class="mb-4"> 
                 {{-- SelfCheck = Hidden By Default  --}}
                 <div class="card shadow-sm animated fadeIn hideme" id="selfcheck">
                     <div class="card-header bg-secondary text-white"><h5>Self Check</h5></div>
