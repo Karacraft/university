@@ -31,31 +31,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('production') }}">Production</a>
+                <a class="nav-link bg-primary" href="{{ route('production') }}">PRODUCTION</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Delivery</a>
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PPMC</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Material</a>
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PRODUCTION ENGINEERING</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Equipment</a>
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">QUALITY ASSURANCE</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Plant 5S</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Efficiency</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Quality Assurance</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">Product Development</a>
+                <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PRODUCT DEVELOPMENT</a>
             </li>
            
         </ul>

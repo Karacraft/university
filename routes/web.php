@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/level2','FrontEndController@leveltwo')->name('leveltwo');
 
 Route::get('/','FrontEndController@index')->name('index');  //  Main Landing Page
 Route::get('/secondary','FrontEndController@secondary')->name('secondary'); //  Select AIT / ABS
@@ -30,6 +31,7 @@ Route::get('/production/moulding/injectunit','ProductionController@moulding_inje
 Route::get('/production/moulding/gendesign','ProductionController@moulding_gendesign')->name('production.moulding.gendesign');
 Route::get('/production/moulding/clampingunit','ProductionController@moulding_clampingunit')->name('production.moulding.clampingunit');
 Route::get('/production/moulding/processtroubleshoot','ProductionController@moulding_processtroubleshoot')->name('production.moulding.processtroubleshoot');
+Route::get('/production/moulding/controlpanel','ProductionController@moulding_controlpanel')->name('production.controlpanel');
 
 Route::get('/production/epp','ProductionController@epp')->name('production.epp');
 Route::get('/production/epp/process','ProductionController@epp_process')->name('production.epp.process');

@@ -83,4 +83,9 @@ class FrontEndController extends Controller
     {
         return view('profile');
     }
+
+    public function leveltwo()
+    {
+        return view('leveltwo');
+    }
 }

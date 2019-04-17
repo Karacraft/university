@@ -8,8 +8,17 @@
             <div class="col-1">
                 {{-- <a href="">&#60;</a> --}}
             </div>
-            <div class="col-10">
-                <h4>PaintShop &rarr; Spray Gun with Pump  &rarr; Material 2.1.4</h4>
+            <div class="col-10 text-center">
+                {{-- <h4>PaintShop &rarr; Spray Gun with Pump  &rarr; Material 2.1.4</h4> --}}
+                <h4>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb bg-primary">
+                        <li class="breadcrumb-item"><a href="#">Paintshop</a></li>
+                        <li class="breadcrumb-item"><a href="#">Machines 2.1</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Spray Guns with Pump 2.1.4</li>
+                        </ol>
+                    </nav>
+                </h4>
             </div>
             <div class="col-1">
                 {{-- <a href="">&#62;</a> --}}

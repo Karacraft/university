@@ -11,7 +11,6 @@ class ProductionController extends Controller
         return view('production');
     }
 
-
     //  Epp
     public function epp()
     {
@@ -66,7 +65,7 @@ class ProductionController extends Controller
     }
 
     //  Moulding
-    public function moulding()
+    public function moulding() 
     {
         return view('production.moulding.index');
     }
@@ -104,5 +103,9 @@ class ProductionController extends Controller
     } 
     public function moulding_processtroubleshoot(){
         return view('production.moulding.processtroubleshoot');
+    }
+    public function moulding_controlpanel()
+    {
+        return view('production.moulding.mold_plc');
     }
 }
