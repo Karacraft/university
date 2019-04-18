@@ -36,9 +36,9 @@
             <li class="nav-item">
                 <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PPMC</a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">PRODUCTION ENGINEERING</a>
-            </li>
+            </li> --}}
             <li class="nav-item">
                 <a class="nav-link bg-primary" href="{{ route('underconstruction') }}" onclick="return false;">QUALITY ASSURANCE</a>
             </li>
