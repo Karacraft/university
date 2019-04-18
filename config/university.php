@@ -14,7 +14,6 @@ return [
     'hasnain.jafri@auvitronics.com', 
     'nasir.hussain@auvitronics.com',
     'adeel.iqbal@auvitronics.com',
-    'ali.rizwan@auvitronics.com',
     'rahila@auvitronics.com',
     'ilyas.shah@auvitronics.com',
     'hafeez.khan@auvitronics.com',

@@ -10,14 +10,15 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/level2','FrontEndController@leveltwo')->name('leveltwo');
+Route::get('/level2','FrontEndController@leveltwo')->name('leveltwo');          //  Shows Level-2 Login Page on All Dropdowns NOTE:Change it
 
-Route::get('/','FrontEndController@index')->name('index');  //  Main Landing Page
-Route::get('/secondary','FrontEndController@secondary')->name('secondary'); //  Select AIT / ABS
-Route::get('/abs','FrontEndController@abs')->name('abs');   //  Avt Businsess School
-Route::get('/ait','FrontEndController@ait')->name('ait');   //  Avt I Technology
-Route::get('/showpowerbilogin','FrontEndController@showpowerbilogin')->name('showpowerbilogin');    //  Powerbi Login - Faker
-Route::post('/powerbilogin','FrontEndController@powerbilogin')->name('powerbilogin');   //  Login User
+Route::get('/','FrontEndController@index')->name('index');                                          //  Main Landing Page
+Route::get('/secondary','FrontEndController@secondary')->name('secondary');                         //  Select AIT / ABS
+Route::get('/abs','FrontEndController@abs')->name('abs');                                           //  Avt Businsess School
+Route::get('/ait','FrontEndController@ait')->name('ait');                                           //  Avt I Technology
+Route::get('/showpowerbilogin','FrontEndController@showpowerbilogin')->name('showpowerbilogin');    //  Powerbi Login - Faker Logini
+Route::post('/powerbilogin','FrontEndController@powerbilogin')->name('powerbilogin');               //  Login User - Add Page to move to 2 other pages
+Route::get('/opsorfin','FrontEndController@operationalOrFinancial')->name('opsorfin');              //  Page with links to Operation or Finance
 
 /** AIT Routes */
 Route::get('/production','ProductionController@production')->name('production');

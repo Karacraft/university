@@ -56,7 +56,8 @@ class FrontEndController extends Controller
             return redirect()->back()->withErrors(array('password' => 'Password is not correct!'))->withInput();
         }
         // return compact('email','password');
-        return redirect('https://app.powerbi.com/view?r=eyJrIjoiMjAyYWRlOGMtOTM1Ny00M2FkLWEwZTUtZWVlOGNjOTE2Njk1IiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9');
+        // return redirect('https://app.powerbi.com/view?r=eyJrIjoiMjAyYWRlOGMtOTM1Ny00M2FkLWEwZTUtZWVlOGNjOTE2Njk1IiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9');
+        return view('opsorfin');
         // dd($request->all());
         $authorized = Config::get('university.authorized', 'default');
         return $authorized;
