@@ -26,7 +26,7 @@
                 <a class="nav-link" id="auxillaries-tab" data-toggle="tab" role="tab" aria-controls="auxillaries" aria-selected="false" href="#auxillaries">Auxillaries 1.4</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="mold_defacts-tab" data-toggle="tab" role="tab" aria-controls="mold_defacts" aria-selected="false" href="#mold_defacts">Mold Defacts 1.5</a>
+                <a class="nav-link" id="mold_defacts-tab" data-toggle="tab" role="tab" aria-controls="mold_defacts" aria-selected="false" href="#mold_defacts">Mold Defects 1.5</a>
             </li>
         </ul> 
 
@@ -82,7 +82,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="{{ route('production.moulding.processtroubleshoot') }}" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/troubleshoot.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="#" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/energy.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -108,7 +108,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="#" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/efficiency.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="#" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/hydraulics.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="{{ route('production.controlpanel') }}" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/plc.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="#" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/parameters.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="#" target="_blank">
-                                    <img src="{{ asset('images/pts.jpg') }}" class="card-img-bottom">
+                                    <img src="{{ asset('images/material_movement.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
