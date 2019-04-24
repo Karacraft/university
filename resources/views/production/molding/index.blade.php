@@ -42,7 +42,7 @@
                                 General Design & Function 1.1.1
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.gendesign') }}" target="_blank">
+                                <a href="{{ route('production.molding.gendesign') }}" target="_blank">
                                     <img src="{{ asset('images/gdf.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -55,7 +55,7 @@
                                 Injection Unit 1.1.2
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.injectunit') }}" target="_blank">
+                                <a href="{{ route('production.molding.injectunit') }}" target="_blank">
                                     <img src="{{ asset('images/injector1.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -68,7 +68,7 @@
                                 Clamping Unit 1.1.3
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.clampingunit') }}" target="_blank">
+                                <a href="{{ route('production.molding.clampingunit') }}" target="_blank">
                                     <img src="{{ asset('images/clamping-unit.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -81,7 +81,7 @@
                                 Process Troubleshooting 1.1.4
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.processtroubleshoot') }}" target="_blank">
+                                <a href="{{ route('production.molding.processtroubleshoot') }}" target="_blank">
                                     <img src="{{ asset('images/troubleshoot.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -94,7 +94,7 @@
                                 Energy 1.1.5
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="#" target="_blank">
+                                <a href="{{ route('production.molding.energy') }}" target="_blank">
                                     <img src="{{ asset('images/energy.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -107,7 +107,7 @@
                                 Efficiency 1.1.6
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="#" target="_blank">
+                                <a href="{{ route('production.molding.efficiency') }}" target="_blank">
                                     <img src="{{ asset('images/efficiency.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -120,7 +120,7 @@
                                 Hydraulics 1.1.7
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="#" target="_blank">
+                                <a href="{{ route('production.molding.hydraulics') }}" target="_blank">
                                     <img src="{{ asset('images/hydraulics.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -133,7 +133,7 @@
                                 Control Panels / PLC 1.1.8
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.controlpanel') }}" target="_blank">
+                                <a href="{{ route('production.molding.controlpanel') }}" target="_blank">
                                     <img src="{{ asset('images/plc.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -146,7 +146,7 @@
                                 Process Parameters 1.1.9
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="#" target="_blank">
+                                <a href="{{ route('production.molding.processparam') }}" target="_blank">
                                     <img src="{{ asset('images/parameters.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -159,7 +159,7 @@
                                 Materials / Parts Movement 1.1.10 
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="#" target="_blank">
+                                <a href="{{ route('production.molding.matpartsmovement') }}" target="_blank">
                                     <img src="{{ asset('images/material_movement.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -178,7 +178,7 @@
                                 Mould Types 1.2.1
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.mouldtype') }}">
+                                <a href="{{ route('production.molding.mouldtype') }}">
                                     <img src="{{ asset('images/mould_type.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -191,7 +191,7 @@
                                 Runner System 1.2.2
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.runner') }}" target="_blank">
+                                <a href="{{ route('production.molding.runner') }}" target="_blank">
                                     <img src="{{ asset('images/mould_runner.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -204,7 +204,7 @@
                                 Gatting System 1.2.3
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.gatting') }}" target="_blank">
+                                <a href="{{ route('production.molding.gatting') }}" target="_blank">
                                     <img src="{{ asset('images/mould_gatting.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
@@ -217,7 +217,7 @@
                                 Components 1.2.4
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.component') }}" target="_blank">
+                                <a href="{{ route('production.molding.component') }}" target="_blank">
                                     <img src="{{ asset('images/mould_component.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>

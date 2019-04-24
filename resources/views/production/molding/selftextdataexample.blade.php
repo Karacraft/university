@@ -1,60 +1,8 @@
-@extends('layouts.app')
 
 @section('content')
     <div class="container mt-4 animated fadeIn">
-
-        {{-- Course Linkage --}}
-        <div class="row text-center bg-primary text-white py-2">
-            <div class="col-1">
-                {{-- <a href="">&#60;</a> --}}
-            </div>
-            <div class="col-10">
-                <h4>Moulding &rarr; Moulds &rarr; Injection Unit 1.1.3</h4>
-            </div>
-            <div class="col-1">
-                {{-- <a href="">&#62;</a> --}}
-            </div>
-        </div>
-        {{-- Course Heading --}}
-        <div class="row py-2">
-            <div class="col-12">
-                <h2 class="text-primary">Injection Unit</h2>
-            </div>
-            {{-- <div class="col-1">
-                <a href="{{ url()->previous() }}" title="Go Back to Courses"><i class="fas fa-book fa-2x text-muted"></i></a>
-            </div> --}}
-        </div>
-
         {{-- Add Course Details Here --}}
         <div class="mb-4">
-            
-                {{-- Youtube Video --}}
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GWcFYM6GmCk" allowfullscreen></iframe>
-                        </div>
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I7-qw5mTA1w" allowfullscreen></iframe>
-                            </div>
-                        {{-- Text Below Video --}}
-                        {{-- <p class="mt-4">There are thousands of variations within each material, so for the purpose of this article, we will be focusing on the main properties of each of these six categories, focusing on hardness, flexibility, weight, and cost.
-                            <br>
-                            <a class="btn btn-primary text-white mt-2 mb-2" id="continue">Continue</a>
-                        </p>     --}}
-                    </div>    
-                    {{-- <div class="col-4">
-                        <ul class="list-group">
-                            <li class="list-group-item active">Related Videos</li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=b1U9W4iNDiQ" target="_blank">Inject Moulding Animation</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=RMjtmsr3CqA" target="_blank">Plastic Injection Moulding</a></li>
-                            <li class="list-group-item"><a href="https://www.youtube.com/watch?v=WHwTHarf8Ck" target="_blank">Injection moulding of 72 screw caps</a></li>
-                        </ul>
-                    </div> --}}
-                </div>     
-            </div>   
-            
             {{-- SelfCheck = Hidden By Default  --}}
             <div class="card border-primary animated fadeIn hideme" id="selfcheck">
                 <div class="body">
@@ -228,6 +176,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 @endsection
 

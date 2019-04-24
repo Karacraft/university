@@ -6,12 +6,12 @@ use Illuminate\Http\Request;
 
 class ProductionController extends Controller
 {
-    public function production()
-    {
+    public function production(){
         return view('production');
     }
 
     //  Epp
+    //--------------------------------------------//
     public function epp()
     {
         return view('production.epp.index');
@@ -35,6 +35,7 @@ class ProductionController extends Controller
 
     
     //  Paintshop
+    //---------------------------------------------//
     public function paintshop()
     {
         return view('production.paintshop.index');
@@ -65,47 +66,87 @@ class ProductionController extends Controller
     }
 
     //  Moulding
-    public function moulding() 
+    //-------------------------------------------------------------//
+    public function molding() 
     {
-        return view('production.moulding.index');
+        return view('production.molding.index');
     }
-    public function moulding_materials()
+    //  Molding -> Machines
+    public function molding_gendesign()
     {
-        return view('production.moulding.materials');
+        return view('production.molding.mold_gendesign');
     }
-    public function moulding_mouldtype()
+    public function molding_injectionunit()
     {
-        return view('production.moulding.mouldtype');
+        return view('production.molding.mold_injectionunit');
     }
-    public function moulding_runner()
+    public function molding_clampingunit()
     {
-        return view('production.moulding.runner');
-    }
-    public function moulding_gatting()
-    {
-        return view('production.moulding.mould_gatting');
-    }
-    public function moulding_components()
-    {
-        return view('production.moulding.mould_component');
-    }
-    public function moulding_injectunit()
-    {
-        return view('production.moulding.mould_injectionunit');
-    }
-    public function moulding_gendesign()
-    {
-        return view('production.moulding.mould_gendesign');
-    }
-    public function moulding_clampingunit()
-    {
-        return view('production.moulding.mould_clampingunit');
+        return view('production.molding.mold_clampingunit');
     } 
-    public function moulding_processtroubleshoot(){
-        return view('production.moulding.processtroubleshoot');
+    public function molding_processtroubleshoot(){
+        return view('production.molding.mold_processtroubleshoot');
     }
-    public function moulding_controlpanel()
+    public function molding_energy()
     {
-        return view('production.moulding.mold_plc');
+        return view('production.molding.mold_energy');
     }
+    public function molding_efficiency()
+    {
+        return view('production.molding.mold_efficiency');
+    }
+    public function molding_hydraulics()
+    {
+        return view('production.molding.mold_hydraulics');
+    }
+    public function molding_controlpanel()
+    {
+        return view('production.molding.mold_plc');
+    }
+    public function molding_processparam()
+    {
+        return view('production.molding.mold_processparam');
+    }
+    public function molding_matpartmovement()
+    {
+        return view('production.molding.mold_matpartmovement');
+    }
+
+
+    //  Molding -> Molds
+    public function molding_moldtype()
+    {
+        return view('production.molding.mouldtype');
+    }
+    public function molding_runner()
+    {
+        return view('production.molding.runner');
+    }
+    public function molding_gatting()
+    {
+        return view('production.molding.mold_gatting');
+    }
+    public function molding_components()
+    {
+        return view('production.molding.mold_component');
+    }
+
+    // Molding -> Materials
+    public function molding_materials()
+    {
+        return view('production.molding.materials');
+    }
+
+
+  
+ 
+    
+   
+  
+   
+
+
+
+
+  
 }

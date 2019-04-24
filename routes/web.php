@@ -21,18 +21,30 @@ Route::post('/powerbilogin','FrontEndController@powerbilogin')->name('powerbilog
 Route::get('/opsorfin','FrontEndController@operationalOrFinancial')->name('opsorfin');              //  Page with links to Operation or Finance
 
 /** AIT Routes */
+//  Molding -> Machines 1.1
 Route::get('/production','ProductionController@production')->name('production');
-Route::get('/production/moulding','ProductionController@moulding')->name('production.moulding');
-Route::get('/production/moulding/materials','ProductionController@moulding_materials')->name('production.moulding.materials');
-Route::get('/production/moulding/mouldtype','ProductionController@moulding_mouldtype')->name('production.moulding.mouldtype');
-Route::get('/production/moulding/runner','ProductionController@moulding_runner')->name('production.moulding.runner');
-Route::get('/production/moulding/gatting','ProductionController@moulding_gatting')->name('production.moulding.gatting');
-Route::get('/production/moudling/components','ProductionController@moulding_components')->name('production.moulding.component');
-Route::get('/production/moulding/injectunit','ProductionController@moulding_injectunit')->name('production.moulding.injectunit');
-Route::get('/production/moulding/gendesign','ProductionController@moulding_gendesign')->name('production.moulding.gendesign');
-Route::get('/production/moulding/clampingunit','ProductionController@moulding_clampingunit')->name('production.moulding.clampingunit');
-Route::get('/production/moulding/processtroubleshoot','ProductionController@moulding_processtroubleshoot')->name('production.moulding.processtroubleshoot');
-Route::get('/production/moulding/controlpanel','ProductionController@moulding_controlpanel')->name('production.controlpanel');
+Route::get('/production/molding','ProductionController@molding')->name('production.molding');
+Route::get('/production/molding/gendesign','ProductionController@molding_gendesign')->name('production.molding.gendesign');
+Route::get('/production/molding/injectunit','ProductionController@molding_injectionunit')->name('production.molding.injectunit');
+Route::get('/production/molding/clampingunit','ProductionController@molding_clampingunit')->name('production.molding.clampingunit');
+Route::get('/production/molding/processtroubleshoot','ProductionController@molding_processtroubleshoot')->name('production.molding.processtroubleshoot');
+Route::get('/production/molding/energy','ProductionController@molding_energy')->name('production.molding.energy');
+Route::get('/production/molding/efficiency','ProductionController@molding_efficiency')->name('production.molding.efficiency');
+Route::get('/production/molding/hydraulics','ProductionController@molding_hydraulics')->name('production.molding.hydraulics');
+Route::get('/production/molding/controlpanel','ProductionController@molding_controlpanel')->name('production.molding.controlpanel');
+Route::get('/production/molding/processparam','ProductionController@molding_processparam')->name('production.molding.processparam');
+Route::get('/production/molding/matpartsmovement','ProductionController@molding_matpartmovement')->name('production.molding.matpartsmovement');
+
+//  Molding->Molds 1.2
+Route::get('/production/molding/mouldtype','ProductionController@molding_mouldtype')->name('production.molding.mouldtype');
+Route::get('/production/molding/runner','ProductionController@molding_runner')->name('production.molding.runner');
+Route::get('/production/molding/gatting','ProductionController@molding_gatting')->name('production.molding.gatting');
+Route::get('/production/molding/components','ProductionController@molding_components')->name('production.molding.component');
+
+//  Molding->Materials 1.3
+Route::get('/production/molding/materials','ProductionController@moulding_materials')->name('production.moulding.materials');
+
+
 
 Route::get('/production/epp','ProductionController@epp')->name('production.epp');
 Route::get('/production/epp/process','ProductionController@epp_process')->name('production.epp.process');
@@ -40,6 +52,7 @@ Route::get('/production/epp/impregnation','ProductionController@epp_impregnation
 Route::get('/production/epp/oven','ProductionController@epp_oven')->name('production.epp.oven');
 Route::get('/production/epp/history','ProductionController@epp_history')->name('production.epp.history');
 
+//  Paintshop
 Route::get('/production/paintshop','ProductionController@paintshop')->name('production.paintshop');
 Route::get('/production/paintshop/materials','ProductionController@paintshop_materials')->name('production.paintshop.materials');
 Route::get('/production/paintshop/iroven','ProductionController@paintshop_iroven')->name('production.paintshop.iroven');
