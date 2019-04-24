@@ -116,11 +116,11 @@ class ProductionController extends Controller
     //  Molding -> Molds
     public function molding_moldtype()
     {
-        return view('production.molding.mouldtype');
+        return view('production.molding.mold_type');
     }
     public function molding_runner()
     {
-        return view('production.molding.runner');
+        return view('production.molding.mold_runner');
     }
     public function molding_gatting()
     {

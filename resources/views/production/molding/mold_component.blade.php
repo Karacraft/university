@@ -1,17 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+@include('includes.ait_navbar')
 <div class="container mt-4 animated fadeIn">
 
     <div class="card border-primary mb-3">
         <div class="card-header bg-primary">
             @component('includes.course_header_links')
                 @slot('left')
-                    {{ route('production.moulding.gatting') }}
+                    {{ route('production.molding.gatting') }}
                 @endslot
 
                 @slot('right')
-                    
+                    {{ route('production.molding.moldtype') }}
                 @endslot
 
                 <h4>Moulding &rarr; Moulds &rarr; Components 1.2.4</h4>

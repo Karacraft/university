@@ -34,9 +34,9 @@ Route::get('/production/molding/hydraulics','ProductionController@molding_hydrau
 Route::get('/production/molding/controlpanel','ProductionController@molding_controlpanel')->name('production.molding.controlpanel');
 Route::get('/production/molding/processparam','ProductionController@molding_processparam')->name('production.molding.processparam');
 Route::get('/production/molding/matpartsmovement','ProductionController@molding_matpartmovement')->name('production.molding.matpartsmovement');
-
+ 
 //  Molding->Molds 1.2
-Route::get('/production/molding/mouldtype','ProductionController@molding_mouldtype')->name('production.molding.mouldtype');
+Route::get('/production/molding/moldtype','ProductionController@molding_moldtype')->name('production.molding.moldtype');
 Route::get('/production/molding/runner','ProductionController@molding_runner')->name('production.molding.runner');
 Route::get('/production/molding/gatting','ProductionController@molding_gatting')->name('production.molding.gatting');
 Route::get('/production/molding/components','ProductionController@molding_components')->name('production.molding.component');
