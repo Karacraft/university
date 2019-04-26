@@ -28,17 +28,38 @@
                         <div class="row">
                             <div class="col-lg-12 col-sm-12 col-md-12">
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/l1jNrmpx-Rw" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/I7-qw5mTA1w" allowfullscreen></iframe>
                                 </div>
                             </div>    
                         </div>  
                         <div class="row">
                             <div class="col-lg-12 col-sm-12 col-md-12">
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GWcFYM6GmCk" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d4F9jvMBk0Y" allowfullscreen></iframe>
                                 </div>
                             </div>    
-                        </div>    
+                        </div>   
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RMjtmsr3CqA" allowfullscreen></iframe>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/B-lUEuzFa9w" allowfullscreen></iframe>
+                                </div>
+                            </div>    
+                        </div> 
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-md-12">
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_iRsrOmE5uk" allowfullscreen></iframe>
+                                </div>
+                            </div>    
+                        </div>  
                     </div>  
                 </div>
     

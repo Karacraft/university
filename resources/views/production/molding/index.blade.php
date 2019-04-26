@@ -178,7 +178,7 @@
                                 Mold Types 1.2.1
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.mouldtype') }}">
+                                <a href="{{ route('production.molding.moldtype') }}">
                                     <img src="{{ asset('images/mould_type.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
