@@ -23,7 +23,7 @@
                 <a class="nav-link" id="materials-tab" data-toggle="tab" role="tab" aria-controls="materials" aria-selected="false" href="#materials">Materials 1.3</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="auxillaries-tab" data-toggle="tab" role="tab" aria-controls="auxillaries" aria-selected="false" href="#auxillaries">Auxillaries 1.4</a>
+                <a class="nav-link" id="auxillaries-tab" data-toggle="tab" role="tab" aria-controls="auxillaries" aria-selected="false" href="#auxillaries">Auxiliaries 1.4</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="mold_defacts-tab" data-toggle="tab" role="tab" aria-controls="mold_defacts" aria-selected="false" href="#mold_defacts">Mold Defects 1.5</a>
@@ -260,7 +260,7 @@
             </div>
             {{-- Auxillaries 1.4 Data --}}
             <div class="tab-pane fade" id="auxillaries" role="tabpanel" aria-labelledby="contact-tab">
-                The Auxillaries
+                The Auxiliaries
             </div>
             {{-- Mold Defacts 1.5 Data --}}
             <div class="tab-pane fade" id="mold_defacts" role="tabpanel" aria-labelledby="contact-tab">
