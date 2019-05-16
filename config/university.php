@@ -17,6 +17,7 @@ return [
     'rahila@auvitronics.com',
     'ilyas.shah@auvitronics.com',
     'hafeez.khan@auvitronics.com',
+    'muneeb.afaq@auvitronics.com'
     ],
 
     'password' => [
