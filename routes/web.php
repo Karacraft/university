@@ -40,6 +40,7 @@ Route::get('/production/molding/moldtype','ProductionController@molding_moldtype
 Route::get('/production/molding/runner','ProductionController@molding_runner')->name('production.molding.runner');
 Route::get('/production/molding/gatting','ProductionController@molding_gatting')->name('production.molding.gatting');
 Route::get('/production/molding/components','ProductionController@molding_components')->name('production.molding.component');
+Route::get('/production/molding/maintenance','ProductionController@molding_maintenance')->name('production.molding.maintenance');
 
 //  Molding->Materials 1.3
 Route::get('/production/molding/materials','ProductionController@moulding_materials')->name('production.moulding.materials');

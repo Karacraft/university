@@ -224,6 +224,18 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                Maintenance 1.2.5
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.molding.maintenance') }}" target="_blank">
+                                    <img src="{{ asset('images/mold_maintenance.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             {{-- Materials 1.3 Data --}}

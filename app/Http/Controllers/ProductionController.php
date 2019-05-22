@@ -130,6 +130,10 @@ class ProductionController extends Controller
     {
         return view('production.molding.mold_component');
     }
+    public function molding_maintenance()
+    {
+        return view('production.molding.mold_maintenance');
+    }
 
     // Molding -> Materials
     public function molding_materials()

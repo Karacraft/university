@@ -8,13 +8,13 @@
             <div class="card-header bg-primary">
                 @component('includes.course_header_links')
                     @slot('left')
-                        {{ route('production.molding.component') }}
+                        {{ route('production.molding.maintenance') }}
                     @endslot
                     
                     @slot('right')
                         {{ route('production.molding.runner') }}
                     @endslot
-                    <h5>Molding &rarr; Machines &rarr; Mold Types 1.2.1 </h5>
+                    <h5>Molding &rarr; Molds &rarr; Mold Types 1.2.1 </h5>
                 @endcomponent
             </div> 
     

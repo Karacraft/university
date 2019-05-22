@@ -12,7 +12,7 @@
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.moldtype') }}
+                    {{ route('production.molding.maintenance') }}
                 @endslot
 
                 <h4>Moulding &rarr; Moulds &rarr; Components 1.2.4</h4>
@@ -82,33 +82,40 @@
             <p>This plate holds the movable side of the mold like spacer block, support plate, cavity plate and ejector mechanism to the movable platen of the injection machine.</p>
             <br>
 
-
+ 
             {{-- Add Course Details Here --}}
             <div class="mb-4">
                 {{-- Youtube Video --}}
-                {{-- <div class="container">
+                <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_VzjIyKWHow" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Ea6vLRkN9Nc" allowfullscreen></iframe>
                             </div>
                         </div>    
                     </div>     
                     <div class="row">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MBmXWyraW1w" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sxrkNN6kJqo" allowfullscreen></iframe>
                             </div>
                         </div>    
                     </div>  
                     <div class="row">
                         <div class="col-12">
                             <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xxd10zlYf7M" allowfullscreen></iframe>
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bg5428fb4F4" allowfullscreen></iframe>
                             </div>
                         </div>    
                     </div>  
-                </div>    --}}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mz44doHKM-Q" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                    </div>  
+                </div>   
             </div>
 
             <div class="mb-4"> 
