@@ -201,7 +201,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                         <div class="card bg-primary shadow-sm, text-white">
                             <div class="card-header bg-primary">
-                                Gatting System 1.2.3
+                                Gating System 1.2.3
                             </div>
                             <div class="card-body bg-secondary">
                                 <a href="{{ route('production.molding.gatting') }}" target="_blank">

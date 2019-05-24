@@ -15,12 +15,12 @@
                 @slot('right')
                     {{ route('production.molding.component') }}
                 @endslot
-                <h5>Molding &rarr; Machines &rarr; Gatting System 1.2.3  </h5>
+                <h5>Molding &rarr; Machines &rarr; Gating System 1.2.3  </h5>
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Gatting System</h3>
+            <h3 class="card-title ml-3">Gating System</h3>
             <hr>
             <br>
 
