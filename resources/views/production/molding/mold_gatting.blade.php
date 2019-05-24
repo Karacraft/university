@@ -61,7 +61,7 @@
                         </p>
                     </div>
                     <div class="row">
-                        <ol>
+                        <ol type="a">
                             <li>Direct (sprue) gate</li>
                             <li>Tab gate</li>  	
                             <li>Edge (standard) gate</li>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="row">
                         
-                        <ol>
+                        <ol type="a">
                             <li>Pin gate</li>
                             <li>Submarine (tunnel, chisel) gate</li>
                             <li>Hot-runner (hot-probe) gate</li>
