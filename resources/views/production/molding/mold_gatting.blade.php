@@ -23,62 +23,119 @@
             <h3 class="card-title ml-3">Gatting System</h3>
             <hr>
             <br>
-    
-            <h5>Gatting System</h5> 
-            
-            <h5>
-            <p>The gate is the connection between the runner system and the molded part. The objective of the gate is to allow enough material flow for both mold filling and thermal shrinkage compensation.</p>
-            </h5>
-            <h5>
-                <p>Types of Gatting Systems</p>
-            
-            <p>Sprue Gate</p>
-            <p>This type of gate is normally used for single-impression molds, especially suitable when the component is cup shaped and involves a base. Compared to a side gate, the material flow is more direct, experiencing minimal pressure loss and reduced shearing.</p>
-            
-            <p>Restricted  Gate </p>
-            <p>This type of gating is used for multi-cavity tools. Finishing operations can often be eliminated because the small gate is broken off during the ejection of the molding. The gate must not be too small otherwise the filling of the cavity is impaired.
-                    However, the gate must not be made too large otherwise it will not break off satisfactorily during ejection.
-                    </p>
 
-            <p>Side / Edge Gate</p>
-            <p>This type of gating is shown in Figure 4.16 and is normally used for multi-impression molds where components are relatively small and of a flat or shallow nature. The size of the gate is dependent upon the shape and thickness of the molding. 
-                    For thick sections the gate thickness should be approximately 75% of the component thickness and as wide as the runner.
-                    </p>
+            <div class="mb-4">
+                <div class="container">
 
-            <p>Flash Gate</p>
-            <p>This gate type is used for long flat components of thin section. This type of gate can
-                    be used quite successfully. It enables a large cavity to be filled quickly and consistently. The length and width of the article and the flow pattern required dictate the length of the gate. In some instances it is advantageous to have the gate the full length of the article, though usually a gate length which is about 50% of the longer side dimension is sufficient.
-                    </p>
+                    <div class="row">
+                        <h4>What is Gate?</h4>
+                        <p>The gate is the connection between the runner system and the molded part. The objective of the gate is to allow enough material flow for both mold filling and thermal shrinkage compensation.</p>
+                        <br>
+                    </div>
+        
+                    <div class="row">
+                        <h4>Types of gating system:</h4>
+                    </div>
+                    <div class="row">
+                        <p class="lead">There are two major classification of gates:</p>
+                    </div>
 
-            <p>Fan Gate</p>
-            <p>For thick section moldings such as optical lenses, this type of gating is often used. This is because it enables the runner to be made of an adequate size to help prevent the material from chilling off when it is injected slowly (as is necessary when making these components). It also allows sufficient follow-up pressure into the cavity during the cooling contraction.</p>
+                    <div class="row">
+                        <h4>Manually trimmed gates</h4>
+                        <p>
+                            Manually trimmed gates are those that require an operator to separate parts from runners during a secondary operation. The reasons for using manually trimmed gates are:
+                        </p>
+                        <ul>
+                            <li>
+                                The gate is too bulky to be sheared from the part as the tool is opened.
+                            </li>
+                            <li>
+                                Some shear-sensitive materials (e.g., PVC) should not be exposed to the high shear rates inherent to the design of automatically trimmed gates.
+                            </li>
+                            <li>
+                                Simultaneous flow distribution across a wide front to achieve specific orientation of fibers of molecules often precludes automatic gate trimming. 
+                            </li>
+                        </ul>
+                        <p>
+                            The following gate types are trimmed from the cavity manually:
+                        </p>
+                    </div>
+                    <div class="row">
+                        <ol>
+                            <li>Direct (sprue) gate</li>
+                            <li>Tab gate</li>  	
+                            <li>Edge (standard) gate</li>
+                            <li>Overlap gate</li> 	
+                            <li>Fan gate</li>  	
+                            <li>Disk (diaphragm) gate</li>
+                            <li>Ring gate</li>  	
+                            <li>Spoke (spider) gate</li>  	
+                            <li>Film (flash) gate</li>
+                        </ol>
+                    </div>
+
+                    <div class="row">
+                        <h4>Automatically trimmed gates</h4>
+                        <p>Automatically trimmed gates incorporate features in the tool to break or shear the gate as the molding tool is opened to eject the part. Automatically trimmed gates should be used to:</p>
+                        <ul>
+                            <li>Avoid gate removal as a secondary operation</li>
+                            <li>Maintain consistent cycle times for all shots</li>
+                            <li>Minimize gate scars</li>
+                        </ul>
+                        
+                    </div>
+                    <div class="row">
+                            <p>The following gate types are trimmed from the cavity automatically:</p>
+                    </div>
+                    <div class="row">
+                        
+                        <ol>
+                            <li>Pin gate</li>
+                            <li>Submarine (tunnel, chisel) gate</li>
+                            <li>Hot-runner (hot-probe) gate</li>
+                            <li>Valve gate</li>
+                        </ol>
+                    </div>
+
+                    {{-- Youtube videos --}}
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qYo7wsbfmXg" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                    </div>     
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_VzjIyKWHow" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                    </div>  
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jcjBElN2k1k" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                    </div>  
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xxd10zlYf7M" allowfullscreen></iframe>
+                            </div>
+                        </div>    
+                    </div>  
+
+                </div>
+            </div>
             
-            <p>Tab Gate</p>
-            <p>This type of gating can be used as an alternative to side gating, especially in multi-impression molds, to produce articles of a flat or shallow nature. It has certain advantages over normal side gates in that the design minimizes the jetting of material into the mold cavity which leads to weld lines and flow marks.</p>
             
+
+
             {{-- Youtube Video --}}
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_VzjIyKWHow" allowfullscreen></iframe>
-                        </div>
-                    </div>    
-                </div>     
-                <div class="row">
-                    <div class="col-12">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MBmXWyraW1w" allowfullscreen></iframe>
-                        </div>
-                    </div>    
-                </div>  
-                <div class="row">
-                    <div class="col-12">
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Xxd10zlYf7M" allowfullscreen></iframe>
-                        </div>
-                    </div>    
-                </div>  
+                
             </div>   
         
 
