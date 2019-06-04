@@ -54,12 +54,12 @@
                                     <div class="row">
                                         <div class="col">
                                             {{-- Ensure Only Super Admin or CAN ACCESS FINANCE can Use these links --}}
-                                            @if (Auth::user()->role_id != Constants::SUPER_ADMIN || Auth::user()->role_id != Constants::CAN_ACCESS_OPS_AND_FINANCE)
-                                                <a>
+                                            @if (Auth::user()->role_id == Constants::SUPER_ADMIN || Auth::user()->role_id == Constants::CAN_ACCESS_OPS_AND_FINANCE)
+                                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZmZmOTAwNDctYzkxOC00ZjIxLWI1NmYtYWFiZmYzZWZjMGNkIiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9" target="_blank">
                                                     <img src="{{ asset('images/fin.png') }}" alt="" class="img-fluid">
                                                 </a>
                                             @else
-                                                <a href="https://app.powerbi.com/view?r=eyJrIjoiZmZmOTAwNDctYzkxOC00ZjIxLWI1NmYtYWFiZmYzZWZjMGNkIiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9" target="_blank">
+                                                <a>
                                                     <img src="{{ asset('images/fin.png') }}" alt="" class="img-fluid">
                                                 </a>
                                             @endif
