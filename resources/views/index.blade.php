@@ -44,7 +44,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 text-muted text-center p-5">
                                     <div class="row">
                                         <div class="col">
-                                            <a href="{{ route('showpowerbilogin')}}">
+                                            <a href="{{ route('login')}}">
                                                 <img src="{{ asset('images/dashboard.png') }}" alt="" class="img-fluid">
                                             </a>
                                         </div>
@@ -53,7 +53,7 @@
                                 <div class="col-lg-6 col-md-12 col-sm-12 text-center text-muted p-5">
                                     <div class="row">
                                         <div class="col">
-                                            <a href="{{ route('secondary') }}">
+                                            <a href="{{ route('aaic') }}">
                                                 <img src="{{ asset('images/aaic.png') }}" alt="" class="img-fluid">
                                             </a>
                                         </div>
@@ -69,7 +69,6 @@
 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
-    console.log('dom content loaded');
     document.getElementById('loader').style.display = 'none';
     document.getElementById('app').classList.remove('hideme');
 })

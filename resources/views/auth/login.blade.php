@@ -1,73 +1,93 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+        <title>{{ config('app.name')}}</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <!-- Animate.css -->
+        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    </head>
+<body>
+    <div class="container mt-5 pt-5 animated fadeIn">
+        <div class="row h-100 justify-content-center align-self-center">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="row align-items-center h-100">
+                            {{-- Sign In Column --}}
+                            <div class="col text-muted pt-5 pl-5 pr-5">
+                                <h3>Log In</h3>
+                                <form action="{{ route('login') }}" method="post">
+                                    @csrf
+                                    <div class="form-group mt-2">
+                                        <label for="email">EMAIL</label>
+                                        <input type="email" name="email" class="form-control" id="email" value="{{ old('email') }}">
+                                        @if ($errors->has('email')) <p class="text-danger">{{ $errors->first('email') }}</p> @endif
+                                    </div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+                                    <div class="form-group">
+                                        <label for="password">PASSWORD</label>
+                                        <div class="input-group">
+                                            <input type="password" name="password" class="form-control" id="password" onkeyup="this.value = this.value.toLowerCase();">
+                                                <div class="input-group-append">
+                                                    <div class="input-group-text">
+                                                        <i class="fas fa-eye" id="showpass"></i>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                        @if ($errors->has('password')) <p class="text-danger">{{ $errors->first('password') }}</p> @endif
+                                    </div>
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                    <div class="form-group mt-5">
+                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                    </div>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                    {{-- <div class="form-group text-center">
+                                        <a href="http://">Forgot Password?</a>
+                                        <br>
+                                        <a href="">Send a New Registration Email</a>
+                                    </div> --}}
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+                                </form>
                             </div>
+                            
                         </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-@endsection
+    {{-- Login Page --}}
+   
+    {{-- <script type="text/javascript" src="js/app.js"></script> --}}
+
+    <script>
+    var showpass = document.getElementById("showpass").addEventListener('click',function(){
+        
+        var password = document.getElementById('password');
+
+        if(password.type === "password")
+        {
+            password.type = "text"; //Change it to text
+            this.classList.remove('fa-eye');    //Remove Icon of Eye
+            this.classList.add('fa-eye-slash'); //Add Slash Icon
+        }
+        else
+        {
+            password.type = "password"; //Change it to text
+            this.classList.add('fa-eye');    //Remove Icon of Eye
+            this.classList.remove('fa-eye-slash'); //Add Slash Icon
+        }
+    })
+    </script>
+
+</body>
+
+</html>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PowerBiLoginRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 
@@ -13,9 +14,14 @@ class FrontEndController extends Controller
         return view('index'); 
     }
 
-    public function secondary()
+    public function aaic()
     {
-        return view('secondary');
+        return view('aaic');
+    }
+
+    public function opsOrFin()
+    {
+        return view('opsorfin');
     }
 
     //  Avt Business School
@@ -36,13 +42,14 @@ class FrontEndController extends Controller
         return view('powerbilogin');
     }
 
-    public function powerbilogin(Request $request)
+    public function powerbilogin(PowerBiLoginRequest $request)
     {
-        $this->validate($request,[
-            'email' => 'required',
-            'password' => 'required'
-        ]);
+        // dd($request->all());
+        $email = $request->email;
+        $password = $request->password;
 
+        //  Locate User & Password
+        //  Validation via PowerBiLoginRequest
         $email = in_array($request->email,Config::get('university.authorized','default'));
         $password = in_array($request->password,Config::get('university.password','default'));
         
@@ -55,8 +62,6 @@ class FrontEndController extends Controller
         {
             return redirect()->back()->withErrors(array('password' => 'Password is not correct!'))->withInput();
         }
-        // return compact('email','password');
-        // return redirect('https://app.powerbi.com/view?r=eyJrIjoiMjAyYWRlOGMtOTM1Ny00M2FkLWEwZTUtZWVlOGNjOTE2Njk1IiwidCI6IjdmMmY4ZTY3LWFiZjYtNDgyZS04MWI2LWQ2OWY2MTQxZTEzMyIsImMiOjl9');
         return view('opsorfin');
         // dd($request->all());
         $authorized = Config::get('university.authorized', 'default');
