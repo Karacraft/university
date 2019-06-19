@@ -50,11 +50,11 @@
     </div> 
  
     <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Lamps
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Level # 1</a>
+            <a class="dropdown-item" href="{{ route('production.lamps') }}">Level # 1</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="{{ route('leveltwo') }}">Level # 2</a>
             {{-- <a class="nav-link bg-primary" href="{{ route('production.epp') }}">Epp</a> --}}

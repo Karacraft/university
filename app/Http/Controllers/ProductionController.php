@@ -141,7 +141,51 @@ class ProductionController extends Controller
         return view('production.molding.materials');
     }
 
+    //  Production -> Lamps
+    public function lamps()
+    {
+        return view('production.lamps.index');
+    }
 
+    public function lampsTestsAirleakTester()
+    {
+        return view('production.lamps.tests_airleaktester');
+    }
+  
+    public function lampsMachineSacraRobot()
+    {
+        return view('production.lamps.machines_scararobot');
+    }
+  
+    public function lampsProcessPlasmaSurfaceTreatment()
+    {
+        return view('production.lamps.process_plasmasurfacetreatment');
+    }
+  
+    public function lampsProcessAdhesiveBonding()
+    {
+        return view('production.lamps.process_adhesivebonding');
+    }
+  
+    public function lampsProcessMetalPlasticWelding()
+    {
+        return view('production.lamps.process_metalplasticwelding');
+    }
+  
+    public function lampsProcessUltraSonicWelding()
+    {
+        return view('production.lamps.process_ultrasonicwelding');
+    }
+  
+    public function lampsProcessHotPlateWelding()
+    {
+        return view('production.lamps.process_hotplatewelding');
+    }
+  
+    public function lampsProcessAnnealingPlastic()
+    {
+        return view('production.lamps.process_annealing');
+    }
   
  
     

@@ -46,7 +46,7 @@ Route::get('/production/molding/maintenance','ProductionController@molding_maint
 Route::get('/production/molding/materials','ProductionController@moulding_materials')->name('production.moulding.materials');
 
 
-
+//  Prodution Epp
 Route::get('/production/epp','ProductionController@epp')->name('production.epp');
 Route::get('/production/epp/process','ProductionController@epp_process')->name('production.epp.process');
 Route::get('/production/epp/impregnation','ProductionController@epp_impregnation')->name('production.epp.impregnation');
@@ -61,6 +61,19 @@ Route::get('/production/paintshop/robot','ProductionController@paintshop_robot')
 Route::get('/production/paintshop/sprayboothahu','ProductionController@paintshop_sprayboothahu')->name('production.paintshop.sprayboothahu');
 Route::get('/production/paintshop/sprayguns','ProductionController@paintshop_sprayguns')->name('production.paintshop.sprayguns');
 Route::get('/production/paintshop/conveyors','ProductionController@paintshop_conveyors')->name('production.paintshop.conveyors');
+
+//  Lamps
+Route::get('/production/lamps','ProductionController@lamps')->name('production.lamps');
+Route::get('/production/lamps/tests/airleaktester','ProductionController@lampsTestsAirleakTester')->name('production.lamps.tests.airleak');
+Route::get('/production/lamps/machines/scararobot','ProductionController@lampsMachineSacraRobot')->name('production.lamps.machines.scararobot');
+Route::get('/production/lamps/process/plasmasurfacetreatment','ProductionController@lampsProcessPlasmaSurfaceTreatment')->name('production.lamps.process.plasmasurfacetreatment');
+Route::get('/production/lamps/process/adhesivebonding','ProductionController@lampsProcessAdhesiveBonding')->name('production.lamps.process.adhesivebonding');
+Route::get('/production/lamps/process/metalplasticwelding','ProductionController@lampsProcessMetalPlasticWelding')->name('production.lamps.process.metalplasticwelding');
+Route::get('/production/lamps/process/ultrasonicwelding','ProductionController@lampsProcessUltraSonicWelding')->name('production.lamps.process.ultrasonicwelding');
+Route::get('/production/lamps/process/hotplatewelding','ProductionController@lampsProcessHotPlateWelding')->name('production.lamps.process.hotplatewelding');
+Route::get('/production/lamps/process/annealingofplastic','ProductionController@lampsProcessAnnealingPlastic')->name('production.lamps.process.annealingofplastic');
+
+
 
 Route::get('/profile','FrontEndController@profile')->name('profile');
 
