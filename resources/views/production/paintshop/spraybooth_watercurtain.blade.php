@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{ route('production.paintshop.spraybooth.airflow') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{ route('production.paintshop.spraybooth.paintfilters') }}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Spray Booth
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    Water Curtain 2.2.2
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">Water Curtain</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,14 +35,20 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                        https://www.youtube.com/embed/7vnE6nZ1ow4
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
+                        https://www.youtube.com/embed/4pNPDqETxtE
                         @endslot
                     @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                        https://www.youtube.com/embed/PB8EH1HhJ0Y
+                        @endslot
+                    @endcomponent
+                   
                 </div>  
             </div>
 

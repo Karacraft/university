@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{ route('production.paintshop.oven.uvoven') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{ route('production.paintshop.oven.uvoven') }}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Oven
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    IR Oven 2.3.1
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">IR Oven</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,12 +35,27 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                            https://www.youtube.com/embed/xaJbxrbFyag
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
+                            https://www.youtube.com/embed/40zcO4X-BSQ
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/IDto0_1haxA
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/99oXCcqnSD0
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/Fxe1sJ0FVz8
                         @endslot
                     @endcomponent
                 </div>  

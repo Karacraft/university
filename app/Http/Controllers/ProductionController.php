@@ -40,31 +40,74 @@ class ProductionController extends Controller
     {
         return view('production.paintshop.index');
     }
-    public function paintshop_materials()
+    public function robotProgramming()
     {
-        return view('production.paintshop.materials');
+        return view('production.paintshop.robot_programming');
     }
-    public function paintshop_iroven()
+    public function paintEquipmentsSprayGuns()
     {
-        return view('production.paintshop.ovenir');
+        return view('production.paintshop.paintingequipment_sprayguns');
     }
-    public function paintshop_robot()
+    public function paintEquipmentsPaintPumps()
     {
-        return view('production.paintshop.robot');
+        return view('production.paintshop.paintingequipment_paintpump');
     }
-    public function paintshop_sprayboothahu()
+    public function chemicalPaint()
     {
-        return view('production.paintshop.spraybooth');
+        return view('production.paintshop.chemical_paint');
     }
-    public function paintshop_sprayguns()
+    public function chemicalHardner()
     {
-        return view('production.paintshop.spraygun');
+        return view('production.paintshop.chemical_hardener');
     }
-    public function paintshop_conveyors()
+    public function chemicalThinner()
     {
-        return view('production.paintshop.paintconveyor');
+        return view('production.paintshop.chemical_thinners');
     }
-
+    public function chemicalIPA()
+    {
+        return view('production.paintshop.chemical_ipa');
+    }
+    public function airfilterationMeshFilter()
+    {
+        return view('production.paintshop.airfiltration_meshfilter');
+    }
+    public function airfilterationBagFilter()
+    {
+        return view('production.paintshop.airfiltration_bagfilter');
+    }
+    public function airfilterationCeilingFilter()
+    {
+        return view('production.paintshop.airfiltration_ceilingfilter');
+    }
+    public function ovenIrOven()
+    {
+        return view('production.paintshop.oven_iroven');
+    }
+    public function ovenUvOven()
+    {
+        return view('production.paintshop.oven_uvoven');
+    }
+    public function sprayAirflow()
+    {
+        return view('production.paintshop.spraybooth_airflow');
+    }
+    public function sprayWaterCurtain()
+    {
+        return view('production.paintshop.spraybooth_watercurtain');
+    }
+    public function sprayPaintFilters()
+    {
+        return view('production.paintshop.spraybooth_paintfilters');
+    }
+    public function sprayConveyor()
+    {
+        return view('production.paintshop.spraybooth_conveyors');
+    }
+    public function sprayPaintingJigs()
+    {
+        return view('production.paintshop.spraybooth_paintingjigs');
+    }
     //  Moulding
     //-------------------------------------------------------------//
     public function molding() 

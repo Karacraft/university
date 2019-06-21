@@ -8,10 +8,12 @@
     {{-- Make Container Flew --}}
     <div class="container-flex animated fadeIn">
         {{-- Add Heading Of Page --}}
-        <div class="col-lg-3 col-md-6 col-sm-6">
-            <h4 class="border-top border-bottom shadow-sm p-2">Molding</h4>
-        </div>
-
+        @component('components.page_heading')
+            @slot('heading')
+                Molding
+            @endslot
+        @endcomponent
+        {{-- Tab Headings --}}
         <ul class="nav nav-tabs" id="molding_tabs" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="machines-tab" data-toggle="tab" role="tab" aria-controls="machines" aria-selected="true" href="#machines">Machines 1.1</a>
@@ -29,7 +31,6 @@
                 <a class="nav-link" id="mold_defacts-tab" data-toggle="tab" role="tab" aria-controls="mold_defacts" aria-selected="false" href="#mold_defacts">Mold Defects 1.5</a>
             </li>
         </ul> 
-
         {{-- Tabs Content --}}
         <div class="tab-content" id="myTabContent">
             {{-- Machines 1.1 Data --}}

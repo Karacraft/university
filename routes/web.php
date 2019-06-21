@@ -55,12 +55,23 @@ Route::get('/production/epp/history','ProductionController@epp_history')->name('
 
 //  Paintshop
 Route::get('/production/paintshop','ProductionController@paintshop')->name('production.paintshop');
-Route::get('/production/paintshop/materials','ProductionController@paintshop_materials')->name('production.paintshop.materials');
-Route::get('/production/paintshop/iroven','ProductionController@paintshop_iroven')->name('production.paintshop.iroven');
-Route::get('/production/paintshop/robot','ProductionController@paintshop_robot')->name('production.paintshop.robot');
-Route::get('/production/paintshop/sprayboothahu','ProductionController@paintshop_sprayboothahu')->name('production.paintshop.sprayboothahu');
-Route::get('/production/paintshop/sprayguns','ProductionController@paintshop_sprayguns')->name('production.paintshop.sprayguns');
-Route::get('/production/paintshop/conveyors','ProductionController@paintshop_conveyors')->name('production.paintshop.conveyors');
+Route::get('/production/robot/programming','ProductionController@robotProgramming')->name('production.paintshop.robot.programming');
+Route::get('/production/paintingequipment/sprayguns','ProductionController@paintEquipmentsSprayGuns')->name('production.paintshop.paintingequipments.sprayguns');
+Route::get('/production/paintingequipment/paintpumps','ProductionController@paintEquipmentsPaintPumps')->name('production.paintshop.paintingequipments.paintpumps');
+Route::get('/production/chemical/paint','ProductionController@chemicalPaint')->name('production.paintshop.chemical.paint');
+Route::get('/production/chemical/hardener','ProductionController@chemicalHardner')->name('production.paintshop.chemical.hardner');
+Route::get('/production/chemical/thinner','ProductionController@chemicalThinner')->name('production.paintshop.chemical.thinner');
+Route::get('/production/chemical/ipa','ProductionController@chemicalIPA')->name('production.paintshop.chemical.ipa');
+Route::get('/production/airfilteration/meshfilter','ProductionController@airfilterationMeshFilter')->name('production.paintshop.airfilteration.meshfilter');
+Route::get('/production/airfilteration/bagfilter','ProductionController@airfilterationBagFilter')->name('production.paintshop.airfilteration.bagfilter');
+Route::get('/production/airfilteration/ceilingfilter','ProductionController@airfilterationCeilingFilter')->name('production.paintshop.airfilteration.ceilingfilter');
+Route::get('/production/oven/iroven','ProductionController@ovenIrOven')->name('production.paintshop.oven.iroven');
+Route::get('/production/oven/uvoven','ProductionController@ovenUvOven')->name('production.paintshop.oven.uvoven');
+Route::get('/production/spraybooth/airflow','ProductionController@sprayAirflow')->name('production.paintshop.spraybooth.airflow');
+Route::get('/production/spraybooth/watercurtain','ProductionController@sprayWaterCurtain')->name('production.paintshop.spraybooth.watercurtain');
+Route::get('/production/spraybooth/paintfilters','ProductionController@sprayPaintFilters')->name('production.paintshop.spraybooth.paintfilters');
+Route::get('/production/spraybooth/conveyor','ProductionController@sprayConveyor')->name('production.paintshop.spraybooth.conveyor');
+Route::get('/production/spraybooth/paintingjigs','ProductionController@sprayPaintingJigs')->name('production.paintshop.spraybooth.paintingjigs');
 
 //  Lamps
 Route::get('/production/lamps','ProductionController@lamps')->name('production.lamps');

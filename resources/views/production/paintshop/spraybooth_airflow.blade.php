@@ -7,42 +7,38 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{ route('production.paintshop.spraybooth.paintingjigs') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{ route('production.paintshop.spraybooth.watercurtain') }}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Spray Booth
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    Air Flow 2.2.1
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">Air Flow</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
             <div class="mb-4">
                 <div class="container">
-                    @component('components.youtube')
+                    {{-- @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                            https://www.youtube.com/embed/wJnJxZfSfKM
                         @endslot
-                    @endcomponent
-                    @component('components.youtube')
-                        @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
-                        @endslot
-                    @endcomponent
+                    @endcomponent --}}
+                   
                 </div>  
             </div>
 

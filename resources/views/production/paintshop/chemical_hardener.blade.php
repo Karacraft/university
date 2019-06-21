@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{ route('production.paintshop.chemical.paint') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{ route('production.paintshop.chemical.thinner') }}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Chemical
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    Hardener 2.1.2
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">Hardener</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,12 +35,17 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                            https://www.youtube.com/embed/CceY5Vqn40Q
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
+                            https://www.youtube.com/embed/jddqC-stli0
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/yFqaGeL6Yb8
                         @endslot
                     @endcomponent
                 </div>  

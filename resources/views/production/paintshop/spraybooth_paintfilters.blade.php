@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{ route('production.paintshop.spraybooth.watercurtain') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{ route('production.paintshop.spraybooth.conveyor') }}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Spray Booth
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    Paint Filters 2.2.3
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">Paint Filters</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,14 +35,20 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                            https://www.youtube.com/embed/oZ0V28SytAU
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
+                            https://www.youtube.com/embed/NJ8Sot4Lvbo
                         @endslot
                     @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/r3Z35uYlA44
+                        @endslot
+                    @endcomponent
+                   
                 </div>  
             </div>
 

@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.molding.injectunit') }}
+                    {{-- {{ route('production.paintshop.robot.programming') }} --}}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.molding.processtroubleshoot') }}
+                    {{-- {{ route('production.paintshop.robot.programming') }} --}}
                 @endslot
                 
                 @slot('segment')
-                    Molding
+                    Paint Shop
                 @endslot
                 @slot('subsegment')
-                    Machines
+                    Robot
                 @endslot
                 @slot('heading')
-                    Clamping Unit 1.1.3
+                    Programming 2.6.1
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Clamping Unit</h3>
+            <h3 class="card-title ml-3">Programming</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,12 +35,17 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/egWBqxA6wjA
+                            https://www.youtube.com/embed/wJnJxZfSfKM
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8SpDmGFD7uw
+                            https://www.youtube.com/embed/lZgAwAyTXig
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                            https://www.youtube.com/embed/pvz3PUMIcXg?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
                         @endslot
                     @endcomponent
                 </div>  
