@@ -37,135 +37,126 @@
             <div class="tab-pane fade show active" id="machines" role="tabpanel" aria-labelledby="home-tab">
                 <div class="row m-2 animated fadeIn mt-2">
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                General Design & Function 1.1.1
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.gendesign') }}" target="_blank">
-                                    <img src="{{ asset('images/gdf.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Injection Unit 1.1.2
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.injectunit') }}" target="_blank">
-                                    <img src="{{ asset('images/injector1.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Clamping Unit 1.1.3
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.clampingunit') }}" target="_blank">
-                                    <img src="{{ asset('images/clamping-unit.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Process Troubleshooting 1.1.4
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.processtroubleshoot') }}" target="_blank">
-                                    <img src="{{ asset('images/troubleshoot.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Energy 1.1.5
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.energy') }}" target="_blank">
-                                    <img src="{{ asset('images/energy.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Efficiency 1.1.6
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.efficiency') }}" target="_blank">
-                                    <img src="{{ asset('images/efficiency.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Hydraulics 1.1.7
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.hydraulics') }}" target="_blank">
-                                    <img src="{{ asset('images/hydraulics.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Control Panels / PLC 1.1.8
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.controlpanel') }}" target="_blank">
-                                    <img src="{{ asset('images/plc.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Process Parameters 1.1.9
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.processparam') }}" target="_blank">
-                                    <img src="{{ asset('images/parameters.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
-                        <div class="card bg-primary shadow-sm, text-white">
-                            <div class="card-header bg-primary">
-                                Materials / Parts Movement 1.1.10 
-                            </div>
-                            <div class="card-body bg-secondary">
-                                <a href="{{ route('production.molding.matpartsmovement') }}" target="_blank">
-                                    <img src="{{ asset('images/material_movement.jpg') }}" class="card-img-bottom">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {{-- General Designs --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            General Design & Function 1.1.1
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.gendesign') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/gdf.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Injection Unit --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Injection Unit 1.1.2
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.injectunit') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/injector1.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Clamping Unit --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Clamping Unit 1.1.3
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.clampingunit') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/clampingunit.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Process Troubleshooting --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Process Troubleshooting 1.1.4
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.processtroubleshoot') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/troubleshoot.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Energy --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                        Energy 1.1.5
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.energy') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/energy.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Energy --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Efficiency 1.1.6
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.efficiency') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/efficiency.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Hydraulics --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Hydraulics 1.1.7
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.hydraulics') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/hydraulics.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Control Panels / PLC --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Control Panels / PLC 1.1.8
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.controlpanel') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/controlpanel.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Process Parameters 1.1.9 --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Process Parameters 1.1.9
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.processparam') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/processparameters.jpg') }}
+                        @endslot
+                    @endcomponent
+                    {{-- Materials / Parts Movement 1.1.10  --}}
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Materials / Parts Movement 1.1.10 
+                        @endslot
+                        @slot('route')
+                            {{ route('production.molding.matpartsmovement') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/matpartsmovement.jpg') }}
+                        @endslot
+                    @endcomponent
 
                 </div>
             </div>
@@ -273,7 +264,65 @@
             </div>
             {{-- Auxillaries 1.4 Data --}}
             <div class="tab-pane fade" id="auxillaries" role="tabpanel" aria-labelledby="contact-tab">
-                The Auxiliaries
+                <div class="row m-2 animated fadeIn mt-2">
+
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Chiller 1.4.1
+                        @endslot
+                        @slot('route')
+                            {{ route('production.moulding.auxillaries.chiller') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/chiller.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Cooling Tower 1.4.2
+                        @endslot
+                        @slot('route')
+                            {{ route('production.moulding.auxillaries.coolingtower') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/coolingtower.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Mold Temperature Controller 1.2.3
+                        @endslot
+                        @slot('route')
+                            {{ route('production.moulding.auxillaries.modtempcontroller') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/moldtemperaturecontroller.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Hot Runner Temperature Controller 1.2.4
+                        @endslot
+                        @slot('route')
+                            {{ route('production.moulding.auxillaries.hotrunnertempcontroller') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/hotrunnertempcontroller.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Material Drying & Dehumidifying Unit 1.2.5
+                        @endslot
+                        @slot('route')
+                            {{ route('production.moulding.auxillaries.materialdryingdehumid') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/moulding/matdhumidunit.jpg') }}
+                        @endslot
+                    @endcomponent
+
+                </div>
             </div>
             {{-- Mold Defacts 1.5 Data --}}
             <div class="tab-pane fade" id="mold_defacts" role="tabpanel" aria-labelledby="contact-tab">

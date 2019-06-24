@@ -183,7 +183,27 @@ class ProductionController extends Controller
     {
         return view('production.molding.materials');
     }
-
+    //  Molding -> Auxillaries
+    public function auxillariesChiller()
+    {
+        return view('production.molding.auxillaries_chiller');
+    }   
+    public function auxillariesCoolingTower()
+    {
+        return view('production.molding.auxillaries_coolingtower');
+    }
+    public function auxillariesModTempController()
+    {
+        return view('production.molding.auxillaries_modtempcontroller');
+    }
+    public function auxillariesHotRunnerTempController()
+    {
+        return view('production.molding.auxillaries_hotrunnertempcontroller');
+    }
+    public function auxillariesMaterialDryingDeHumid()
+    {
+        return view('production.molding.auxillaries_matdrydhumidunit');
+    }
     //  Production -> Lamps
     public function lamps()
     {
