@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.paintshop.machines.dx200prog') }}
+                    {{ route('production.vacmet.machine.vacmmp') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.paintshop.robot.yaskawarobots') }}
+                    {{ route('production.vacmet.machine.vacgauge') }}
                 @endslot
                 
                 @slot('segment')
-                    Paint Shop
+                    Vacuum Metalizing
                 @endslot
                 @slot('subsegment')
-                    Robot
+                    Machine
                 @endslot
                 @slot('heading')
-                    Programming 2.6.1
+                    Vacuum Pumps 6.2.1
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Programming</h3>
+            <h3 class="card-title ml-3">Vacuum Pumps</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,17 +35,17 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/wJnJxZfSfKM
+                        https://www.youtube.com/embed/CnpYLzbCbqU
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/lZgAwAyTXig
+                        https://www.youtube.com/embed/7u0hJfgxQCQ
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/pvz3PUMIcXg?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/mp3NeWuEDk8
                         @endslot
                     @endcomponent
                 </div>  

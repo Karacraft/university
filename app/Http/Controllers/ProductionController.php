@@ -44,6 +44,21 @@ class ProductionController extends Controller
     {
         return view('production.paintshop.robot_programming');
     }
+
+    public function paintshopMachineYaskawaRobot()
+    {
+        return view('production.paintshop.robot_yaskawarobots');
+    }
+    public function paintshopMachineDX100Prog()
+    {
+        return view('production.paintshop.robot_dx100prog');
+    }
+    public function paintshopMachineDX200Prog()
+    {
+        return view('production.paintshop.robot_dx200prog');
+    }
+
+
     public function paintEquipmentsSprayGuns()
     {
         return view('production.paintshop.paintingequipment_sprayguns');
@@ -219,7 +234,8 @@ class ProductionController extends Controller
     {
         return view('production.lamps.machines_scararobot');
     }
-  
+
+
     public function lampsProcessPlasmaSurfaceTreatment()
     {
         return view('production.lamps.process_plasmasurfacetreatment');
@@ -251,9 +267,44 @@ class ProductionController extends Controller
     }
   
  
-    
+    //  Vacuum Metailizing
+    public function vacuumMetalizing()
+    {
+        return view('production.vacuummetalizing.index');
+    }
+    public function vacuumMetalizingMaterialAluminium()
+    {
+        return view('production.vacuummetalizing.material_aluminium');
+    }
+    public function vacuumMetalizingMaterialTungesten()
+    {
+        return view('production.vacuummetalizing.material_tungsten');
+    }
+    public function vacuumMetalizingMaterialSiliconOil()
+    {
+        return view('production.vacuummetalizing.material_siliconoil');
+    }
    
-  
+    public function vacuumMetalizingMaterialvacpump()
+    {
+        return view('production.vacuummetalizing.machine_vacuumpump');
+    }
+    public function vacuumMetalizingMaterialvacgauge()
+    {
+        return view('production.vacuummetalizing.machine_vacuumgauge');
+    }
+    public function vacuumMetalizingMaterialvacmmp()
+    {
+        return view('production.vacuummetalizing.machine_vacmmp');
+    }
+    public function vacuumMetalizingCleanRoomAirFilteration()
+    {
+        return view('production.vacuummetalizing.cleanroom_airfilteration');
+    }
+    public function vacuumMetalizingCleanRoomDressCode()
+    {
+        return view('production.vacuummetalizing.cleanroom_dresscode');
+    }
    
 
 

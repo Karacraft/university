@@ -273,6 +273,39 @@
                             {{ asset('images/production/paintshop/programming.jpg') }}
                         @endslot
                     @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            Yaskawa Robots 2.6.2
+                        @endslot
+                        @slot('route')
+                            {{ route('production.paintshop.robot.yaskawarobots') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/paintshop/yaskawarobots.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            DX100 2.6.3
+                        @endslot
+                        @slot('route')
+                            {{ route('production.paintshop.robot.dx100prog') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/paintshop/dx100programming.jpg') }}
+                        @endslot
+                    @endcomponent
+                    @component('components.tab_content')
+                        @slot('tabheader')
+                            DX200 2.6.4
+                        @endslot
+                        @slot('route')
+                            {{ route('production.paintshop.machines.dx200prog') }}
+                        @endslot
+                        @slot('image')
+                            {{ asset('images/production/paintshop/dx200programming.jpg') }}
+                        @endslot
+                    @endcomponent
                 </div>
             </div>
         </div>

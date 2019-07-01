@@ -7,11 +7,11 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.paintshop.machines.dx200prog') }}
+                    {{ route('production.paintshop.robot.programming') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.paintshop.robot.yaskawarobots') }}
+                    {{ route('production.paintshop.robot.dx100prog') }}
                 @endslot
                 
                 @slot('segment')
@@ -21,13 +21,13 @@
                     Robot
                 @endslot
                 @slot('heading')
-                    Programming 2.6.1
+                    Yaskawa Robots 2.6.2
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Programming</h3>
+            <h3 class="card-title ml-3">Yaskawa Robots</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,17 +35,17 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/wJnJxZfSfKM
+                        https://www.youtube.com/embed/wJnJxZfSfKM
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/lZgAwAyTXig
+                        https://www.youtube.com/embed/q3ITgx4iH0U
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/pvz3PUMIcXg?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/kBTTgAOop_k
                         @endslot
                     @endcomponent
                 </div>  

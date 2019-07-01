@@ -62,6 +62,9 @@ Route::get('/production/epp/machines/history','ProductionController@epp_history'
 Route::get('/production/paintshop','ProductionController@paintshop')->name('production.paintshop');
 //  Paintshop -> robot
 Route::get('/production/paintshop/robot/programming','ProductionController@robotProgramming')->name('production.paintshop.robot.programming');
+Route::get('/production/paintshop/robot/yaskawarobots','ProductionController@paintshopMachineYaskawaRobot')->name('production.paintshop.robot.yaskawarobots');
+Route::get('/production/paintshop/robot/dx100prog','ProductionController@paintshopMachineDX100Prog')->name('production.paintshop.robot.dx100prog');
+Route::get('/production/paintshop/robot/dx200prog','ProductionController@paintshopMachineDX200Prog')->name('production.paintshop.machines.dx200prog');
 //  Paintshop -> painting equipments
 Route::get('/production/paintshop/paintingequipment/sprayguns','ProductionController@paintEquipmentsSprayGuns')->name('production.paintshop.paintingequipments.sprayguns');
 Route::get('/production/paintshop/paintingequipment/paintpumps','ProductionController@paintEquipmentsPaintPumps')->name('production.paintshop.paintingequipments.paintpumps');
@@ -90,6 +93,7 @@ Route::get('/production/lamps','ProductionController@lamps')->name('production.l
 Route::get('/production/lamps/tests/airleaktester','ProductionController@lampsTestsAirleakTester')->name('production.lamps.tests.airleak');
 //  lamps -> Scara Robot
 Route::get('/production/lamps/machines/scararobot','ProductionController@lampsMachineSacraRobot')->name('production.lamps.machines.scararobot');
+
 //  Lamps -> process
 Route::get('/production/lamps/process/plasmasurfacetreatment','ProductionController@lampsProcessPlasmaSurfaceTreatment')->name('production.lamps.process.plasmasurfacetreatment');
 Route::get('/production/lamps/process/adhesivebonding','ProductionController@lampsProcessAdhesiveBonding')->name('production.lamps.process.adhesivebonding');
@@ -98,6 +102,16 @@ Route::get('/production/lamps/process/ultrasonicwelding','ProductionController@l
 Route::get('/production/lamps/process/hotplatewelding','ProductionController@lampsProcessHotPlateWelding')->name('production.lamps.process.hotplatewelding');
 Route::get('/production/lamps/process/annealingofplastic','ProductionController@lampsProcessAnnealingPlastic')->name('production.lamps.process.annealingofplastic');
 
+//  Vacuum Metailizing
+Route::get('/production/vacmet','ProductionController@vacuumMetalizing')->name('production.vacmet');
+Route::get('/production/vacmet/material/aluminium','ProductionController@vacuumMetalizingMaterialAluminium')->name('production.vacmet.material.aluminium');
+Route::get('/production/vacmet/material/tungesten','ProductionController@vacuumMetalizingMaterialTungesten')->name('production.vacmet.material.tungesten');
+Route::get('/production/vacmet/material/siliconoil','ProductionController@vacuumMetalizingMaterialSiliconOil')->name('production.vacmet.material.siliconoil');
+Route::get('/production/vacmet/machine/vacpump','ProductionController@vacuumMetalizingMaterialvacpump')->name('production.vacmet.machine.vacpump');
+Route::get('/production/vacmet/machine/vacgauge','ProductionController@vacuumMetalizingMaterialvacgauge')->name('production.vacmet.machine.vacgauge');
+Route::get('/production/vacmet/machine/vacmmp','ProductionController@vacuumMetalizingMaterialvacmmp')->name('production.vacmet.machine.vacmmp');
+Route::get('/production/vacmet/cleanroom/airfilteration','ProductionController@vacuumMetalizingCleanRoomAirFilteration')->name('production.vacmet.cleanroom.airfilteration');
+Route::get('/production/vacmet/cleanroom/dresscode','ProductionController@vacuumMetalizingCleanRoomDressCode')->name('production.vacmet.cleanroom.dresscode');
 
 
 Route::get('/profile','FrontEndController@profile')->name('profile');
