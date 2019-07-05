@@ -323,5 +323,19 @@ class ProductionController extends Controller
         return view('production.vacuummetalizing.cleanroom_airfilteration');
     }
 
+    //  Vibration Welding
+    public function vibweld()
+    {
+        return view('production.vibweld.index');
+    }
+    public function vibweldBasicsProcess()
+    {
+        return view('production.vibweld.basics_process');
+    }
+    public function vibweldBasicsTest()
+    {
+        return view('production.vibweld.basics_test');
+    }
+
   
 }

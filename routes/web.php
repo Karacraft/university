@@ -118,7 +118,10 @@ Route::get('/production/vacmet/machine/vacgauge','ProductionController@vacuumMet
 Route::get('/production/vacmet/machine/vacmmp','ProductionController@vacuumMetalizingMaterialvacmmp')->name('production.vacmet.machine.vacmmp');
 Route::get('/production/vacmet/cleanroom/airfilteration','ProductionController@vacuumMetalizingCleanRoomAirFilteration')->name('production.vacmet.cleanroom.airfilteration');
 
-
+//  Vibration Welding
+Route::get('/production/vibweld','ProductionController@vibweld')->name('production.vibweld');
+Route::get('/production/vibweld/basics/process','ProductionController@vibweldBasicsProcess')->name('production.vibweld.basics.process');
+Route::get('/production/vibweld/basics/test','ProductionController@vibweldBasicsTest')->name('production.vibweld.basics.test');
 
 Route::get('/profile','FrontEndController@profile')->name('profile');
 
