@@ -11,7 +11,7 @@
                 @endslot
 
                 @slot('right')
-                    {{ route('production.paintshop.machines.dx200prog') }}
+                    {{ route('production.paintshop.robot.dx200prog') }}
                 @endslot
                 
                 @slot('segment')

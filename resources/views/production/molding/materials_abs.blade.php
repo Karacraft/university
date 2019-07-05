@@ -7,39 +7,49 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.vacmet.cleanroom.airfilteration') }}
+                    {{ route('production.moulding.materials.pp') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.vacmet.cleanroom.airfilteration') }}
+                    {{ route('production.moulding.materials.nylon') }}
                 @endslot
                 
                 @slot('segment')
-                    Vacuum Metalizing
+                   Molding
                 @endslot
                 @slot('subsegment')
-                    Clean Room
+                    Materials
                 @endslot
                 @slot('heading')
-                    Dress Code 6.3.2
+                    Acrylonitrile Butadiene Styrene (ABS) 1.3.3
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Dress Code</h3>
+            <h3 class="card-title ml-3">Acrylonitrile Butadiene Styrene (ABS)</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
-            {{-- <div class="mb-4">
+            <div class="mb-4">
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/dlh_VIezw_Q
+                        https://www.youtube.com/embed/p1VUm46hd4c
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                        https://www.youtube.com/embed/Ou9nMd-GkHQ
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                        https://www.youtube.com/embed/EPFzOD-AYeA
                         @endslot
                     @endcomponent
                 </div>  
-            </div> --}}
+            </div>
 
         </div>
         {{-- Footer --}}

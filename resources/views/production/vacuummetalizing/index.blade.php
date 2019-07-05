@@ -125,19 +125,6 @@
                             {{ asset('images/production/vacmet/airfilteration.jpg') }}
                         @endslot
                     @endcomponent
-
-                    @component('components.tab_content')
-                        @slot('tabheader')
-                            Dress Code 6.3.2
-                        @endslot
-                        @slot('route')
-                            {{ route('production.vacmet.cleanroom.dresscode') }}
-                        @endslot
-                        @slot('image')
-                            {{ asset('images/production/vacmet/dresscode.jpg') }}
-                        @endslot
-                    @endcomponent
-                    
                 </div>
             </div>
           

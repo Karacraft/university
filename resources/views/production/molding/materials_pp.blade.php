@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.paintshop.machines.dx200prog') }}
+                    {{ route('production.moulding.materials.plastics') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.paintshop.robot.yaskawarobots') }}
+                    {{ route('production.moulding.materials.abs') }}
                 @endslot
                 
                 @slot('segment')
-                    Paint Shop
+                   Molding
                 @endslot
                 @slot('subsegment')
-                    Robot
+                    Materials
                 @endslot
                 @slot('heading')
-                    Programming 2.6.1
+                    PolyPropylene(PP) 1.3.2
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Programming</h3>
+            <h3 class="card-title ml-3">PolyPropylene(PP)</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,17 +35,17 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/wJnJxZfSfKM
+                        https://www.youtube.com/embed/Yw75R-o4UJc
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/lZgAwAyTXig
+                        https://www.youtube.com/embed/KrUyJjkwTr8
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                            https://www.youtube.com/embed/pvz3PUMIcXg?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/2uEjfU941oA
                         @endslot
                     @endcomponent
                 </div>  

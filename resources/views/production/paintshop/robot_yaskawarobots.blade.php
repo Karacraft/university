@@ -7,7 +7,7 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.paintshop.robot.programming') }}
+                    {{ route('production.paintshop.robot.dx200prog') }}
                 @endslot
 
                 @slot('right')
@@ -21,7 +21,7 @@
                     Robot
                 @endslot
                 @slot('heading')
-                    Yaskawa Robots 2.6.2
+                    Yaskawa Robots 2.6.1
                 @endslot
             @endcomponent
         </div> 

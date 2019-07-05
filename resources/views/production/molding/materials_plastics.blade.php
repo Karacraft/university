@@ -7,27 +7,27 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{ route('production.paintshop.robot.dx100prog') }}
+                    {{ route('production.moulding.materials.pe') }}
                 @endslot
 
                 @slot('right')
-                    {{ route('production.paintshop.robot.yaskawarobots') }}
+                    {{ route('production.moulding.materials.pp') }}
                 @endslot
                 
                 @slot('segment')
-                    Paint Shop
+                   Molding
                 @endslot
                 @slot('subsegment')
-                    Robot
+                    Materials
                 @endslot
                 @slot('heading')
-                    DX200 Programming 2.6.3
+                    Plastics 1.3.1
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">DX200 Programming</h3>
+            <h3 class="card-title ml-3">Plastics</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
@@ -35,30 +35,29 @@
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/pvz3PUMIcXg?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/ggh0Ptk3VGE
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/xVo0iJySY1w?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/z4zmfTzzWxs
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/Xwyzy4tD9Z0?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/bmTaWgvC6uA
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/8OTuSdHd2QY?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/lNS7TwWmlrg
                         @endslot
                     @endcomponent
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/IVm6M_n1-l4?list=PLoQTh8O3tekJgeIkHPYf4R3C7cdYVDBcl
+                        https://www.youtube.com/embed/fZr0xlCygjM
                         @endslot
                     @endcomponent
-                  
                 </div>  
             </div>
 

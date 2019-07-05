@@ -258,24 +258,13 @@
                     
                 </div>
             </div>
-            {{-- Air filteration 2.4 Data --}}
+            {{-- Robot 2.4 Data --}}
             <div class="tab-pane fade" id="robot" role="tabpanel">
                 <div class="row m-2 animated fadeIn mt-2">
             
                     @component('components.tab_content')
                         @slot('tabheader')
-                            Programming 2.6.1
-                        @endslot
-                        @slot('route')
-                            {{ route('production.paintshop.robot.programming') }}
-                        @endslot
-                        @slot('image')
-                            {{ asset('images/production/paintshop/programming.jpg') }}
-                        @endslot
-                    @endcomponent
-                    @component('components.tab_content')
-                        @slot('tabheader')
-                            Yaskawa Robots 2.6.2
+                            Yaskawa Robots 2.6.1
                         @endslot
                         @slot('route')
                             {{ route('production.paintshop.robot.yaskawarobots') }}
@@ -286,7 +275,7 @@
                     @endcomponent
                     @component('components.tab_content')
                         @slot('tabheader')
-                            DX100 2.6.3
+                            DX100 2.6.2
                         @endslot
                         @slot('route')
                             {{ route('production.paintshop.robot.dx100prog') }}
@@ -297,10 +286,10 @@
                     @endcomponent
                     @component('components.tab_content')
                         @slot('tabheader')
-                            DX200 2.6.4
+                            DX200 2.6.3
                         @endslot
                         @slot('route')
-                            {{ route('production.paintshop.machines.dx200prog') }}
+                            {{ route('production.paintshop.robot.dx200prog') }}
                         @endslot
                         @slot('image')
                             {{ asset('images/production/paintshop/dx200programming.jpg') }}

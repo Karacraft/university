@@ -27,14 +27,11 @@
             <li class="nav-item">
                 <a class="nav-link" id="auxillaries-tab" data-toggle="tab" role="tab" aria-controls="auxillaries" aria-selected="false" href="#auxillaries">Auxiliaries 1.4</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" id="mold_defacts-tab" data-toggle="tab" role="tab" aria-controls="mold_defacts" aria-selected="false" href="#mold_defacts">Mold Defects 1.5</a>
-            </li>
         </ul> 
         {{-- Tabs Content --}}
         <div class="tab-content" id="myTabContent">
             {{-- Machines 1.1 Data --}}
-            <div class="tab-pane fade show active" id="machines" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="machines" role="tabpanel" aria-labelledby="machines-tab">
                 <div class="row m-2 animated fadeIn mt-2">
 
                     {{-- General Designs --}}
@@ -161,7 +158,7 @@
                 </div>
             </div>
             {{-- Mold 1.2 Data --}}
-            <div class="tab-pane fade" id="molds" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="molds" role="tabpanel" aria-labelledby="mold-tab">
                 <div class="row m-2 animated fadeIn mt-2">
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
@@ -231,30 +228,89 @@
                 </div>
             </div>
             {{-- Materials 1.3 Data --}}
-            <div class="tab-pane fade" id="materials" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="materials" role="tabpanel" aria-labelledby="materials-tab">
                 <div class="row m-2 animated fadeIn mt-2">
 
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                         <div class="card bg-primary shadow-sm, text-white">
                             <div class="card-header bg-primary">
-                                Poly Propylene [PP] 1.3.1
+                                Plastics 1.3.1
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.materials') }}" >
-                                    <img src="{{ asset('images/material.jpg') }}" class="card-img-bottom">
+                                <a href="{{ route('production.moulding.materials.plastics') }}" >
+                                    <img src="{{ asset('images/production/moulding/plastics.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
                         <div class="card bg-primary shadow-sm, text-white">
                             <div class="card-header bg-primary">
-                                Acrylonitrile butadiene styrene [ABS] 1.3.2
+                                PolyPropylene(PP) 1.3.2
                             </div>
                             <div class="card-body bg-secondary">
-                                <a href="{{ route('production.moulding.materials') }}" >
-                                    <img src="{{ asset('images/material.jpg') }}" class="card-img-bottom">
+                                <a href="{{ route('production.moulding.materials.pp') }}" >
+                                    <img src="{{ asset('images/production/moulding/polypropylene.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                Acrylonitrile Butadiene Styrene (ABS) 1.3.3
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.moulding.materials.abs') }}" >
+                                    <img src="{{ asset('images/production/moulding/abs.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                Polyamide (Nylon) 1.3.4
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.moulding.materials.nylon') }}" >
+                                    <img src="{{ asset('images/production/moulding/polyamide.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                High Density Polyethylene (HDPE) 1.3.5
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.moulding.materials.hdpe') }}" >
+                                    <img src="{{ asset('images/production/moulding/hdpe.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                Polycarbonate (PC) 1.3.6
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.moulding.materials.pc') }}" >
+                                    <img src="{{ asset('images/production/moulding/polycarbonate.jpg') }}" class="card-img-bottom">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+                        <div class="card bg-primary shadow-sm, text-white">
+                            <div class="card-header bg-primary">
+                                Polyethylene (PE) 1.3.7
+                            </div>
+                            <div class="card-body bg-secondary">
+                                <a href="{{ route('production.moulding.materials.pe') }}" >
+                                    <img src="{{ asset('images/production/moulding/polyethylene.jpg') }}" class="card-img-bottom">
                                 </a>
                             </div>
                         </div>
@@ -263,7 +319,7 @@
                 </div>
             </div>
             {{-- Auxillaries 1.4 Data --}}
-            <div class="tab-pane fade" id="auxillaries" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="auxillaries" role="tabpanel" aria-labelledby="auxillaries-tab">
                 <div class="row m-2 animated fadeIn mt-2">
 
                     @component('components.tab_content')
@@ -323,10 +379,6 @@
                     @endcomponent
 
                 </div>
-            </div>
-            {{-- Mold Defacts 1.5 Data --}}
-            <div class="tab-pane fade" id="mold_defacts" role="tabpanel" aria-labelledby="contact-tab">
-                The Mold Defects
             </div>
         </div>
 

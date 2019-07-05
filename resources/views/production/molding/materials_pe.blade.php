@@ -7,39 +7,44 @@
         <div class="card-header bg-primary">
             @component('components.course_header_links')
                 @slot('left')
-                    {{-- {{ route('production.vacmet.cleanroom.dresscode') }} --}}
+                    {{ route('production.moulding.materials.pc') }}
                 @endslot
 
                 @slot('right')
-                    {{-- {{ route('production.vacmet.cleanroom.dresscode') }} --}}
+                    {{ route('production.moulding.materials.plastics') }}
                 @endslot
                 
                 @slot('segment')
-                    Vacuum Metalizing
+                   Molding
                 @endslot
                 @slot('subsegment')
-                    Clean Room
+                    Materials
                 @endslot
                 @slot('heading')
-                    Air Filteration 6.3.1
+                    Polyethylene (PE) 1.3.7
                 @endslot
             @endcomponent
         </div> 
 
         <div class="card-body">
-            <h3 class="card-title ml-3">Air Filteration</h3>
+            <h3 class="card-title ml-3">Polyethylene (PE)</h3>
             <hr>
             <br>
             {{-- Youtube Videos --}}
-            {{-- <div class="mb-4">
+            <div class="mb-4">
                 <div class="container">
                     @component('components.youtube')
                         @slot('source')
-                        https://www.youtube.com/embed/dlh_VIezw_Q
+                        https://www.youtube.com/embed/43-f0QJ1WYw
+                        @endslot
+                    @endcomponent
+                    @component('components.youtube')
+                        @slot('source')
+                        https://www.youtube.com/embed/MZ6MAn2_Pa0
                         @endslot
                     @endcomponent
                 </div>  
-            </div> --}}
+            </div>
 
         </div>
         {{-- Footer --}}

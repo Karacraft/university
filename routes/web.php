@@ -42,7 +42,14 @@ Route::get('/production/molding/molds/gatting','ProductionController@molding_gat
 Route::get('/production/molding/molds/components','ProductionController@molding_components')->name('production.molding.component');
 Route::get('/production/molding/molds/maintenance','ProductionController@molding_maintenance')->name('production.molding.maintenance');
 //  Molding->Materials 1.3
-Route::get('/production/materials','ProductionController@moulding_materials')->name('production.moulding.materials');
+// Route::get('/production/materials','ProductionController@moldingMaterials')->name('production.moulding.materials');
+Route::get('/production/materials/plastics','ProductionController@moldingMaterialsPlastics')->name('production.moulding.materials.plastics');
+Route::get('/production/materials/pp','ProductionController@moldingMaterialsPP')->name('production.moulding.materials.pp');
+Route::get('/production/materials/abs','ProductionController@moldingMaterialsABS')->name('production.moulding.materials.abs');
+Route::get('/production/materials/nylon','ProductionController@moldingMaterialsNylon')->name('production.moulding.materials.nylon');
+Route::get('/production/materials/hdpe','ProductionController@moldingMaterialsHDPE')->name('production.moulding.materials.hdpe');
+Route::get('/production/materials/pc','ProductionController@moldingMaterialsPC')->name('production.moulding.materials.pc');
+Route::get('/production/materials/pe','ProductionController@moldingMaterialsPE')->name('production.moulding.materials.pe');
 //  Molding->Auxillaries 1.4
 Route::get('/production/molding/auxillaries/chiller','ProductionController@auxillariesChiller')->name('production.moulding.auxillaries.chiller');
 Route::get('/production/molding/auxillaries/coolingtower','ProductionController@auxillariesCoolingTower')->name('production.moulding.auxillaries.coolingtower');
@@ -50,7 +57,7 @@ Route::get('/production/molding/auxillaries/modtempcontroller','ProductionContro
 Route::get('/production/molding/auxillaries/hotrunnertempcontroller','ProductionController@auxillariesHotRunnerTempController')->name('production.moulding.auxillaries.hotrunnertempcontroller');
 Route::get('/production/molding/auxillaries/matdryingdehumid','ProductionController@auxillariesMaterialDryingDeHumid')->name('production.moulding.auxillaries.materialdryingdehumid');
 
-//  Prodution Epp
+//  Prodution->Epp
 Route::get('/production/epp','ProductionController@epp')->name('production.epp');
 //  EPP -> Machines 3.1
 Route::get('/production/epp/machines/process','ProductionController@epp_process')->name('production.epp.process');
@@ -61,10 +68,9 @@ Route::get('/production/epp/machines/history','ProductionController@epp_history'
 //  Paintshop
 Route::get('/production/paintshop','ProductionController@paintshop')->name('production.paintshop');
 //  Paintshop -> robot
-Route::get('/production/paintshop/robot/programming','ProductionController@robotProgramming')->name('production.paintshop.robot.programming');
 Route::get('/production/paintshop/robot/yaskawarobots','ProductionController@paintshopMachineYaskawaRobot')->name('production.paintshop.robot.yaskawarobots');
 Route::get('/production/paintshop/robot/dx100prog','ProductionController@paintshopMachineDX100Prog')->name('production.paintshop.robot.dx100prog');
-Route::get('/production/paintshop/robot/dx200prog','ProductionController@paintshopMachineDX200Prog')->name('production.paintshop.machines.dx200prog');
+Route::get('/production/paintshop/robot/dx200prog','ProductionController@paintshopMachineDX200Prog')->name('production.paintshop.robot.dx200prog');
 //  Paintshop -> painting equipments
 Route::get('/production/paintshop/paintingequipment/sprayguns','ProductionController@paintEquipmentsSprayGuns')->name('production.paintshop.paintingequipments.sprayguns');
 Route::get('/production/paintshop/paintingequipment/paintpumps','ProductionController@paintEquipmentsPaintPumps')->name('production.paintshop.paintingequipments.paintpumps');
@@ -111,7 +117,7 @@ Route::get('/production/vacmet/machine/vacpump','ProductionController@vacuumMeta
 Route::get('/production/vacmet/machine/vacgauge','ProductionController@vacuumMetalizingMaterialvacgauge')->name('production.vacmet.machine.vacgauge');
 Route::get('/production/vacmet/machine/vacmmp','ProductionController@vacuumMetalizingMaterialvacmmp')->name('production.vacmet.machine.vacmmp');
 Route::get('/production/vacmet/cleanroom/airfilteration','ProductionController@vacuumMetalizingCleanRoomAirFilteration')->name('production.vacmet.cleanroom.airfilteration');
-Route::get('/production/vacmet/cleanroom/dresscode','ProductionController@vacuumMetalizingCleanRoomDressCode')->name('production.vacmet.cleanroom.dresscode');
+
 
 
 Route::get('/profile','FrontEndController@profile')->name('profile');

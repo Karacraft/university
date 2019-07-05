@@ -40,11 +40,6 @@ class ProductionController extends Controller
     {
         return view('production.paintshop.index');
     }
-    public function robotProgramming()
-    {
-        return view('production.paintshop.robot_programming');
-    }
-
     public function paintshopMachineYaskawaRobot()
     {
         return view('production.paintshop.robot_yaskawarobots');
@@ -194,10 +189,36 @@ class ProductionController extends Controller
     }
 
     // Molding -> Materials
-    public function molding_materials()
+    public function moldingMaterialsPlastics()
     {
-        return view('production.molding.materials');
+        return view('production.molding.materials_plastics');
     }
+    public function moldingMaterialsPP()
+    {
+        return view('production.molding.materials_pp');
+    }
+    public function moldingMaterialsABS()
+    {
+        return view('production.molding.materials_abs');
+    }
+    public function moldingMaterialsNylon()
+    {
+        return view('production.molding.materials_nylon');
+    }
+    public function moldingMaterialsHDPE()
+    {
+        return view('production.molding.materials_hdpe');
+    }
+    public function moldingMaterialsPC()
+    {
+        return view('production.molding.materials_pc');
+    }
+    public function moldingMaterialsPE()
+    {
+        return view('production.molding.materials_pe');
+    }
+
+
     //  Molding -> Auxillaries
     public function auxillariesChiller()
     {
@@ -301,14 +322,6 @@ class ProductionController extends Controller
     {
         return view('production.vacuummetalizing.cleanroom_airfilteration');
     }
-    public function vacuumMetalizingCleanRoomDressCode()
-    {
-        return view('production.vacuummetalizing.cleanroom_dresscode');
-    }
-   
-
-
-
 
   
 }
