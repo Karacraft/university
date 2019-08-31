@@ -44,7 +44,7 @@ class FrontEndController extends Controller
 
     public function powerbilogin(PowerBiLoginRequest $request)
     {
-        // dd($request->all());
+        dd($request->all());
         $email = $request->email;
         $password = $request->password;
 

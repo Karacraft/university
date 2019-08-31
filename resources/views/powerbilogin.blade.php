@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <div class="row align-items-center h-100">
                             {{-- Sign In Column --}}
-                            <div class="col text-muted pt-5 pl-5 pr-5">
+                            <div class="col text-muted pt-5 pl-5 pr-5"> 
                                 <h3>Log In</h3>
                                 <form action="{{ route('powerbilogin') }}" method="post">
                                     @csrf

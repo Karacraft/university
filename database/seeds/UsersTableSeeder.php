@@ -201,5 +201,13 @@ class UsersTableSeeder extends Seeder
         $user->designation = 'Manager';
         $user->role_id = Constants::CAN_ACCESS_OPS_ONLY;
         $user->save();
+         
+        $user = new User();
+        $user->name = 'Zain Hasham';
+        $user->email = 'zain.hasham@auvitronics.com';
+        $user->password = Hash::make('avt@uni2019');
+        $user->designation = 'General Manager';
+        $user->role_id = Constants::CAN_ACCESS_OPS_ONLY;
+        $user->save();
     }
 }

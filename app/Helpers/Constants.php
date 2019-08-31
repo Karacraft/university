@@ -9,6 +9,7 @@ class Constants
     const CAN_ACCESS_OPS_AND_FINANCE = 1;
     const CAN_ACCESS_OPS_ONLY = 2;
     const CAN_ACCESS_FINANCE_ONLY = 3;
+    const CAN_ACCESS_NOTHING = 4;
     
     //  String for access
     const STRING_SUPER_ADMIN = 'SUPER ADMIN';

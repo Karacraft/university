@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->comment('Hashed Password');
             $table->string('designation')->comment('Position in Company');
-            $table->integer('role_id')->default(Constants::USERS_ROLE_USER)->comment('Role Id as Per Constants');
+            $table->integer('role_id')->default(Constants::CAN_ACCESS_NOTHING)->comment('Role Id as Per Constants');
             $table->rememberToken();
             $table->timestamps();
         });

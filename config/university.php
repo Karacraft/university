@@ -19,7 +19,8 @@ return [
         'hafeez.khan@auvitronics.com',
         'muneeb.afaq@auvitronics.com',
         'mahad.hamza@hoh.net',
-        'sibtain.haji@hoh.net'
+        'sibtain.haji@hoh.net',
+        'zain.hasham@auvitronics.com',
     ],
 
     'password' => [
