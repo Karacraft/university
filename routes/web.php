@@ -69,7 +69,7 @@ Route::get('/production/epp/machines/history','ProductionController@epp_history'
 Route::get('/production/paintshop','ProductionController@paintshop')->name('production.paintshop');
 //  Paintshop -> robot
 Route::get('/production/paintshop/robot/yaskawarobots','ProductionController@paintshopMachineYaskawaRobot')->name('production.paintshop.robot.yaskawarobots');
-Route::get('/production/paintshop/robot/dx100prog','ProductionController@paintshopMachineDX100Prog')->name('production.paintshop.robot.dx100prog');
+Route::get('/production/paintshop/robot/dx100prog','ProductionController@paintshopMachineNX100Prog')->name('production.paintshop.robot.nx100prog');
 Route::get('/production/paintshop/robot/dx200prog','ProductionController@paintshopMachineDX200Prog')->name('production.paintshop.robot.dx200prog');
 //  Paintshop -> painting equipments
 Route::get('/production/paintshop/paintingequipment/sprayguns','ProductionController@paintEquipmentsSprayGuns')->name('production.paintshop.paintingequipments.sprayguns');

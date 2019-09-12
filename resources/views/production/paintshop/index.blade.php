@@ -275,10 +275,10 @@
                     @endcomponent
                     @component('components.tab_content')
                         @slot('tabheader')
-                            DX100 2.6.2
+                            NX100 2.6.2
                         @endslot
                         @slot('route')
-                            {{ route('production.paintshop.robot.dx100prog') }}
+                            {{ route('production.paintshop.robot.nx100prog') }}
                         @endslot
                         @slot('image')
                             {{ asset('images/production/paintshop/dx100programming.jpg') }}

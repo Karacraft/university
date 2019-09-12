@@ -44,9 +44,9 @@ class ProductionController extends Controller
     {
         return view('production.paintshop.robot_yaskawarobots');
     }
-    public function paintshopMachineDX100Prog()
+    public function paintshopMachineNX100Prog()
     {
-        return view('production.paintshop.robot_dx100prog');
+        return view('production.paintshop.robot_nx100prog');
     }
     public function paintshopMachineDX200Prog()
     {
