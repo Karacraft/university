@@ -16,3 +16,16 @@ use Illuminate\Http\Request;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+
+Route::group(['prefix' => 'v1/'], function () {
+    Route::post('production',function(Request $request){
+        $productions = $request->all();
+        $data = [ 'status'=> false, 'message' => 'failure','code' => 200, 'production' => $productions];
+        return response()->json($data);
+    });
+    Route::get('getter',function(Request $request){
+        $data = [ 'status'=> false, 'message' => 'getter','code' => 200];
+        return response()->json($data);
+    });
+});
+

@@ -130,3 +130,13 @@ Route::get('/underconstruction','FrontEndController@underconstruction')->name('u
 Auth::routes(['register' => false, 'reset' => false , 'verify' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::fallback(function(){
+
+    return response()->json([
+        'message' => 'Page Not Found. If error persists, contact IT Department.'
+    ],404);
+});
+
