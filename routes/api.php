@@ -2,30 +2,70 @@
 
 use Illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
-
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 Route::group(['prefix' => 'v1/'], function () {
     Route::post('production',function(Request $request){
-        $productions = $request->all();
-        $data = [ 'status'=> false, 'message' => 'failure','code' => 200, 'production' => $productions];
-        return response()->json($data);
+        // Log::info($request->all());
+        $d = $request->input();
+        Log::Info($d);
+        $asm = \App\Assembly::where('batch_number',$d['batch_number'])->first();
+        if($asm != null)
+            return response()->json(0);
+
+
+        \App\Assembly::create([
+            'assembly_name' => $d['assembly_name'],
+            'batch_number' => $d['batch_number'],
+            'mold' => $d['mold'],
+            'mold_id' => $d['mold_id'],
+            'planned_qty' => $d['planned_qty'],
+            'produced_qty' => $d['produced_qty'],
+            'shift' => $d['shift'],
+            'shift_id' => $d['shift_id'],
+            'supervisor' => $d['supervisor'],
+            'skilled' => $d['skilled'],
+            'unskilled' => $d['unskilled'],
+            'production_date' => $d['production_date'],
+            'created_at' => $d['created_at'],
+            'updated_at' => Carbon\Carbon::now()
+        ]);
+
+        // Log::Info($d);
+        // $c = collect($d);
+        // Log::Info($c);
+        // Log::Info(count($c));
+        // $batchnubmers = [];
+        // for ($i=0; $i < count($c) ; $i++) {
+        //     Log::critical($c[$i]['batch_number']);
+        //     array_push($batchnubmers,$c[$i]['batch_number']);
+        // }
+        // Log::critical(json_encode($batchnubmers));
+        // $data = [ 'status'=> false, 'message' => 'failure','code' => 200 , 'batchnumbers' => $batchnubmers ];
+        return response()->json(1);
     });
-    Route::get('getter',function(Request $request){
-        $data = [ 'status'=> false, 'message' => 'getter','code' => 200];
-        return response()->json($data);
+
+    Route::get('create',function(){
+        return \App\Assembly::create([
+            'assembly_name' => 'Lamp Assembly',
+            'batch_number' => '20040002',
+            'mold' => 'MOLD',
+            'mold_id' => 1,
+            'planned_qty' => 200,
+            'produced_qty' => 0,
+            'shift' => 'Shift',
+            'shift_id' => 1,
+            'supervisor' => 0,
+            'skilled' => 0,
+            'unskilled' => 0,
+            'production_date' => '06-04-2020',
+            'created_at' => '06-04-2020',
+            'updated_at' => Carbon\Carbon::now()
+        ]);
+
+    });
+
+    Route::get('display',function(){
+        $asms = \App\Assembly::all();
+        return $asms;
     });
 });
 

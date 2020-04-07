@@ -20,5 +20,9 @@
         "sass-loader": "^7.3.1",
         "vue-template-compiler": "^2.6.11"
     },
-    "dependencies": {}
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "popper": "^1.0.1",
+        "popper.js": "^1.16.1"
+    }
 }
