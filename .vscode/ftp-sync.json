@@ -1,14 +1,14 @@
 {
-    "remotePath": "./university/",
+    "remotePath": "./",
     "host": "ftp.auvitronics.com",
     "username": "misc@avtit.auvitronics.com",
-    "password": "Avt@2018&_",
+    "password": "avtit2019",
     "port": 21,
     "secure": false,
     "protocol": "ftp",
-    "uploadOnSave": false,
+    "uploadOnSave": true,
     "passive": false,
-    "debug": true,
+    "debug": false,
     "privateKeyPath": null,
     "passphrase": null,
     "agent": null,
@@ -22,6 +22,6 @@
         "extensionsToInclude": [
             ""
         ],
-        "path": "./"
+        "path": ""
     }
 }
