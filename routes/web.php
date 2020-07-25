@@ -140,3 +140,7 @@ Route::fallback(function(){
     ],404);
 });
 
+Route::get('timer',function(){
+    // return date('Y-m-d h:m:s',strtotime('2020-07-14T09:02:08.000000Z'));
+    return date(now());
+});

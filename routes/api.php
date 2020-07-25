@@ -24,8 +24,8 @@ Route::group(['prefix' => 'v1/'], function () {
             'supervisor' => $d['supervisor'],
             'skilled' => $d['skilled'],
             'unskilled' => $d['unskilled'],
-            'production_date' => $d['production_date'],
-            'created_at' => $d['created_at'],
+            'production_date' => date('Y-m-d h:m:s',strtotime($d['production_date'])),
+            'created_at' => date('Y-m-d h:m:s',strtotime($d['created_at'])),
             'updated_at' => Carbon\Carbon::now()
         ]);
 
@@ -56,16 +56,37 @@ Route::group(['prefix' => 'v1/'], function () {
             'supervisor' => 0,
             'skilled' => 0,
             'unskilled' => 0,
-            'production_date' => '06-04-2020',
-            'created_at' => '06-04-2020',
+            'production_date' => date('Y-m-d h:m:s',strtotime('2020-07-14T09:02:08.000000Z')),
+            'created_at' => date('Y-m-d h:m:s',strtotime('2020-07-14T09:02:08.000000Z')),
             'updated_at' => Carbon\Carbon::now()
         ]);
 
     });
 
     Route::get('display',function(){
-        $asms = \App\Assembly::all();
-        return $asms;
+        // $asms = \App\Assembly::all();
+        // return $asms;
+        $asms = "
+        SELECT * FROM (
+            SELECT
+            id,
+            batch_number,
+            assembly_name,
+            mold,
+            mold_id,
+            planned_qty,
+            produced_qty,
+            shift,
+            shift_id,
+            production_date,
+            created_at,
+            updated_at
+            FROM assemblies
+            ORDER BY id DESC LIMIT 96
+        ) Var4 ORDER BY id ASC
+        ";
+
+        return  DB::select($asms);
     });
 });
 
