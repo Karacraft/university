@@ -6,13 +6,12 @@ return [
         'mkf@auvitronics.com',
         'izhar.mustafa@auvitronics.com',
         'ilyas.hussain@auvitronics.com',
-        'tayyab@auvitronics.com',
         'iqbal.arif@auvitronics.com', 
         'nazimuddin@auvitronics.com',
         'junaid.saeed@auvitronics.com', 
         'sumair@auvitronics.com',
         'hasnain.jafri@auvitronics.com', 
-        'nasir.hussain@auvitronics.com',
+        'babar.gul@auvitronics.com',
         'adeel.iqbal@auvitronics.com',
         'rahila@auvitronics.com',
         'ilyas.shah@auvitronics.com',
@@ -20,7 +19,6 @@ return [
         'muneeb.afaq@auvitronics.com',
         'mahad.hamza@hoh.net',
         'sibtain.haji@hoh.net',
-        'zain.hasham@auvitronics.com',
     ],
 
     'password' => [
