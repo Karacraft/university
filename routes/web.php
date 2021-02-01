@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/','FrontEndController@index')->name('index');                                          //  Main Landing Page
 Route::get('/aaic','FrontEndController@aaic')->name('aaic');                         //  Select AIT / ABS
 Route::get('/abs','FrontEndController@abs')->name('abs');                                           //  Avt Businsess School
