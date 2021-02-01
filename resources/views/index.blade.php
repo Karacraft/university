@@ -11,68 +11,32 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('css/all.css') }}" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/all.js') }}"></script>
-    <script src="{{ asset('js/donut-chart.js') }}"></script>
 </head>
 <body>
-    {{-- Loader For Website --}}
-    <div class="lds-grid center-loader" id="loader">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    {{-- Main page --}}
-    <div id="app" class="mt-5 hideme animated fadeIn">
-        <div class="container  mt-5 pt-5 h-100">
-            <div class="row h-100 justify-content-center  mt-5">
-                <div class="col-12">
-                    <div class="card shadow">
-                        <div class="card-body">
-                            <div class="row align-items-center h-100">
-                                <div class="col-lg-6 col-md-12 col-sm-12 text-muted text-center p-5">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="{{ route('login')}}">
-                                                <img src="{{ asset('images/dashboard.png') }}" alt="" class="img-fluid">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12 text-center text-muted p-5">
-                                    <div class="row">
-                                        <div class="col">
-                                            <a href="{{ route('aaic') }}">
-                                                <img src="{{ asset('images/aaic.png') }}" alt="" class="img-fluid">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+    <!-- Center both Container & Inner Items -->
+    <div class="flex flex-col h-screen justify-center items-center">
+        <!-- This Div will be center on both Axis - Inner Container-->
+        <div class="w-3/4 md:w-3/4 lg:w-2/4">
+
+            <div class="flex justify-between">
+                <div class="">
+                    <a href="http://">
+                        <img src="{{ asset('images/dashboard.png') }}" alt="Dashboard" srcset="" class="p-2">
+                    </a>
+                </div>
+                <div class="">
+                    <a href="{{ route('aaic')}}">
+                        <img src="{{ asset('images/aaic.png') }}" alt="Avt Artificial Intelligence Center" srcset="" class="p-2">
+                    </a>
                 </div>
             </div>
-        </div>
-    </div>
 
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-    document.getElementById('loader').style.display = 'none';
-    document.getElementById('app').classList.remove('hideme');
-})
-</script>
+        </div>
+
+    </div>
 
 </body>
 </html>

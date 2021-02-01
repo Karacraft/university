@@ -1,118 +1,91 @@
-// Variables
-@import 'variables';
+/* ./resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-// Bootstrap
-// @import '~bootstrap/scss/bootstrap';
-@import 'flatly.scss';
 @import 'loadingio.scss';
 
 
-// @font-face {
-//     font-family: 'Roboto';
-//     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: normal;
-//   }
-//  Welcome/Login page Navbar
 .navbar-laravel {
-  background-color: $primary;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-}
-
-//  Vertical Line Between Divisions - Welcom/Login Page
-.vl {
-    border-left: 1px solid lightgray;
-    height: 410px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 25px;
+    /* background-color: $primary; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   }
 
-.vl2 {
-    border-left: 1px solid lightgray;
-    height: 230px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    top: 25px;
-}
+/* Vertical Line Between Divisions - Welcom/Login Page */
+  .vl {
+      border-left: 1px solid lightgray;
+      height: 410px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 25px;
+    }
 
-//   .navlink {
-
-//     background-color: green !important;
-
-//   }
-.hideme {
-    display:none;
-}
-
-.chart-item-bg { stroke: #e3e3e3 }
-
-.chart-item-0 { stroke: #137000 }
-
-.chart-item-1 { stroke: #00cc00 }
-
-.chart-item-2 { stroke: #0000ff }
-// .active a {
-
-//     background-color: green !important;
-
-//   }
-
-//   Center Image
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-// .card-body{
-//     font-size: .8rem;
-// }
-
-
-// Set border radius to 0
-* {
-    border-radius: 0 !important;
+  .vl2 {
+      border-left: 1px solid lightgray;
+      height: 230px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 25px;
   }
 
 
-//
-.checked {
-    color: orange;
+  .hideme {
+      display:none;
   }
 
-.onerem{
-    font-size:1rem;
-}
+  .chart-item-bg { stroke: #e3e3e3 }
 
-.tworem{
-    font-size:2rem;
-}
+  .chart-item-0 { stroke: #137000 }
 
-.text-box{
-    padding-top:8px;
-    border: 1px solid gray;
-}
+  .chart-item-1 { stroke: #00cc00 }
 
-// div.entry-content p:first-child:first-letter {
-//     float:left;
-//     font-size:2em;
-//     font-weight: bold;
-//     // color: #000099;
-//     margin-right:0.10em;
-//     line-height:90%;
-//     // text-shadow: 0.05em 0.05em #C0C0C0;
-// }
+  .chart-item-2 { stroke: #0000ff }
 
-.entry-content p:first-letter {
-    // float:left;
-    font-size:1.1em;
-    font-weight: 900;
-    // color: #000099;
-    margin-right:0.50em;
-    line-height:60%;
-    // text-shadow: 0.05em 0.05em #C0C0C0;
-}
+
+  /* //   Center Image */
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
+
+
+
+
+/* Set border radius to 0 */
+  * {
+      border-radius: 0 !important;
+    }
+
+
+
+  .checked {
+      color: orange;
+    }
+
+  .onerem{
+      font-size:1rem;
+  }
+
+  .tworem{
+      font-size:2rem;
+  }
+
+  .text-box{
+      padding-top:8px;
+      border: 1px solid gray;
+  }
+
+
+  .entry-content p:first-letter {
+
+      font-size:1.1em;
+      font-weight: 900;
+
+      margin-right:0.50em;
+      line-height:60%;
+
+  }

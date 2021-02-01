@@ -9,12 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Bootstrap -->
+    <!-- TailwindCSS -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('css/all.css') }}">
     {{-- Extra Styles --}}
     @yield('styles')
 
@@ -26,8 +22,6 @@
     </div>
 
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-    <script src="{{ asset('js/all.js') }}"></script>
-    <script src="{{ asset('js/donut-chart.js') }}"></script>
     @yield('scripts')
 
 </body>

@@ -12,7 +12,7 @@
 */
 
 Route::get('/','FrontEndController@index')->name('index');                                          //  Main Landing Page
-Route::get('/aaic','FrontEndController@aaic')->name('aaic');                         //  Select AIT / ABS
+Route::get('/aaic','FrontEndController@aaic')->name('aaic');                                        //  Select AIT / ABS
 Route::get('/abs','FrontEndController@abs')->name('abs');                                           //  Avt Businsess School
 Route::get('/ait','FrontEndController@ait')->name('ait');                                           //  Avt I Technology
 Route::get('/level2','FrontEndController@leveltwo')->name('leveltwo');          //  Shows Level-2 Login Page on All Dropdowns NOTE:Change it
