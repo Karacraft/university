@@ -18,14 +18,15 @@ mix.sass('resources/sass/app.scss', 'public/css')
         processCssUrls:false,
         postCss:[ tailwindcss('tailwind.config.js')]
     })
-    .browserSync({
-        proxy: 'localhost/university/public/',
-        files: [
-            'app/js/*.js',
-            'app/css/*.css',
-            'app/**/*',
-            'public/**/*',
-            'resources/views/**/*',
-            'routes/**/*'
-        ]
-   });
+//     .browserSync({
+//         proxy: 'localhost/university/public/',
+//         files: [
+//             'app/js/*.js',
+//             'app/css/*.css',
+//             'app/**/*',
+//             'public/**/*',
+//             'resources/views/**/*',
+//             'routes/**/*'
+//         ]
+//    })
+   ;
