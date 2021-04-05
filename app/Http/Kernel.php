@@ -63,6 +63,7 @@ class Kernel extends HttpKernel
         'admin' => \App\Http\Middleware\Admin::class,
         'canaccessopsfin' => \App\Http\Middleware\OperationAndFinance::class,
         'onlyops' => \App\Http\Middleware\OperationOnly::class,
+        'role' => Middleware\RoleMiddleware::class,   //
     ];
 
     /**
