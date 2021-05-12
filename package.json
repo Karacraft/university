@@ -37,7 +37,7 @@
     "axios": "^0.21",
     "laravel-mix": "^6.0.16",
     "lodash": "^4.17.21",
-    "postcss": "^8.2.9",
+    "postcss": "^8.2.10",
     "tailwindcss": "^2.0.4"
   },
   "dependencies": {
