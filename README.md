@@ -13,3 +13,11 @@
 *  Short Listing Agile Candidates
 
 
+## How to user Roles & Permissions
+
+    dd(auth()->user()->hasRole('admin_all','basic_display'))
+    dd(auth()->user()->can('display_user'))
+    dd( auth()->user()->givePermissionsTo('display_user') )
+    dd( auth()->user()->givePermissionsTo('delete_user') )
+    dd(auth()->user()->can('delete_user'))
+    dd(auth()->user()->can('display_user'))

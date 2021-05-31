@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg py-0 navbar-dark bg-primary">
+{{-- USed in Video Link Pages - Refactor --}}
+<nav class="flex w-full bg-blue-500">
     <ul class="navbar-nav">
         <li class="nav-item">
             <a href="{{ route('ait') }}" class="nav-link" title="Go Back">

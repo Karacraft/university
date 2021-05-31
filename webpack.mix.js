@@ -1,5 +1,4 @@
 const mix = require('laravel-mix');
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,12 +11,10 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js');
-const tailwindcss = require("tailwindcss");
-mix.sass('resources/sass/app.scss', 'public/css')
-    .options({
-        processCssUrls:false,
-        postCss:[ tailwindcss('tailwind.config.js')]
-    })
+mix.postCss('resources/css/app.css','public/css',[
+    require('tailwindcss'),
+    require('autoprefixer')
+]);
 //     .browserSync({
 //         proxy: 'localhost/university/public/',
 //         files: [
@@ -29,4 +26,3 @@ mix.sass('resources/sass/app.scss', 'public/css')
 //             'routes/**/*'
 //         ]
 //    })
-   ;

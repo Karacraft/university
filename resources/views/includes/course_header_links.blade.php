@@ -1,3 +1,4 @@
+{{-- Convert into Component --}}
 <div class="row text-center text-white">
     <div class="col-lg-1 col-md-1 col-sm-1">
         <a href="{{$left}}"><i class="fas fa-chevron-left text-white"></i></a>

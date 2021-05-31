@@ -15,13 +15,12 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id')->comment('Auto Incrementing Value');
+            $table->bigIncrements('id')->comment('Auto Incrementing Value');
             $table->string('name')->comment('Full Name of the User');
             $table->string('email')->unique()->comment('Unique Email Address of User');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->comment('Hashed Password');
-            $table->string('designation')->comment('Position in Company');
-            $table->integer('role_id')->default(Constants::CAN_ACCESS_NOTHING)->comment('Role Id as Per Constants');
+            $table->enum('role', ['owner','admin','manager','user','level1','level2'])->default('level1');
             $table->rememberToken();
             $table->timestamps();
         });

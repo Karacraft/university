@@ -7,6 +7,15 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 
 class RouteServiceProvider extends ServiceProvider
 {
+
+    /**
+     * The path to the "home" route for your application.
+     *
+     * @var string
+     */
+    public const HOME = '/production';
+    // Learn More : https://stackoverflow.com/a/59800517/4853427
+
     /**
      * This namespace is applied to your controller routes.
      *

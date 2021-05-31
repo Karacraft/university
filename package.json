@@ -1,27 +1,4 @@
 {
-  "name": "university",
-  "description": "**Developed By** *By Ali Jibran [ Deputy Manger IT  Auvitronics]*",
-  "version": "1.0.0",
-  "main": "tailwind.config.js",
-  "directories": {
-    "test": "tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Karacraft/university.git"
-  },
-  "keywords": [
-    "uni",
-    "university",
-    "avt",
-    "auvitronics"
-  ],
-  "author": "Ali Jibran",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Karacraft/university/issues"
-  },
-  "homepage": "https://github.com/Karacraft/university#readme",
   "private": true,
   "scripts": {
     "dev": "npm run development",
@@ -33,15 +10,12 @@
     "production": "mix --production"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
+    "autoprefixer": "^10.2.6",
     "axios": "^0.21",
-    "laravel-mix": "^6.0.16",
+    "laravel-mix": "^6.0.19",
     "lodash": "^4.17.21",
-    "postcss": "^8.2.9",
-    "tailwindcss": "^2.0.4"
-  },
-  "dependencies": {
-    "sass": "^1.32.8",
-    "sass-loader": "^11.0.1"
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2",
+    "tailwindcss-pseudo-elements": "^2.0.0"
   }
 }

@@ -1,8 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@include('includes.ait_navbar')
-<div class="container mt-5 animated fadeIn">
 
         <div class="card border-primary mb-3">
             <div class="card-header bg-primary">
@@ -59,9 +57,5 @@
     
             </div>
             {{-- Div Card-Body Ends here --}}
-            <div class="card-footer text-center">
-                <a href="{{ url()->previous() }}" class="btn btn-sm btn-primary">Go Back</a>
-            </div>
-        </div>
-    </div>
+            <x-go-back />
 @endsection

@@ -3,19 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Bootstrap -->
+    <!-- Tailwind -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
     <script src="{{ asset('js/app.js') }}"></script>
 </head>
 <body>
-
     <!-- Center both Container & Inner Items -->
     <div class="flex flex-col h-screen justify-center items-center">
         <!-- This Div will be center on both Axis - Inner Container-->
@@ -23,12 +18,12 @@
 
             <div class="flex justify-between">
                 <div class="">
-                    <a href="{{ route('ait')}}">
+                    <a href="{{ route('production')}}">
                         <img src="{{ asset('images/ait.png') }}" alt="AIT" srcset="" class="p-2">
                     </a>
                 </div>
                 <div class="">
-                    <a href="{{ route('abs')}}">
+                    <a href="{{ route('abs') }}">
                         <img src="{{ asset('images/abs.png') }}" alt="ABS srcset="" class="p-2">
                     </a>
                 </div>
@@ -37,7 +32,6 @@
         </div>
 
     </div>
-
 
 </body>
 </html>

@@ -15,13 +15,15 @@
     @yield('styles')
 
 </head>
-<body>
+<body class="">
+
+    {{-- Include Main Navigation here --}}
+    @include('includes.main_navbar')
     {{-- Main App --}}
-    <div id="app">
-        @yield('content')
-    </div>
+    @yield('content')
 
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/web.js') }}"></script>
     @yield('scripts')
 
 </body>

@@ -9,38 +9,21 @@ use Illuminate\Support\Facades\Config;
 class FrontEndController extends Controller
 {
     //  Shows Main page
-    public function index()
-    {
-        return view('index'); 
+    public function index(){
+        // return view('test.index');
+        return view('index');   
     }
-
-    public function aaic()
-    {
-        return view('aaic');
-    }
-
-    public function opsOrFin()
-    {
-        return view('opsorfin');
-    }
-
-    //  Avt Business School
-    public function abs()
-    {
-        return view('abs');
-    }
-
-    //  Avt Intelligent Tech
-    public function ait()
-    {
-        return view('ait');
-    }
-
+    public function index2(){return view('index2');}
+    
+    public function opsOrFin(){return view('opsorfin');}
     //  Powerbi Login Faker
-    public function showpowerbilogin()
-    {
-        return view('powerbilogin');
-    }
+    public function showpowerbilogin(){return view('powerbilogin');}
+    
+    public function underconstruction(){return view('underconstruction');}
+  
+    public function machine(){return view('production.machine');}
+
+    public function profile(){return view('profile');}
 
     public function powerbilogin(PowerBiLoginRequest $request)
     {
@@ -75,23 +58,4 @@ class FrontEndController extends Controller
         // return redirect()->route('landing');
     }
 
-    public function underconstruction()
-    {
-        return view('underconstruction');
-    }
-  
-    public function machine()
-    {
-        return view('production.machine');
-    }
-
-    public function profile()
-    {
-        return view('profile');
-    }
-
-    public function leveltwo()
-    {
-        return view('leveltwo');
-    }
 }
